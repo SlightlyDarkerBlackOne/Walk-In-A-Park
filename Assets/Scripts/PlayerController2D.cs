@@ -16,8 +16,6 @@ public class PlayerController2D : MonoBehaviour
     [SerializeField]
     private float dashSpeed = 2;
     [SerializeField]
-    private int dashManaCost = 5;
-    [SerializeField]
     private float rollSpeed = 3.64f;
     [SerializeField]
     private float rollSpeedMinimum = 2.04f;
