@@ -45,6 +45,8 @@ public class PlayerController2D : MonoBehaviour
     private bool isDashButtonDown;
     public bool playerFrozen = false;
 
+    public GameObject leash;
+
     #region Singleton
     public static PlayerController2D Instance { get; private set; }
 
@@ -64,22 +66,28 @@ public class PlayerController2D : MonoBehaviour
 
     // Update is called once per frame
     void Update() {
-        Move();
-        SetAnimations();
-        TrailEffect();
 
-        if (Input.GetKeyDown(KeyCode.F)) {
-            isDashButtonDown = true;
-        }
-        if (dashTime >= 0) {
-            isDashButtonDown = false;
-        }
-        dashTime -= Time.deltaTime;
+        if (!leash.activeSelf)
+        {
+            Move();
+            SetAnimations();
+            TrailEffect();
 
-        if (playerFrozen) {
-            state = State.Idle;
-            playerMoving = false;
+            if (Input.GetKeyDown(KeyCode.F)) {
+                isDashButtonDown = true;
+            }
+            if (dashTime >= 0) {
+                isDashButtonDown = false;
+            }
+            dashTime -= Time.deltaTime;
+
+            if (playerFrozen) {
+                state = State.Idle;
+                playerMoving = false;
+            }
+
         }
+
     }
 
     private void FixedUpdate() {

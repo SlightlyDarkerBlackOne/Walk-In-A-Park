@@ -8,6 +8,8 @@ namespace Cainos.PixelArtTopDown_Basic
     {
         public float speed;
 
+        public GameObject leash;
+
         private Animator animator;
 
         private void Start()
@@ -17,6 +19,14 @@ namespace Cainos.PixelArtTopDown_Basic
 
 
         private void Update()
+        {
+            if (leash.activeSelf)
+            {
+                Move();
+            }            
+        }
+
+        private void Move()
         {
             Vector2 dir = Vector2.zero;
             if (Input.GetKey(KeyCode.LeftArrow))
