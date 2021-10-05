@@ -45,6 +45,8 @@ public class PlayerController2D : MonoBehaviour
     private bool isDashButtonDown;
     public bool playerFrozen = false;
 
+    public GameObject leash;
+
     #region Singleton
     public static PlayerController2D Instance { get; private set; }
 
@@ -64,6 +66,7 @@ public class PlayerController2D : MonoBehaviour
 
     // Update is called once per frame
     void Update() {
+
         Move();
         SetAnimations();
         TrailEffect();
@@ -80,6 +83,7 @@ public class PlayerController2D : MonoBehaviour
             state = State.Idle;
             playerMoving = false;
         }
+
     }
 
     private void FixedUpdate() {
@@ -107,27 +111,31 @@ public class PlayerController2D : MonoBehaviour
                 float moveX = 0f;
                 float moveY = 0f;
 
-                if (Input.GetKey(KeyCode.W)) {
-                    moveY = +1f;
-                }
-                if (Input.GetKey(KeyCode.S)) {
-                    moveY = -1f;
-                }
-                if (Input.GetKey(KeyCode.A)) {
-                    moveX = -1f;
-                }
-                if (Input.GetKey(KeyCode.D)) {
-                    moveX = +1f;
-                }
-                if (moveX != 0 || moveY != 0) {
-                    playerMoving = true;
-                    lastMoveDir = moveDir;
-                } else {
-                    playerMoving = false;
-                }
+                if (!leash.activeSelf)
+                {
+                    if (Input.GetKey(KeyCode.W)) {
+                        moveY = +1f;
+                    }
+                    if (Input.GetKey(KeyCode.S)) {
+                        moveY = -1f;
+                    }
+                    if (Input.GetKey(KeyCode.A)) {
+                        moveX = -1f;
+                    }
+                    if (Input.GetKey(KeyCode.D)) {
+                        moveX = +1f;
+                    }
+                    if (moveX != 0 || moveY != 0) {
+                        playerMoving = true;
+                        lastMoveDir = moveDir;
+                    } else {
+                        playerMoving = false;
+                    }
+                } else playerMoving = false;
+
                 moveDir = new Vector3(moveX, moveY).normalized;
 
-                if (Input.GetKeyDown(KeyCode.Space)) {
+                if (!leash.activeSelf && Input.GetKeyDown(KeyCode.Space)) {
                     rollDir = lastMoveDir;
                     rollSpeedOngoing = rollSpeed;
                     if (dashTime <= 0) {
