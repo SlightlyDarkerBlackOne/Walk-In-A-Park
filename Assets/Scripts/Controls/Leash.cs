@@ -6,17 +6,16 @@ public class Leash : MonoBehaviour
 {
     public GameObject leash;
     public GameObject playerHuman;
-    public GameObject playerDog;
-    public HingeJoint2D joint;
     public GameObject boneToJoint;
-    private float dist;
+    private HingeJoint2D joint;
+    private float minLeashDistance;
 
     // Start is called before the first frame update
     void Start()
     {
         joint = playerHuman.GetComponent<HingeJoint2D>();
 
-        dist = Vector2.Distance(playerHuman.transform.position, playerDog.transform.position);
+        minLeashDistance = Vector2.Distance(playerHuman.transform.position, PlayerController2D.Instance.transform.position);
 
     }
 
@@ -27,12 +26,7 @@ public class Leash : MonoBehaviour
         {
             if (!leash.activeSelf && DogInRange())
             {
-                leash.SetActive(true);
-                //move the end of leash from where it was left off to the new position 
-                //of the human before reactivating? (for now just teleport the player to that location)
-                playerHuman.transform.position = boneToJoint.transform.position;
-                
-                joint.enabled = true;
+                SetLeashToPlayerHuman();
             }
             else if (leash.activeSelf)
             {
@@ -45,8 +39,18 @@ public class Leash : MonoBehaviour
 
     private bool DogInRange()
     {
-        var d = Vector2.Distance(playerHuman.transform.position, playerDog.transform.position);
-        if (d > dist) return false;
+        var currentDistance = Vector2.Distance(playerHuman.transform.position, PlayerController2D.Instance.transform.position);
+        if (currentDistance > minLeashDistance) return false;
         return true;
+    }
+
+    private void SetLeashToPlayerHuman()
+    {
+        leash.SetActive(true);
+        //move the end of leash from where it was left off to the new position 
+        //of the human before reactivating? (for now just teleport the player to that location)
+        playerHuman.transform.position = boneToJoint.transform.position;
+                
+        joint.enabled = true;
     }
 }

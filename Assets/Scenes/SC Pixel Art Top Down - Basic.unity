@@ -10943,6 +10943,23 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 2067696404}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &398961371
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 398961367}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6f2047c1125de5d184ad6ae7e77ff13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  leash: {fileID: 584872725}
+  rb: {fileID: 0}
+  direction: {x: 0, y: 0, z: 0}
+  anim: {fileID: 0}
+  state: 0
 --- !u!1001 &403841260
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20486,8 +20503,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   leash: {fileID: 584872725}
   playerHuman: {fileID: 328513448}
-  playerDog: {fileID: 398961367}
-  joint: {fileID: 0}
   boneToJoint: {fileID: 1804272108}
 --- !u!4 &1175904463
 Transform:
