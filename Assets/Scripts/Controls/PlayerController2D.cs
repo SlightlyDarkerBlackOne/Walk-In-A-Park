@@ -46,6 +46,7 @@ public class PlayerController2D : MonoBehaviour
     public bool playerFrozen = false;
 
     public GameObject leash;
+    private float moveX, moveY;
 
     #region Singleton
     public static PlayerController2D Instance { get; private set; }
@@ -108,10 +109,12 @@ public class PlayerController2D : MonoBehaviour
                     state = State.Walking;
                 break;
             case State.Walking:
-                float moveX = 0f;
-                float moveY = 0f;
+                moveX = 0f;
+                moveY = 0f;
 
-                if (!leash.activeSelf)
+                //even if leash is still inactive, if the owner is in the process of
+                //putting the leash, don't allow the dog to move
+                if (!leash.activeSelf && !Leash.PuttingOnLeash)
                 {
                     if (Input.GetKey(KeyCode.W)) {
                         moveY = +1f;

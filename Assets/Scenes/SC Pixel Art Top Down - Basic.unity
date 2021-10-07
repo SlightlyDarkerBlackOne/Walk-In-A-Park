@@ -6064,8 +6064,8 @@ HingeJoint2D:
   m_BreakForce: Infinity
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
-  m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 0.12761351, y: -0.25444412}
+  m_Anchor: {x: -0.031021595, y: 0.26590085}
+  m_ConnectedAnchor: {x: 0.09659195, y: 0.011456719}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -6083,9 +6083,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 328513448}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 30fe85dfa66d6776ba5e526d4e79cfce, type: 3}
+  m_Script: {fileID: 11500000, guid: abd146093740c5d43b5909c7913f3109, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 5
+  leash: {fileID: 584872725}
 --- !u!1001 &346026315
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10955,11 +10957,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6f2047c1125de5d184ad6ae7e77ff13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  leash: {fileID: 584872725}
-  rb: {fileID: 0}
-  direction: {x: 0, y: 0, z: 0}
-  anim: {fileID: 0}
-  state: 0
 --- !u!1001 &403841260
 PrefabInstance:
   m_ObjectHideFlags: 0
