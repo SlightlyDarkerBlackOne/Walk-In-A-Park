@@ -9,6 +9,7 @@ public class PlayerController2D : MonoBehaviour
         Idle,
         Walking,
         Rolling,
+        Follow,
     }
 
     [SerializeField]
@@ -47,6 +48,11 @@ public class PlayerController2D : MonoBehaviour
 
     public GameObject leash;
 
+    public float timeBetweenMove;
+    private float timeBetweenMoveCounter;
+    public float timeToMove;
+    private float timeToMoveCounter;
+
     #region Singleton
     public static PlayerController2D Instance { get; private set; }
 
@@ -61,6 +67,9 @@ public class PlayerController2D : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         anim = transform.Find("Animation").GetComponent<Animator>();
         state = State.Walking;
+
+        timeBetweenMoveCounter = Random.Range(timeBetweenMove * 0.75f, timeBetweenMove * 1.25f);
+        timeToMoveCounter = Random.Range(timeToMove * 0.75f, timeToMove * 1.25f);
     }
     #endregion
 
@@ -111,27 +120,29 @@ public class PlayerController2D : MonoBehaviour
                 float moveX = 0f;
                 float moveY = 0f;
 
-                if (!leash.activeSelf)
-                {
-                    if (Input.GetKey(KeyCode.W)) {
-                        moveY = +1f;
-                    }
-                    if (Input.GetKey(KeyCode.S)) {
-                        moveY = -1f;
-                    }
-                    if (Input.GetKey(KeyCode.A)) {
-                        moveX = -1f;
-                    }
-                    if (Input.GetKey(KeyCode.D)) {
-                        moveX = +1f;
-                    }
-                    if (moveX != 0 || moveY != 0) {
-                        playerMoving = true;
-                        lastMoveDir = moveDir;
-                    } else {
-                        playerMoving = false;
-                    }
-                } else playerMoving = false;
+                if (leash.activeSelf) {
+                    state = State.Follow;
+                }
+                
+                if (Input.GetKey(KeyCode.W)) {
+                    moveY = +1f;
+                }
+                if (Input.GetKey(KeyCode.S)) {
+                    moveY = -1f;
+                }
+                if (Input.GetKey(KeyCode.A)) {
+                    moveX = -1f;
+                }
+                if (Input.GetKey(KeyCode.D)) {
+                    moveX = +1f;
+                }
+                if (moveX != 0 || moveY != 0) {
+                    playerMoving = true;
+                    lastMoveDir = moveDir;
+                } else {
+                    playerMoving = false;
+                }
+                
 
                 moveDir = new Vector3(moveX, moveY).normalized;
 
@@ -147,8 +158,44 @@ public class PlayerController2D : MonoBehaviour
             case State.Rolling:
                 Roll();
                 break;
+            case State.Follow:
+                if (!leash.activeSelf) {
+                    state = State.Idle;
+                }
+                Follow();
+                break;
         }
     }
+
+    private void Follow() {
+        if (playerMoving) {
+            timeToMoveCounter -= Time.deltaTime;
+            rb.velocity = moveDir;
+
+            //Ako je dosao do ruba zone za hodanje
+            //IsOverTheZone();
+
+            if (timeToMoveCounter < 0f) {
+                playerMoving = false;
+                anim.SetBool("PlayerMoving", false);
+                timeBetweenMoveCounter = Random.Range(timeBetweenMove * 0.75f, timeBetweenMove * 1.25f);
+                lastMoveDir = moveDir;
+            }
+
+        } else {
+            timeBetweenMoveCounter -= Time.deltaTime;
+            rb.velocity = Vector2.zero;
+
+            if (timeBetweenMoveCounter < 0f) {
+                playerMoving = true;
+                anim.SetBool("PlayerMoving", true);
+                timeToMoveCounter = Random.Range(timeToMove * 0.75f, timeToMove * 1.25f);
+
+                moveDir = new Vector3(Random.Range(-1f, 1f) * moveSpeed, Random.Range(-1f, 1f) * moveSpeed, 0f);
+            }
+        }
+    }
+
     private void Roll() {
         rollSpeedOngoing -= rollSpeedOngoing * rollSpeedDropMultiplier * Time.deltaTime;
         if (rollSpeedOngoing < rollSpeedMinimum) {
