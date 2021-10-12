@@ -5,11 +5,11 @@ using UnityEngine.Experimental.Rendering.LWRP;
 
 public class DayNight : MonoBehaviour
 {
-    public Light2D sun;
+    public UnityEngine.Experimental.Rendering.Universal.Light2D sun;
     public float cycleSpeed = 0.1f;
 
     void Start() {
-        sun = GetComponent<Light2D>();
+        sun = GetComponent<UnityEngine.Experimental.Rendering.Universal.Light2D>();
         StartCoroutine(Sunrise());
     }
 
