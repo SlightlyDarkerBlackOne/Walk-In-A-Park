@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Leash : MonoBehaviour
 {
-    public GameObject leash;
+    private GameObject leash;
     public GameObject playerHuman;
     public GameObject boneToJoint;
     private HingeJoint2D joint;
@@ -13,6 +13,7 @@ public class Leash : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        leash = this.gameObject;
         joint = playerHuman.GetComponent<HingeJoint2D>();
 
         minLeashDistance = Vector2.Distance(playerHuman.transform.position, PlayerController2D.Instance.transform.position);
