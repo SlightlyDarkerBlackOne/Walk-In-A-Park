@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class SFXManager : MonoBehaviour
 {
-    public AudioSource playerDead;
     public AudioSource levelUP;
     public AudioSource itemPickedUp;
     public AudioSource breakCrate;
@@ -13,6 +12,9 @@ public class SFXManager : MonoBehaviour
 
     public AudioSource dash;
     public AudioSource footsteps;
+
+    public AudioSource dogBark;
+    public AudioSource dogCry;
 
     #region Singleton
     public static SFXManager Instance { get; private set; }
