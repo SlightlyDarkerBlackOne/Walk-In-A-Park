@@ -2,11 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class DialogueManager : MonoBehaviour {
 
-    public Text nameText;
-    public Text dialogueText;
+    public TextMeshProUGUI nameText;
+    public TextMeshProUGUI dialogueText;
 
     public Animator animator;
 
@@ -31,7 +32,7 @@ public class DialogueManager : MonoBehaviour {
     
     //For starting a dialogue and also for starting quest dialogue
     public void StartDialogue(Dialogue dialogue) {
-        PlayerController2D.Instance.FrezePlayer();
+        //PlayerController2D.Instance.FrezePlayer();
         animator.SetBool("IsOpen", true);
 
         nameText.text = dialogue.name;

@@ -9,6 +9,8 @@ public class Leash : MonoBehaviour
     public GameObject boneToJoint;
     private HingeJoint2D joint;
     private float minLeashDistance;
+    public static bool PuttingOnLeash;
+    private Vector2 previousPosition;
 
     // Start is called before the first frame update
     void Start()
@@ -17,6 +19,7 @@ public class Leash : MonoBehaviour
 
         minLeashDistance = Vector2.Distance(playerHuman.transform.position, PlayerController2D.Instance.transform.position);
 
+        PuttingOnLeash = false;
     }
 
     // Update is called once per frame
@@ -26,12 +29,23 @@ public class Leash : MonoBehaviour
         {
             if (!leash.activeSelf && DogInRange())
             {
-                SetLeashToPlayerHuman();
+                PuttingOnLeash = true;
             }
             else if (leash.activeSelf)
             {
-                leash.SetActive(false);
-                joint.enabled = false;
+                DisconnectLeashFromPlayerHuman();
+            }
+        }
+        
+        if (PuttingOnLeash)
+        {
+            playerHuman.transform.position = Vector2.Lerp(playerHuman.transform.position,
+                boneToJoint.transform.position, 5f*Time.deltaTime);
+
+            if (Vector2.Distance(playerHuman.transform.position, boneToJoint.transform.position)<0.1f) 
+            {
+                SetLeashToPlayerHuman();
+                PuttingOnLeash = false;
             }
         }
         
@@ -46,11 +60,13 @@ public class Leash : MonoBehaviour
 
     private void SetLeashToPlayerHuman()
     {
-        leash.SetActive(true);
-        //move the end of leash from where it was left off to the new position 
-        //of the human before reactivating? (for now just teleport the player to that location)
-        playerHuman.transform.position = boneToJoint.transform.position;
-                
+        leash.SetActive(true);  
         joint.enabled = true;
+    }
+
+    private void DisconnectLeashFromPlayerHuman()
+    {
+        leash.SetActive(false);
+        joint.enabled = false;
     }
 }

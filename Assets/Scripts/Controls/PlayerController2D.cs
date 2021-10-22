@@ -53,6 +53,8 @@ public class PlayerController2D : MonoBehaviour
     public float timeToMove;
     private float timeToMoveCounter;
 
+    private InteractionSystem dogActions;
+
     #region Singleton
     public static PlayerController2D Instance { get; private set; }
 
@@ -70,11 +72,36 @@ public class PlayerController2D : MonoBehaviour
 
         timeBetweenMoveCounter = Random.Range(timeBetweenMove * 0.75f, timeBetweenMove * 1.25f);
         timeToMoveCounter = Random.Range(timeToMove * 0.75f, timeToMove * 1.25f);
+
+        dogActions = GetComponent<InteractionSystem>();
     }
     #endregion
 
     // Update is called once per frame
-    void Update() {
+    void Update() 
+    {
+        //check leash status
+        if (!LeashOn()) 
+        {
+            //State.Follow in order to avoid triggering State.Walking in FixedUpdate
+            //which adds much more velocity
+            state = State.Follow;
+            Follow();
+            SetAnimations();
+            return;
+        }
+
+        //if 1) examining an item or 2) in inventory window, don't allow movement
+        if (FindObjectOfType<InteractionSystem>().isExamining ||
+            FindObjectOfType<InventorySystem>().showInventory) 
+        {
+            //sets velocity to zero
+            state = State.Idle;
+            //to correct animation to idle
+            playerMoving = false;
+            SetAnimations();
+            return;
+        }
 
         Move();
         SetAnimations();
@@ -95,7 +122,16 @@ public class PlayerController2D : MonoBehaviour
 
     }
 
-    private void FixedUpdate() {
+    bool LeashOn()
+    {
+        bool canMove;
+        if (!leash.activeSelf) canMove = true;
+        else canMove = false;
+        return canMove;
+    }
+
+    private void FixedUpdate() 
+    {
         switch (state) {
             case State.Idle:
                 rb.velocity = Vector2.zero;
@@ -110,7 +146,8 @@ public class PlayerController2D : MonoBehaviour
         }
     }
 
-    private void Move() {
+    private void Move() 
+    {
         switch (state) {
             case State.Idle:
                 if (!playerFrozen)
@@ -146,7 +183,7 @@ public class PlayerController2D : MonoBehaviour
 
                 moveDir = new Vector3(moveX, moveY).normalized;
 
-                if (!leash.activeSelf && Input.GetKeyDown(KeyCode.Space)) {
+                if (Input.GetKeyDown(KeyCode.Space)) {
                     rollDir = lastMoveDir;
                     rollSpeedOngoing = rollSpeed;
                     if (dashTime <= 0) {
