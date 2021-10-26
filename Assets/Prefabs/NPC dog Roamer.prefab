@@ -174,3 +174,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movementRangeX: 3
   movementRangeY: 3
+  targetToMoveAwayFrom: {fileID: 0}

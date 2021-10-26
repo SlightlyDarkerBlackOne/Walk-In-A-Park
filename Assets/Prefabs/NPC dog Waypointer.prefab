@@ -165,7 +165,15 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   waypointList: []
+  count: 0
 --- !u!114 &2942785047781452142
 MonoBehaviour:
   m_ObjectHideFlags: 0

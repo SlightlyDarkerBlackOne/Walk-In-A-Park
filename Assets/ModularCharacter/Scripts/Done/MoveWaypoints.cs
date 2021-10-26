@@ -20,9 +20,11 @@ public class MoveWaypoints : MonoBehaviour {
     [SerializeField] private Transform[] waypointListTransform;
     [SerializeField] private List<Vector3> waypointList;
     private int waypointIndex;
+    public float count;
 
     private void Start() {
         FillWaypointList();
+        count = waypointList.Count;
     }
     private void Update() {
         SetMovePosition(GetWaypointPosition());
@@ -30,10 +32,10 @@ public class MoveWaypoints : MonoBehaviour {
         float arrivedAtPositionDistance = 1f;
         if (Vector3.Distance(transform.position, GetWaypointPosition()) < arrivedAtPositionDistance) {
             // Reached position
-
-            if(waypointIndex >= waypointList.Count) {
+            if ((waypointIndex+1) >= waypointList.Count) { 
                 waypointIndex = 0;
             } else {
+                //if (waypointIndex - 1 >= waypointList.Count) {
                 waypointIndex++;
             }
         }

@@ -15,7 +15,7 @@ public class Leash : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        leash = this.gameObject;
+        leash = transform.Find("Leash").gameObject;
         joint = playerHuman.GetComponent<HingeJoint2D>();
 
         minLeashDistance = Vector2.Distance(playerHuman.transform.position, PlayerController2D.Instance.transform.position);
@@ -43,8 +43,9 @@ public class Leash : MonoBehaviour
             playerHuman.transform.position = Vector2.Lerp(playerHuman.transform.position,
                 boneToJoint.transform.position, 5f*Time.deltaTime);
 
-            if (Vector2.Distance(playerHuman.transform.position, boneToJoint.transform.position)<0.1f) 
+            if (Vector2.Distance(playerHuman.transform.position, boneToJoint.transform.position)<=0.1f) 
             {
+                Debug.Log("close enough");
                 SetLeashToPlayerHuman();
                 PuttingOnLeash = false;
             }
