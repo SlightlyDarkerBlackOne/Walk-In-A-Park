@@ -53,8 +53,6 @@ public class PlayerController2D : MonoBehaviour
     public float timeToMove;
     private float timeToMoveCounter;
 
-    private InteractionSystem dogActions;
-
     #region Singleton
     public static PlayerController2D Instance { get; private set; }
 
@@ -72,8 +70,6 @@ public class PlayerController2D : MonoBehaviour
 
         timeBetweenMoveCounter = Random.Range(timeBetweenMove * 0.75f, timeBetweenMove * 1.25f);
         timeToMoveCounter = Random.Range(timeToMove * 0.75f, timeToMove * 1.25f);
-
-        dogActions = GetComponent<InteractionSystem>();
     }
     #endregion
 
