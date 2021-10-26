@@ -80,29 +80,6 @@ public class PlayerController2D : MonoBehaviour
     // Update is called once per frame
     void Update() 
     {
-        //check leash status
-        if (!LeashOn()) 
-        {
-            //State.Follow in order to avoid triggering State.Walking in FixedUpdate
-            //which adds much more velocity
-            state = State.Follow;
-            Follow();
-            SetAnimations();
-            return;
-        }
-
-        //if 1) examining an item or 2) in inventory window, don't allow movement
-        if (FindObjectOfType<InteractionSystem>().isExamining ||
-            FindObjectOfType<InventorySystem>().showInventory) 
-        {
-            //sets velocity to zero
-            state = State.Idle;
-            //to correct animation to idle
-            playerMoving = false;
-            SetAnimations();
-            return;
-        }
-
         Move();
         SetAnimations();
         TrailEffect();

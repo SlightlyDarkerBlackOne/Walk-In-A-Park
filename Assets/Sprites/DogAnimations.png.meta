@@ -1,0 +1,492 @@
+fileFormatVersion: 2
+guid: db9b79d59bcbc74488b7523b13c75780
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4353814613105701788
+    second: DogAnimations_0
+  - first:
+      213: -64322295042957322
+    second: DogAnimations_1
+  - first:
+      213: 5963712489225264187
+    second: DogAnimations_2
+  - first:
+      213: -7773693073209250419
+    second: DogAnimations_3
+  - first:
+      213: 5513989795946431439
+    second: DogAnimations_4
+  - first:
+      213: -7395673719736163681
+    second: DogAnimations_5
+  - first:
+      213: 7422039205768284510
+    second: DogAnimations_6
+  - first:
+      213: 6665047760660927931
+    second: DogAnimations_7
+  - first:
+      213: -7681973638351693299
+    second: DogAnimations_8
+  - first:
+      213: -6328006911348251201
+    second: DogAnimations_9
+  - first:
+      213: -5297733602948364528
+    second: DogAnimations_10
+  - first:
+      213: -7881540486940711161
+    second: DogAnimations_11
+  - first:
+      213: 4952703248850434719
+    second: DogAnimations_12
+  - first:
+      213: 438766308179240880
+    second: DogAnimations_13
+  - first:
+      213: 2732166665772720506
+    second: DogAnimations_14
+  - first:
+      213: 2324012767762262455
+    second: DogAnimations_15
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 230
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: DogAnimations_0
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 835
+        width: 95
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46c0ee74da42493c0800000000000000
+      internalID: -4353814613105701788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogAnimations_1
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 835
+        width: 105
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ff93d4a63b7b1ff0800000000000000
+      internalID: -64322295042957322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogAnimations_2
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 835
+        width: 95
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3c15de69ec53c250800000000000000
+      internalID: 5963712489225264187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogAnimations_3
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 835
+        width: 105
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8da272365b4e1490800000000000000
+      internalID: -7773693073209250419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogAnimations_4
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 600
+        width: 165
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc3048a4180a58c40800000000000000
+      internalID: 5513989795946431439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogAnimations_5
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 600
+        width: 175
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f922f649fe94d5990800000000000000
+      internalID: -7395673719736163681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogAnimations_6
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 600
+        width: 165
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5947d08551600760800000000000000
+      internalID: 7422039205768284510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogAnimations_7
+      rect:
+        serializedVersion: 2
+        x: 730
+        y: 600
+        width: 175
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb5153910a10f7c50800000000000000
+      internalID: 6665047760660927931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogAnimations_8
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 360
+        width: 175
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0ad1204da5246590800000000000000
+      internalID: -7681973638351693299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogAnimations_9
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 360
+        width: 165
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb5eed8cd376e28a0800000000000000
+      internalID: -6328006911348251201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogAnimations_10
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 360
+        width: 175
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 017cc915b5baa76b0800000000000000
+      internalID: -5297733602948364528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogAnimations_11
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 360
+        width: 165
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7072a017fa42f9290800000000000000
+      internalID: -7881540486940711161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogAnimations_12
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 120
+        width: 105
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9a37a14d598bb440800000000000000
+      internalID: 4952703248850434719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogAnimations_13
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 120
+        width: 105
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b7ee62f1afc61600800000000000000
+      internalID: 438766308179240880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogAnimations_14
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 120
+        width: 105
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a71eb8c5b1b9ae520800000000000000
+      internalID: 2732166665772720506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogAnimations_15
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 120
+        width: 105
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b921f39c4d804020800000000000000
+      internalID: 2324012767762262455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
