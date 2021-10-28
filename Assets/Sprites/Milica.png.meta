@@ -1,0 +1,492 @@
+fileFormatVersion: 2
+guid: 8ab945a6d59d37242adec9db0c047b4a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4639967206989696130
+    second: Milica_0
+  - first:
+      213: -1784881737800010033
+    second: Milica_1
+  - first:
+      213: -6125028402298213884
+    second: Milica_2
+  - first:
+      213: -5473775046829064113
+    second: Milica_3
+  - first:
+      213: 2208933504915818790
+    second: Milica_4
+  - first:
+      213: -7413291441203449873
+    second: Milica_5
+  - first:
+      213: -7467502818284009264
+    second: Milica_6
+  - first:
+      213: -4008882436971638423
+    second: Milica_7
+  - first:
+      213: 3791094235912016765
+    second: Milica_8
+  - first:
+      213: 1489392249243600255
+    second: Milica_9
+  - first:
+      213: 924276715511989744
+    second: Milica_10
+  - first:
+      213: 7758216581592132491
+    second: Milica_11
+  - first:
+      213: 374092855948350473
+    second: Milica_12
+  - first:
+      213: 1463407882655494876
+    second: Milica_13
+  - first:
+      213: -687917109781934092
+    second: Milica_14
+  - first:
+      213: 5371396383931407802
+    second: Milica_15
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 200
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Milica_0
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 1040
+        width: 75
+        height: 245
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e73fae9a8668b9fb0800000000000000
+      internalID: -4639967206989696130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Milica_1
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 1040
+        width: 75
+        height: 240
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc639542483da37e0800000000000000
+      internalID: -1784881737800010033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Milica_2
+      rect:
+        serializedVersion: 2
+        x: 645
+        y: 1040
+        width: 75
+        height: 245
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40a26d1be178ffaa0800000000000000
+      internalID: -6125028402298213884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Milica_3
+      rect:
+        serializedVersion: 2
+        x: 805
+        y: 1040
+        width: 75
+        height: 240
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f404b51a89e3904b0800000000000000
+      internalID: -5473775046829064113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Milica_4
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 720
+        width: 240
+        height: 235
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62947fcb155b7ae10800000000000000
+      internalID: 2208933504915818790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Milica_5
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 720
+        width: 250
+        height: 230
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fefef9626b2be1990800000000000000
+      internalID: -7413291441203449873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Milica_6
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 720
+        width: 240
+        height: 235
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d804f450c91e5890800000000000000
+      internalID: -7467502818284009264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Milica_7
+      rect:
+        serializedVersion: 2
+        x: 955
+        y: 720
+        width: 250
+        height: 230
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 961d00ed9a69d58c0800000000000000
+      internalID: -4008882436971638423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Milica_8
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 400
+        width: 250
+        height: 230
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7311991f1cac9430800000000000000
+      internalID: 3791094235912016765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Milica_9
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 400
+        width: 240
+        height: 235
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f75826b0c526ba410800000000000000
+      internalID: 1489392249243600255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Milica_10
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 400
+        width: 250
+        height: 230
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f5c14696c0b3dc00800000000000000
+      internalID: 924276715511989744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Milica_11
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 400
+        width: 240
+        height: 235
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8b285c40e8baab60800000000000000
+      internalID: 7758216581592132491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Milica_12
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 80
+        width: 85
+        height: 230
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90410df687b013500800000000000000
+      internalID: 374092855948350473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Milica_13
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 80
+        width: 85
+        height: 225
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd2ff2f37b11f4410800000000000000
+      internalID: 1463407882655494876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Milica_14
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 80
+        width: 85
+        height: 230
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ffc88c88070476f0800000000000000
+      internalID: -687917109781934092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Milica_15
+      rect:
+        serializedVersion: 2
+        x: 795
+        y: 80
+        width: 85
+        height: 225
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abd9c046d880b8a40800000000000000
+      internalID: 5371396383931407802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
