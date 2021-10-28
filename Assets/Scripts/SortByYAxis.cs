@@ -16,7 +16,7 @@ public class SortByYAxis : MonoBehaviour
     [SerializeField]
     private int _originOrder = 100;
     [SerializeField]
-    private float _precision = 1f;
+    public float _precision = 1f;
     [SerializeField]
     private int _offset = 0;
     [SerializeField]

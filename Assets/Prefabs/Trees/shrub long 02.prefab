@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7783056538755724500}
   - component: {fileID: 8525509960030380103}
   - component: {fileID: 222409749069859487}
+  - component: {fileID: 7368963655375351620}
   m_Layer: 0
   m_Name: shrub long 02
   m_TagString: Untagged
@@ -110,3 +111,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.3289419, y: 0.044516545}
   m_EdgeRadius: 0
+--- !u!114 &7368963655375351620
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1687815488495687814}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e3fdca004f2d45fe8abbed571a8abd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OverrideArea: 1
+  m_Area: 1
+  m_IgnoreFromBuild: 0
+  m_AffectedAgents: ffffffff

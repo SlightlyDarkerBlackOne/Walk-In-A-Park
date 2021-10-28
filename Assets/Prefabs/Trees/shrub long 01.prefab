@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4400158612909041689}
   - component: {fileID: 5684208815836203546}
   - component: {fileID: 8656347129867434916}
+  - component: {fileID: -3358191837837075172}
   m_Layer: 0
   m_Name: shrub long 01
   m_TagString: Untagged
@@ -100,7 +101,7 @@ BoxCollider2D:
   m_Offset: {x: 0.01603128, y: 0.0052816}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.51463914, y: 0.25331482}
+    pivot: {x: 0.5, y: 0.23649532}
     oldSize: {x: 0.72, y: 0.47}
     newSize: {x: 0.72, y: 0.47}
     adaptiveTilingThreshold: 0.5
@@ -110,3 +111,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.4462413, y: 0.045367055}
   m_EdgeRadius: 0
+--- !u!114 &-3358191837837075172
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6004166246177150119}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e3fdca004f2d45fe8abbed571a8abd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OverrideArea: 1
+  m_Area: 1
+  m_IgnoreFromBuild: 0
+  m_AffectedAgents: ffffffff

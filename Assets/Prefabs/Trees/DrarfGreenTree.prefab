@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6141381413785207934}
   - component: {fileID: 6141381413785207933}
   - component: {fileID: 1348006931377260049}
+  - component: {fileID: -7276206171004909176}
   m_Layer: 0
   m_Name: DrarfGreenTree
   m_TagString: Untagged
@@ -100,7 +101,7 @@ BoxCollider2D:
   m_Offset: {x: 0.008325219, y: 0.040300816}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.27659392}
+    pivot: {x: 0.51550025, y: 0.27086556}
     oldSize: {x: 0.34, y: 0.46}
     newSize: {x: 0.82, y: 0.79}
     adaptiveTilingThreshold: 0.5
@@ -110,3 +111,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.13642216, y: 0.10047811}
   m_EdgeRadius: 0
+--- !u!114 &-7276206171004909176
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6141381413785207932}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e3fdca004f2d45fe8abbed571a8abd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OverrideArea: 1
+  m_Area: 1
+  m_IgnoreFromBuild: 0
+  m_AffectedAgents: ffffffff

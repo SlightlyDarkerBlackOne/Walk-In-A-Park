@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -9,8 +10,11 @@ public class AddSortByYAxisToChildren : MonoBehaviour
     {
         Transform[] allChildren = GetComponentsInChildren<Transform>();
         foreach (Transform child in allChildren) {
-            if(child.GetComponent<Renderer>() != null)
+            if(child.GetComponent<Renderer>() != null) {
                 child.gameObject.AddComponent<SortByYAxis>();
+                SortByYAxis sortByYAxis = child.gameObject.GetComponent<SortByYAxis>();
+                sortByYAxis._precision = 0.1f;
+            }   
         }
     }
 }
