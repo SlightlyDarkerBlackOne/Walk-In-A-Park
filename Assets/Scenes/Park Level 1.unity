@@ -201,6 +201,12 @@ PrefabInstance:
       propertyPath: targetToMoveAwayFrom
       value: 
       objectReference: {fileID: 21236954}
+    - target: {fileID: 3581614946955836175, guid: 85c8d042223a4674e85fba4152427590,
+        type: 3}
+      propertyPath: m_text
+      value: To his dog, every man is Napoleon; hence the constant popularity of
+        dogs.
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 85c8d042223a4674e85fba4152427590, type: 3}
 --- !u!4 &46980322 stripped
@@ -251,18 +257,8 @@ Transform:
   - {fileID: 561883159}
   - {fileID: 959103098}
   - {fileID: 46980322}
-  - {fileID: 21236954}
-  - {fileID: 892806451}
-  - {fileID: 387364610}
-  - {fileID: 1887238285}
-  - {fileID: 139111703}
-  - {fileID: 1158924028}
-  - {fileID: 1481832193}
-  - {fileID: 738132788}
-  - {fileID: 846587995}
-  - {fileID: 1905785982}
-  - {fileID: 2027256907}
-  - {fileID: 1892234890}
+  - {fileID: 1361548173}
+  - {fileID: 127344098}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -360,6 +356,11 @@ PrefabInstance:
       propertyPath: targetToMoveAwayFrom
       value: 
       objectReference: {fileID: 21236954}
+    - target: {fileID: 3581614946955836175, guid: 85c8d042223a4674e85fba4152427590,
+        type: 3}
+      propertyPath: m_text
+      value: The dog is a gentleman; I hope to go to his heaven, not man's.
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 85c8d042223a4674e85fba4152427590, type: 3}
 --- !u!4 &117818598 stripped
@@ -368,6 +369,48 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 117818597}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &127344097
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 127344098}
+  m_Layer: 0
+  m_Name: Waypoint NPC
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &127344098
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 127344097}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -2.363, y: -0.62899995, z: 0.15259323}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 21236954}
+  - {fileID: 892806451}
+  - {fileID: 387364610}
+  - {fileID: 1887238285}
+  - {fileID: 139111703}
+  - {fileID: 1158924028}
+  - {fileID: 1481832193}
+  - {fileID: 738132788}
+  - {fileID: 846587995}
+  - {fileID: 1905785982}
+  - {fileID: 2027256907}
+  - {fileID: 1892234890}
+  m_Father: {fileID: 59094728}
+  m_RootOrder: 15
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &139111702
 GameObject:
   m_ObjectHideFlags: 0
@@ -392,11 +435,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 139111702}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.96, y: 3.9499996, z: 0.15259323}
+  m_LocalPosition: {x: -0.5970001, y: 4.5789995, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 59094728}
-  m_RootOrder: 18
+  m_Father: {fileID: 127344098}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &166417464
 PrefabInstance:
@@ -467,19 +510,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 54630091238314930, guid: 85c8d042223a4674e85fba4152427590,
         type: 3}
-      propertyPath: movementRangeX
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 54630091238314930, guid: 85c8d042223a4674e85fba4152427590,
-        type: 3}
-      propertyPath: movementRangeY
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 54630091238314930, guid: 85c8d042223a4674e85fba4152427590,
-        type: 3}
       propertyPath: targetToMoveAwayFrom
       value: 
       objectReference: {fileID: 21236954}
+    - target: {fileID: 3581614946955836175, guid: 85c8d042223a4674e85fba4152427590,
+        type: 3}
+      propertyPath: m_text
+      value: Everything I know I learned from dogs.
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 85c8d042223a4674e85fba4152427590, type: 3}
 --- !u!4 &166417465 stripped
@@ -641,19 +679,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 54630091238314930, guid: 85c8d042223a4674e85fba4152427590,
         type: 3}
-      propertyPath: movementRangeX
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 54630091238314930, guid: 85c8d042223a4674e85fba4152427590,
-        type: 3}
-      propertyPath: movementRangeY
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 54630091238314930, guid: 85c8d042223a4674e85fba4152427590,
-        type: 3}
       propertyPath: targetToMoveAwayFrom
       value: 
       objectReference: {fileID: 21236954}
+    - target: {fileID: 3581614946955836175, guid: 85c8d042223a4674e85fba4152427590,
+        type: 3}
+      propertyPath: m_text
+      value: "Dogs\u2019 lives are too short. Their only fault, really."
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 85c8d042223a4674e85fba4152427590, type: 3}
 --- !u!4 &312197633 stripped
@@ -744,6 +777,11 @@ PrefabInstance:
       propertyPath: targetToMoveAwayFrom
       value: 
       objectReference: {fileID: 21236954}
+    - target: {fileID: 3581614946955836175, guid: 85c8d042223a4674e85fba4152427590,
+        type: 3}
+      propertyPath: m_text
+      value: Every dog must have his day.
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 85c8d042223a4674e85fba4152427590, type: 3}
 --- !u!4 &370647865 stripped
@@ -776,11 +814,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 387364609}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.45, y: 3.4999998, z: 0.15259323}
+  m_LocalPosition: {x: -3.087, y: 4.1289997, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 59094728}
-  m_RootOrder: 16
+  m_Father: {fileID: 127344098}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &476000444
 PrefabInstance:
@@ -925,19 +963,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 54630091238314930, guid: 85c8d042223a4674e85fba4152427590,
         type: 3}
-      propertyPath: movementRangeX
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 54630091238314930, guid: 85c8d042223a4674e85fba4152427590,
-        type: 3}
-      propertyPath: movementRangeY
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 54630091238314930, guid: 85c8d042223a4674e85fba4152427590,
-        type: 3}
       propertyPath: targetToMoveAwayFrom
       value: 
       objectReference: {fileID: 21236954}
+    - target: {fileID: 3581614946955836175, guid: 85c8d042223a4674e85fba4152427590,
+        type: 3}
+      propertyPath: m_text
+      value: Who let the dogs out?
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 85c8d042223a4674e85fba4152427590, type: 3}
 --- !u!4 &561883159 stripped
@@ -1094,6 +1127,11 @@ PrefabInstance:
       propertyPath: targetToMoveAwayFrom
       value: 
       objectReference: {fileID: 21236954}
+    - target: {fileID: 3581614946955836175, guid: 85c8d042223a4674e85fba4152427590,
+        type: 3}
+      propertyPath: m_text
+      value: The more I learn about people, the more I like my dog.
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 85c8d042223a4674e85fba4152427590, type: 3}
 --- !u!4 &639536398 stripped
@@ -1113,7 +1151,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 59094728}
+    m_TransformParent: {fileID: 127344098}
     m_Modifications:
     - target: {fileID: 2942785047781452054, guid: a3878a18f445617489480ff122269db3,
         type: 3}
@@ -1123,22 +1161,22 @@ PrefabInstance:
     - target: {fileID: 2942785047781452136, guid: a3878a18f445617489480ff122269db3,
         type: 3}
       propertyPath: m_RootOrder
-      value: 14
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2942785047781452136, guid: a3878a18f445617489480ff122269db3,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.363
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2942785047781452136, guid: a3878a18f445617489480ff122269db3,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.629
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2942785047781452136, guid: a3878a18f445617489480ff122269db3,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.15259323
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2942785047781452136, guid: a3878a18f445617489480ff122269db3,
         type: 3}
@@ -1256,11 +1294,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 738132787}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.18, y: 1.9400003, z: 0.15259323}
+  m_LocalPosition: {x: 0.18299985, y: 2.5690002, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 59094728}
-  m_RootOrder: 21
+  m_Father: {fileID: 127344098}
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &743323388
 PrefabInstance:
@@ -1508,11 +1546,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 846587994}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.22, y: 1.6900003, z: 0.15259323}
+  m_LocalPosition: {x: -0.8570001, y: 2.3190002, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 59094728}
-  m_RootOrder: 22
+  m_Father: {fileID: 127344098}
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &856241476 stripped
 GameObject:
@@ -1531,6 +1569,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Main Camera
+      objectReference: {fileID: 0}
+    - target: {fileID: 223366279023311913, guid: ceec0923551c9294ca485aef0bfad17c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 223366279023311915, guid: ceec0923551c9294ca485aef0bfad17c,
         type: 3}
@@ -1618,11 +1661,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 892806450}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.77, y: 3.2799995, z: 0.15259323}
+  m_LocalPosition: {x: -4.407, y: 3.9089994, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 59094728}
-  m_RootOrder: 15
+  m_Father: {fileID: 127344098}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &922266221
 PrefabInstance:
@@ -1802,6 +1845,86 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.2788324, y: 2.4251509}
   m_EdgeRadius: 0
+--- !u!1001 &933833381
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 59094728}
+    m_Modifications:
+    - target: {fileID: 54630091238314888, guid: 85c8d042223a4674e85fba4152427590,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 54630091238314888, guid: 85c8d042223a4674e85fba4152427590,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -9.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 54630091238314888, guid: 85c8d042223a4674e85fba4152427590,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -7.51
+      objectReference: {fileID: 0}
+    - target: {fileID: 54630091238314888, guid: 85c8d042223a4674e85fba4152427590,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.15259323
+      objectReference: {fileID: 0}
+    - target: {fileID: 54630091238314888, guid: 85c8d042223a4674e85fba4152427590,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 54630091238314888, guid: 85c8d042223a4674e85fba4152427590,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 54630091238314888, guid: 85c8d042223a4674e85fba4152427590,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 54630091238314888, guid: 85c8d042223a4674e85fba4152427590,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 54630091238314888, guid: 85c8d042223a4674e85fba4152427590,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 54630091238314888, guid: 85c8d042223a4674e85fba4152427590,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 54630091238314888, guid: 85c8d042223a4674e85fba4152427590,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 54630091238314929, guid: 85c8d042223a4674e85fba4152427590,
+        type: 3}
+      propertyPath: m_Name
+      value: NPC dog Roamer (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 54630091238314930, guid: 85c8d042223a4674e85fba4152427590,
+        type: 3}
+      propertyPath: targetToMoveAwayFrom
+      value: 
+      objectReference: {fileID: 21236954}
+    - target: {fileID: 3581614946955836175, guid: 85c8d042223a4674e85fba4152427590,
+        type: 3}
+      propertyPath: m_text
+      value: "A dog is the only thing on earth that loves you more than he loves
+        himself.\u201D"
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 85c8d042223a4674e85fba4152427590, type: 3}
 --- !u!1001 &959103097
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1874,6 +1997,11 @@ PrefabInstance:
       propertyPath: targetToMoveAwayFrom
       value: 
       objectReference: {fileID: 21236954}
+    - target: {fileID: 3581614946955836175, guid: 85c8d042223a4674e85fba4152427590,
+        type: 3}
+      propertyPath: m_text
+      value: "Scratch a dog and you\u2019ll find a permanent job."
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 85c8d042223a4674e85fba4152427590, type: 3}
 --- !u!4 &959103098 stripped
@@ -1918,11 +2046,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1158924027}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.3900001, y: 3.3799999, z: 0.15259323}
+  m_LocalPosition: {x: 0.9729998, y: 4.009, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 59094728}
-  m_RootOrder: 19
+  m_Father: {fileID: 127344098}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1191465259
 PrefabInstance:
@@ -2006,6 +2134,12 @@ PrefabInstance:
       propertyPath: targetToMoveAwayFrom
       value: 
       objectReference: {fileID: 21236954}
+    - target: {fileID: 3581614946955836175, guid: 85c8d042223a4674e85fba4152427590,
+        type: 3}
+      propertyPath: m_text
+      value: Outside of a dog, a book is man's best friend. Inside of a dog, it's
+        too dark to read.
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 85c8d042223a4674e85fba4152427590, type: 3}
 --- !u!4 &1191465260 stripped
@@ -2049,6 +2183,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2658878372350388072, guid: b9dffd6f3aca50242abbf302385200b4,
     type: 3}
   m_PrefabInstance: {fileID: 743323388}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1361548173 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 54630091238314888, guid: 85c8d042223a4674e85fba4152427590,
+    type: 3}
+  m_PrefabInstance: {fileID: 933833381}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1365208952 stripped
 GameObject:
@@ -2152,6 +2292,11 @@ PrefabInstance:
       propertyPath: targetToMoveAwayFrom
       value: 
       objectReference: {fileID: 21236954}
+    - target: {fileID: 3581614946955836175, guid: 85c8d042223a4674e85fba4152427590,
+        type: 3}
+      propertyPath: m_text
+      value: Who are all these dogs?
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 85c8d042223a4674e85fba4152427590, type: 3}
 --- !u!4 &1431696683 stripped
@@ -2242,6 +2387,11 @@ PrefabInstance:
       propertyPath: targetToMoveAwayFrom
       value: 
       objectReference: {fileID: 21236954}
+    - target: {fileID: 3581614946955836175, guid: 85c8d042223a4674e85fba4152427590,
+        type: 3}
+      propertyPath: m_text
+      value: Dogs are not our whole life, but they make our lives whole.
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 85c8d042223a4674e85fba4152427590, type: 3}
 --- !u!4 &1463945505 stripped
@@ -2274,11 +2424,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1481832192}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.94000006, y: 2.5600002, z: 0.15259323}
+  m_LocalPosition: {x: 1.4229999, y: 3.1890001, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 59094728}
-  m_RootOrder: 20
+  m_Father: {fileID: 127344098}
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1513406511
 PrefabInstance:
@@ -2362,6 +2512,12 @@ PrefabInstance:
       propertyPath: targetToMoveAwayFrom
       value: 
       objectReference: {fileID: 21236954}
+    - target: {fileID: 3581614946955836175, guid: 85c8d042223a4674e85fba4152427590,
+        type: 3}
+      propertyPath: m_text
+      value: Petting, scratching, and cuddling a dog could be as soothing to the
+        mind and heart as deep meditation, and almost as good for the soul as prayer.
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 85c8d042223a4674e85fba4152427590, type: 3}
 --- !u!4 &1513406512 stripped
@@ -2448,6 +2604,11 @@ PrefabInstance:
       propertyPath: targetToMoveAwayFrom
       value: 
       objectReference: {fileID: 21236954}
+    - target: {fileID: 3581614946955836175, guid: 85c8d042223a4674e85fba4152427590,
+        type: 3}
+      propertyPath: m_text
+      value: Every Dog has its Day; and every Man his Hour.
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 85c8d042223a4674e85fba4152427590, type: 3}
 --- !u!4 &1617116010 stripped
@@ -2606,6 +2767,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 5892482536719667162, guid: 8a4481b5d7a05bc498a8a3c22b991e75,
+        type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5892482536719667163, guid: 8a4481b5d7a05bc498a8a3c22b991e75,
         type: 3}
       propertyPath: m_BlockingMask.m_Bits
@@ -2716,6 +2882,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5892482536719667173, guid: 8a4481b5d7a05bc498a8a3c22b991e75,
+        type: 3}
+      propertyPath: m_AdditionalShaderChannelsFlag
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5892482537665117935, guid: 8a4481b5d7a05bc498a8a3c22b991e75,
         type: 3}
       propertyPath: m_IsActive
@@ -2783,11 +2954,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1887238284}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.13, y: 3.8500001, z: 0.15259323}
+  m_LocalPosition: {x: -1.7670002, y: 4.479, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 59094728}
-  m_RootOrder: 17
+  m_Father: {fileID: 127344098}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1890901614
 PrefabInstance:
@@ -2858,11 +3029,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 54630091238314930, guid: 85c8d042223a4674e85fba4152427590,
         type: 3}
-      propertyPath: movementRangeX
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 54630091238314930, guid: 85c8d042223a4674e85fba4152427590,
-        type: 3}
       propertyPath: targetToMoveAwayFrom
       value: 
       objectReference: {fileID: 21236954}
@@ -2898,11 +3064,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1892234889}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.9, y: 2.2399995, z: 0.15259323}
+  m_LocalPosition: {x: -4.537, y: 2.8689995, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 59094728}
-  m_RootOrder: 25
+  m_Father: {fileID: 127344098}
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1905785981
 GameObject:
@@ -2928,11 +3094,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1905785981}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.59, y: 1.5699995, z: 0.15259323}
+  m_LocalPosition: {x: -2.2270002, y: 2.1989994, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 59094728}
-  m_RootOrder: 23
+  m_Father: {fileID: 127344098}
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1914758659
 GameObject:
@@ -3155,11 +3321,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2027256906}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.91, y: 1.7399995, z: 0.15259323}
+  m_LocalPosition: {x: -3.547, y: 2.3689995, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 59094728}
-  m_RootOrder: 24
+  m_Father: {fileID: 127344098}
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2111499042 stripped
 GameObject:
@@ -3188,7 +3354,7 @@ PrefabInstance:
     - target: {fileID: 340909075813288369, guid: 69678639593397040b520dadd0c5a652,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 340909075813288370, guid: 69678639593397040b520dadd0c5a652,
         type: 3}
@@ -3294,6 +3460,31 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 340909077265702084, guid: 69678639593397040b520dadd0c5a652,
+        type: 3}
+      propertyPath: m_Interactable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 340909077265702085, guid: 69678639593397040b520dadd0c5a652,
+        type: 3}
+      propertyPath: m_Type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 340909077265702085, guid: 69678639593397040b520dadd0c5a652,
+        type: 3}
+      propertyPath: m_RaycastTarget
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 340909077265702090, guid: 69678639593397040b520dadd0c5a652,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 220
+      objectReference: {fileID: 0}
+    - target: {fileID: 340909077265702090, guid: 69678639593397040b520dadd0c5a652,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 90
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 69678639593397040b520dadd0c5a652, type: 3}

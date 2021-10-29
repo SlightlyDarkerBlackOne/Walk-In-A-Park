@@ -13,6 +13,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using CodeMonkey.Utils;
 
 public class MoveRoam : MonoBehaviour {
@@ -24,9 +25,10 @@ public class MoveRoam : MonoBehaviour {
 
     private Vector3 startPosition;
     private Vector3 targetMovePosition;
-
+    private AgentRoamer agent;
     private void Awake() {
         startPosition = transform.position;
+        agent = GetComponent<AgentRoamer>();
     }
 
     private void Start() {
@@ -41,12 +43,15 @@ public class MoveRoam : MonoBehaviour {
     }
 
     private void Update() {
-        SetMovePosition(targetMovePosition);
+        agent.SetAgentDestination(targetMovePosition);
+        //SetMovePosition(targetMovePosition);
 
         float arrivedAtPositionDistance = 1f;
         if (Vector3.Distance(transform.position, targetMovePosition) < arrivedAtPositionDistance) {
             // Reached position
+            startPosition = transform.position;
             SetRandomMovePosition();
+
         }
     }
 

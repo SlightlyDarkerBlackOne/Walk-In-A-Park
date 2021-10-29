@@ -21,12 +21,6 @@ public class AgentEnemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-        if(Vector2.Distance(target.position, transform.position) < 0.2f) {
-            agent.Stop();
-        } else {
-            agent.Resume();
-            agent.SetDestination(target.position);
-        }
+        agent.SetDestination(target.position);
     }
 }
