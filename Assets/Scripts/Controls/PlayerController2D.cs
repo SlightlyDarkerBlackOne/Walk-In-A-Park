@@ -53,6 +53,13 @@ public class PlayerController2D : MonoBehaviour
     public float timeToMove;
     private float timeToMoveCounter;
 
+    public Transform detectPoint;
+    private const float detectRadius = 0.3f;
+    public LayerMask detectLayer;
+    public GameObject detectedItem;
+    public bool carryItem = false;
+
+
     #region Singleton
     public static PlayerController2D Instance { get; private set; }
 
@@ -70,6 +77,8 @@ public class PlayerController2D : MonoBehaviour
 
         timeBetweenMoveCounter = Random.Range(timeBetweenMove * 0.75f, timeBetweenMove * 1.25f);
         timeToMoveCounter = Random.Range(timeToMove * 0.75f, timeToMove * 1.25f);
+    
+        detectPoint = gameObject.transform;
     }
     #endregion
 
@@ -92,6 +101,28 @@ public class PlayerController2D : MonoBehaviour
             state = State.Idle;
             playerMoving = false;
         }
+
+        if (DetectItem())
+        {
+            //PC
+            if (Input.GetKeyDown(KeyCode.G)) carryItem = !carryItem;
+
+            //mobile
+            if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began)
+            {
+                
+                Vector2 position = Camera.main.ScreenToWorldPoint(Input.GetTouch(0).position);
+                Collider2D obj = Physics2D.OverlapCircle(position, detectRadius, detectLayer); 
+                if (obj)
+                {
+                    carryItem = !carryItem;
+                }
+                
+            }
+        }
+
+        if (carryItem) detectedItem.transform.parent = transform;
+        else if (DetectItem()) detectedItem.transform.parent = null;
 
     }
 
@@ -255,4 +286,43 @@ public class PlayerController2D : MonoBehaviour
     public void UnFreezePlayer() {
         playerFrozen = false;
     }
+
+    private bool DetectItem()
+    {
+        Collider2D item = Physics2D.OverlapCircle(detectPoint.position,
+            detectRadius, detectLayer);
+
+        if (item == null)
+        {
+            detectedItem = null;
+            return false;
+        }
+        else
+        {
+            detectedItem = item.gameObject;
+            return true;
+        }
+    }
 }
+/*
+if ((Input.touchCount > 0) && (Input.GetTouch(0).phase == TouchPhase.Began))
+    {
+        Ray raycast = Camera.main.ScreenPointToRay(Input.GetTouch(0).position);
+        RaycastHit raycastHit;
+        if (Physics.Raycast(raycast, out raycastHit))
+        {
+            Debug.Log("Something Hit");
+            if (raycastHit.collider.name == "Soccer")
+            {
+                Debug.Log("Soccer Ball clicked");
+            }
+
+            //OR with Tag
+
+            if (raycastHit.collider.CompareTag("SoccerTag"))
+            {
+                Debug.Log("Soccer Ball clicked");
+            }
+        }
+    }
+    */
