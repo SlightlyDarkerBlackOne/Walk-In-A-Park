@@ -97,6 +97,7 @@ GameObject:
   - component: {fileID: 5628018141983903117}
   - component: {fileID: 4616719885696106401}
   - component: {fileID: 328513455}
+  - component: {fileID: 812062462}
   m_Layer: 8
   m_Name: Player Stone
   m_TagString: Player
@@ -269,7 +270,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: -0.02055502, y: 0.2261045}
-  m_ConnectedAnchor: {x: 0.10705876, y: -0.028340112}
+  m_ConnectedAnchor: {x: 0.07427597, y: 0.016197197}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -278,3 +279,21 @@ HingeJoint2D:
   m_AngleLimits:
     m_LowerAngle: 0
     m_UpperAngle: 359
+--- !u!114 &812062462
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5628018141983903104}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6ef55caed63213469014cb8f57a58c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _originOrder: 100
+  _precision: 0.2
+  _offset: 0
+  _runOnlyOnce: 0
+  _sortingSelector: 0
+  _sortingAxis: 1
