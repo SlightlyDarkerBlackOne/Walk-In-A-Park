@@ -8,30 +8,14 @@ public class PlayerController2D : MonoBehaviour
     {
         Idle,
         Walking,
-        Rolling,
         Follow,
     }
 
     [SerializeField]
     private float moveSpeed;
-    [SerializeField]
-    private float dashSpeed = 2;
-    [SerializeField]
-    private float rollSpeed = 3.64f;
-    [SerializeField]
-    private float rollSpeedMinimum = 2.04f;
-    [SerializeField]
-    private float rollSpeedDropMultiplier = 3.61f;
-    private float rollSpeedOngoing;
-    [Space(20)]
-    [SerializeField]
-    private LayerMask dashLayerMask;
-
     private Rigidbody2D rb;
     private Vector3 moveDir;
     private Vector3 lastMoveDir;
-    private Vector3 rollDir;
-
     private Animator anim;
     private State state;
 
@@ -39,11 +23,7 @@ public class PlayerController2D : MonoBehaviour
     private float timeBtwTrail;
     public GameObject trailEffect;
 
-    private float dashTime;
-    public float startDashTime;
-
     private bool playerMoving;
-    private bool isDashButtonDown;
     public bool playerFrozen = false;
 
     public GameObject leash;
@@ -59,6 +39,10 @@ public class PlayerController2D : MonoBehaviour
     public GameObject detectedItem;
     public bool carryItem = false;
 
+    public float screenWidth;
+    public float screenHeight;
+    private float horizontal;
+    private float vertical;
 
     #region Singleton
     public static PlayerController2D Instance { get; private set; }
@@ -79,6 +63,8 @@ public class PlayerController2D : MonoBehaviour
         timeToMoveCounter = Random.Range(timeToMove * 0.75f, timeToMove * 1.25f);
     
         detectPoint = gameObject.transform;
+        screenWidth = Screen.width;
+        screenHeight = Screen.height;
     }
     #endregion
 
@@ -86,52 +72,15 @@ public class PlayerController2D : MonoBehaviour
     void Update() 
     {
         Move();
+        Interact();
         SetAnimations();
         TrailEffect();
-
-        if (Input.GetKeyDown(KeyCode.F)) {
-            isDashButtonDown = true;
-        }
-        if (dashTime >= 0) {
-            isDashButtonDown = false;
-        }
-        dashTime -= Time.deltaTime;
 
         if (playerFrozen) {
             state = State.Idle;
             playerMoving = false;
         }
 
-        if (DetectItem())
-        {
-            //PC
-            if (Input.GetKeyDown(KeyCode.G)) carryItem = !carryItem;
-
-            //mobile
-            if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began)
-            {
-                
-                Vector2 position = Camera.main.ScreenToWorldPoint(Input.GetTouch(0).position);
-                Collider2D obj = Physics2D.OverlapCircle(position, detectRadius, detectLayer); 
-                if (obj)
-                {
-                    carryItem = !carryItem;
-                }
-                
-            }
-        }
-
-        if (carryItem) detectedItem.transform.parent = transform;
-        else if (DetectItem()) detectedItem.transform.parent = null;
-
-    }
-
-    bool LeashOn()
-    {
-        bool canMove;
-        if (!leash.activeSelf) canMove = true;
-        else canMove = false;
-        return canMove;
     }
 
     private void FixedUpdate() 
@@ -142,10 +91,6 @@ public class PlayerController2D : MonoBehaviour
                 break;
             case State.Walking:
                 rb.velocity = moveDir * moveSpeed;
-                Dash();
-                break;
-            case State.Rolling:
-                rb.velocity = rollDir * rollSpeedOngoing;
                 break;
         }
     }
@@ -161,46 +106,94 @@ public class PlayerController2D : MonoBehaviour
                 float moveX = 0f;
                 float moveY = 0f;
 
-                if (leash.activeSelf) {
+                if (leash.activeSelf) 
                     state = State.Follow;
-                }
                 
-                if (Input.GetKey(KeyCode.W)) {
+                if (Input.GetKey(KeyCode.W)) 
+                {
                     moveY = +1f;
+                    vertical = 1f;
                 }
-                if (Input.GetKey(KeyCode.S)) {
+                if (Input.GetKey(KeyCode.S)) 
+                {
                     moveY = -1f;
+                    vertical = -1f;
                 }
-                if (Input.GetKey(KeyCode.A)) {
+                if (Input.GetKey(KeyCode.A))
+                {
                     moveX = -1f;
+                    horizontal = -1f;
                 }
-                if (Input.GetKey(KeyCode.D)) {
+                if (Input.GetKey(KeyCode.D)) 
+                {
                     moveX = +1f;
+                    horizontal = 1f;
                 }
-                if (moveX != 0 || moveY != 0) {
+
+                if ((Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D))
+                && (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.S)))
+                {
+                    vertical = 0f;
+                }
+
+                if (moveX != 0 || moveY != 0) 
+                {
                     playerMoving = true;
                     lastMoveDir = moveDir;
-                } else {
+                } 
+                else 
+                {
+                    playerMoving = false;
+                    horizontal = 0f;
+                    vertical = 0f;
+                }
+
+                Vector2 target;
+                if (Input.touchCount > 0)
+                {
+
+                    Touch touch = Input.GetTouch(0);
+
+                    if (touch.position.y > screenHeight / 2)
+                        vertical = 1.0f;
+            
+                    if (touch.position.y < screenHeight / 2)
+                        vertical = -1.0f;
+
+                    if (touch.position.x > screenWidth / 2)
+                        horizontal = 1.0f;
+            
+                    if (touch.position.x < screenWidth / 2)
+                        horizontal = -1.0f;
+
+                    if (touch.position.y < 2*screenHeight/3 && 
+                        touch.position.y > screenHeight/3)
+                    {
+                        vertical = 0f;
+                    }
+                    
+                    target = Camera.main.ScreenToWorldPoint(Input.GetTouch(0).position);
+                    var delta = 2f*moveSpeed*Time.deltaTime;
+                    Vector2 position = Vector3.MoveTowards(transform.position, target, delta);    
+                    rb.MovePosition(position);
+                    lastMoveDir = new Vector2 (horizontal, vertical);
+                    playerMoving = true;
+
+                } 
+                else if (moveX == 0 && moveY == 0) 
+                { 
+                    horizontal = 0f; 
+                    vertical = 0f; 
                     playerMoving = false;
                 }
-                
 
                 moveDir = new Vector3(moveX, moveY).normalized;
+                break;
 
-                if (Input.GetKeyDown(KeyCode.Space)) {
-                    rollDir = lastMoveDir;
-                    rollSpeedOngoing = rollSpeed;
-                    if (dashTime <= 0) {
-                        SFXManager.Instance.PlaySound(SFXManager.Instance.dash);
-                        state = State.Rolling;
-                    }
-                }
-                break;
-            case State.Rolling:
-                Roll();
-                break;
             case State.Follow:
-                if (!leash.activeSelf) {
+
+                if (!leash.activeSelf) 
+                {
                     state = State.Idle;
                 }
                 Follow();
@@ -209,7 +202,9 @@ public class PlayerController2D : MonoBehaviour
     }
 
     private void Follow() {
+
         if (playerMoving) {
+
             timeToMoveCounter -= Time.deltaTime;
             rb.velocity = moveDir;
 
@@ -237,33 +232,9 @@ public class PlayerController2D : MonoBehaviour
         }
     }
 
-    private void Roll() {
-        rollSpeedOngoing -= rollSpeedOngoing * rollSpeedDropMultiplier * Time.deltaTime;
-        if (rollSpeedOngoing < rollSpeedMinimum) {
-            state = State.Walking;
-        }
-    }
-    private void Dash() {
-        if (isDashButtonDown && dashTime <= 0) {
-            dashTime = startDashTime;
-            Vector3 dashPosition = transform.position + lastMoveDir * dashSpeed;
-
-            RaycastHit2D raycastHit2D = Physics2D.Raycast(transform.position, lastMoveDir,
-                    dashSpeed, dashLayerMask);
-            if (raycastHit2D.collider != null) {
-                dashPosition = raycastHit2D.point;
-            }
-
-            rb.MovePosition(dashPosition);
-
-            SFXManager.Instance.PlaySound(SFXManager.Instance.dash);
-            isDashButtonDown = false;
-        }
-    }
-
     private void SetAnimations() {
-        anim.SetFloat("MoveX", Input.GetAxisRaw("Horizontal"));
-        anim.SetFloat("MoveY", Input.GetAxisRaw("Vertical"));
+        anim.SetFloat("MoveX", horizontal);
+        anim.SetFloat("MoveY", vertical);
         anim.SetBool("PlayerMoving", playerMoving);
         anim.SetFloat("LastMoveX", lastMoveDir.x);
         anim.SetFloat("LastMoveY", lastMoveDir.y);
@@ -287,6 +258,31 @@ public class PlayerController2D : MonoBehaviour
         playerFrozen = false;
     }
 
+    private void Interact()
+    {
+        if (DetectItem())
+        {
+            //PC
+            if (Input.GetKeyDown(KeyCode.G)) carryItem = !carryItem;
+
+            //mobile
+            if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began)
+            {
+                
+                Vector2 position = Camera.main.ScreenToWorldPoint(Input.GetTouch(0).position);
+                Collider2D obj = Physics2D.OverlapCircle(position, detectRadius, detectLayer); 
+                if (obj)
+                {
+                    carryItem = !carryItem;
+                }
+                
+            }
+        }
+
+        if (carryItem) detectedItem.transform.parent = transform;
+        else if (DetectItem()) detectedItem.transform.parent = null;
+    }
+
     private bool DetectItem()
     {
         Collider2D item = Physics2D.OverlapCircle(detectPoint.position,
@@ -302,27 +298,6 @@ public class PlayerController2D : MonoBehaviour
             detectedItem = item.gameObject;
             return true;
         }
-    }
+    }   
+
 }
-/*
-if ((Input.touchCount > 0) && (Input.GetTouch(0).phase == TouchPhase.Began))
-    {
-        Ray raycast = Camera.main.ScreenPointToRay(Input.GetTouch(0).position);
-        RaycastHit raycastHit;
-        if (Physics.Raycast(raycast, out raycastHit))
-        {
-            Debug.Log("Something Hit");
-            if (raycastHit.collider.name == "Soccer")
-            {
-                Debug.Log("Soccer Ball clicked");
-            }
-
-            //OR with Tag
-
-            if (raycastHit.collider.CompareTag("SoccerTag"))
-            {
-                Debug.Log("Soccer Ball clicked");
-            }
-        }
-    }
-    */
