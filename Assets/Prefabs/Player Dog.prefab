@@ -2799,21 +2799,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 3.54
-  dashSpeed: 2
-  rollSpeed: 8.04
-  rollSpeedMinimum: 4.27
-  rollSpeedDropMultiplier: 6.29
-  dashLayerMask:
-    serializedVersion: 2
-    m_Bits: 0
   startTimeBtwTrail: 0.1
   trailEffect: {fileID: 1148421819908946, guid: 2976262eb7075c4469774072094b1328,
     type: 3}
-  startDashTime: 1
   playerFrozen: 0
   leash: {fileID: 584872725}
   timeBetweenMove: 0.33
   timeToMove: 0.79
+  detectPoint: {fileID: 0}
+  detectLayer:
+    serializedVersion: 2
+    m_Bits: 524288
+  detectedItem: {fileID: 0}
+  carryItem: 0
+  screenWidth: 0
+  screenHeight: 0
 --- !u!114 &1434403192
 MonoBehaviour:
   m_ObjectHideFlags: 0
