@@ -1526,6 +1526,11 @@ PrefabInstance:
       propertyPath: playerHuman
       value: 
       objectReference: {fileID: 812062461}
+    - target: {fileID: 2658878372350388068, guid: b9dffd6f3aca50242abbf302385200b4,
+        type: 3}
+      propertyPath: detectLayer.m_Bits
+      value: 524288
+      objectReference: {fileID: 0}
     - target: {fileID: 2658878372350388069, guid: b9dffd6f3aca50242abbf302385200b4,
         type: 3}
       propertyPath: m_Name
@@ -3668,6 +3673,16 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -12.07
       objectReference: {fileID: 0}
+    - target: {fileID: 1477261103605137764, guid: 28540cdd28e29974c8842b51cc142fb8,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -7.64
+      objectReference: {fileID: 0}
+    - target: {fileID: 1477261103605137764, guid: 28540cdd28e29974c8842b51cc142fb8,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -10.13
+      objectReference: {fileID: 0}
     - target: {fileID: 1714908800395761805, guid: 28540cdd28e29974c8842b51cc142fb8,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -3763,6 +3778,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4331437289405877956, guid: 28540cdd28e29974c8842b51cc142fb8,
+        type: 3}
+      propertyPath: m_Layer
+      value: 19
       objectReference: {fileID: 0}
     - target: {fileID: 4681282600539630230, guid: 28540cdd28e29974c8842b51cc142fb8,
         type: 3}

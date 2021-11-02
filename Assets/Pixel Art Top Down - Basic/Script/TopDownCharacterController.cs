@@ -8,8 +8,8 @@ namespace Cainos.PixelArtTopDown_Basic
     {
         private enum State
         {
-            Move,
-            Follow
+            StayClose,
+            Roam
         }
 
         private State state;
@@ -30,9 +30,9 @@ namespace Cainos.PixelArtTopDown_Basic
             animator = GetComponent<Animator>();
 
             if (leash.activeSelf) {
-                state = State.Move;
+                state = State.StayClose;
             } else {
-                state = State.Follow;
+                state = State.Roam;
             }
         }
 
@@ -46,29 +46,17 @@ namespace Cainos.PixelArtTopDown_Basic
         {
             Vector2 dir = Vector2.zero;
             switch (state) {
-                case State.Move:
+                case State.StayClose:
                     if (!leash.activeSelf) {
-                        state = State.Follow;
+                        state = State.Roam;
                     }
-                    if (Input.GetKey(KeyCode.A)) {
-                    dir.x = -1;
-                    animator.SetInteger("Direction", 3);
-                    } else if (Input.GetKey(KeyCode.D)) {
-                        dir.x = 1;
-                        animator.SetInteger("Direction", 2);
-                    }
-
-                    if (Input.GetKey(KeyCode.W)) {
-                        dir.y = 1;
-                        animator.SetInteger("Direction", 1);
-                    } else if (Input.GetKey(KeyCode.S)) {
-                        dir.y = -1;
-                        animator.SetInteger("Direction", 0);
-                    }
+                    
+                    //animator.SetInteger("Direction", 0);
+            
                     break;
-                case State.Follow:
+                case State.Roam:
                     if (leash.activeSelf) {
-                        state = State.Move;
+                        state = State.StayClose;
                     }
                     Follow();
                     break;
