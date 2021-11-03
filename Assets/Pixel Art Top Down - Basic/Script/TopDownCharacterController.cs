@@ -58,7 +58,8 @@ namespace Cainos.PixelArtTopDown_Basic
                     if (leash.activeSelf) {
                         state = State.StayClose;
                     }
-                    Follow();
+                    Roam();
+                    //Follow();
                     break;
             }
             
@@ -66,6 +67,10 @@ namespace Cainos.PixelArtTopDown_Basic
 
             animator.SetBool("IsMoving", dir.magnitude > 0);
             GetComponent<Rigidbody2D>().velocity = speed * dir;
+        }
+        private void Roam() {
+            //Go from random waypoint to random waypoint
+            //Wait at the waypoint for specific time
         }
         private void Follow() {
             float distanceBetweenPlayers = Vector2.Distance(transform.position, PlayerController2D.Instance.transform.position);

@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class AgentEnemy : MonoBehaviour
+public class AgentEnemy : MonoBehaviour, IMovePosition
 {
     private Transform target;
     private NavMeshAgent agent;
+    [SerializeField] private bool followPlayer;
 
     // Start is called before the first frame update
     void Start()
@@ -21,6 +22,12 @@ public class AgentEnemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        agent.SetDestination(target.position);
+        if (followPlayer) {
+            agent.SetDestination(target.position);
+        }
     }
+    public void SetMovePosition(Vector3 movePosition) {
+        agent.SetDestination(movePosition);
+    }
+
 }
