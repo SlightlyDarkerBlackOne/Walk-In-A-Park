@@ -1621,19 +1621,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 584872725, guid: b9dffd6f3aca50242abbf302385200b4, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1434403192, guid: b9dffd6f3aca50242abbf302385200b4, type: 3}
       propertyPath: playerHuman
       value: 
       objectReference: {fileID: 812062461}
-    - target: {fileID: 2658878372350388068, guid: b9dffd6f3aca50242abbf302385200b4,
-        type: 3}
-      propertyPath: detectLayer.m_Bits
-      value: 524288
-      objectReference: {fileID: 0}
     - target: {fileID: 2658878372350388069, guid: b9dffd6f3aca50242abbf302385200b4,
         type: 3}
       propertyPath: m_Name
