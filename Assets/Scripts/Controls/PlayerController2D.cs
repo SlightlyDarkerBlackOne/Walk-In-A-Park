@@ -41,8 +41,13 @@ public class PlayerController2D : MonoBehaviour
 
     public float screenWidth;
     public float screenHeight;
-    private float horizontal;
-    private float vertical;
+    private float horizontal = 0f;
+    private float vertical = 0f;
+
+    private Vector2 startPos, endPos, direction;
+    public float throwForce;
+    public bool ignoreFirstTouch = true;
+
 
     #region Singleton
     public static PlayerController2D Instance { get; private set; }
@@ -62,6 +67,7 @@ public class PlayerController2D : MonoBehaviour
         timeBetweenMoveCounter = Random.Range(timeBetweenMove * 0.75f, timeBetweenMove * 1.25f);
         timeToMoveCounter = Random.Range(timeToMove * 0.75f, timeToMove * 1.25f);
     
+        detectLayer = LayerMask.GetMask("Item");
         detectPoint = gameObject.transform;
         screenWidth = Screen.width;
         screenHeight = Screen.height;
@@ -260,15 +266,29 @@ public class PlayerController2D : MonoBehaviour
 
     private void Interact()
     {
+
+        /*if (carryItem)
+        {
+            if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began)
+            {
+                Vector2 force = new Vector2(-throwForce, -throwForce);
+                Rigidbody2D rbItem = detectedItem.GetComponent<Rigidbody2D>();
+                rbItem.isKinematic = false;
+                rbItem.AddForce(force);
+                carryItem = false;
+            } 
+
+        }*/
+        
+        //carrying items in mouth
         if (DetectItem())
         {
             //PC
             if (Input.GetKeyDown(KeyCode.G)) carryItem = !carryItem;
 
             //mobile
-            if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began)
-            {
-                
+            if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Ended)
+            {                
                 Vector2 position = Camera.main.ScreenToWorldPoint(Input.GetTouch(0).position);
                 Collider2D obj = Physics2D.OverlapCircle(position, detectRadius, detectLayer); 
                 if (obj)
@@ -277,10 +297,12 @@ public class PlayerController2D : MonoBehaviour
                 }
                 
             }
+            
         }
 
         if (carryItem) detectedItem.transform.parent = transform;
         else if (DetectItem()) detectedItem.transform.parent = null;
+
     }
 
     private bool DetectItem()
@@ -299,5 +321,29 @@ public class PlayerController2D : MonoBehaviour
             return true;
         }
     }   
+
+    private void ThrowItem()
+    {
+        Debug.Log("Entered");
+        if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began)
+        {
+            startPos = Input.GetTouch(0).position;
+            Debug.Log("Began");
+        }
+
+        if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Ended)
+        {
+            endPos = Input.GetTouch(0).position;
+            direction = startPos-endPos;
+            Vector2 force = new Vector2(-direction.x*throwForce, -direction.y*throwForce);
+            Rigidbody2D rbItem = detectedItem.GetComponent<Rigidbody2D>();
+            rbItem.isKinematic = false;
+            rbItem.AddForce(force);
+            carryItem = false;
+            Debug.Log("thrown");
+
+        }
+
+    }
 
 }

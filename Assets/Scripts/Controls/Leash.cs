@@ -11,6 +11,7 @@ public class Leash : MonoBehaviour
     private float minLeashDistance;
     public static bool PuttingOnLeash;
     private Vector2 previousPosition;
+    public LayerMask detectLayer;
 
     // Start is called before the first frame update
     void Start()
@@ -21,12 +22,14 @@ public class Leash : MonoBehaviour
         minLeashDistance = Vector2.Distance(playerHuman.transform.position, PlayerController2D.Instance.transform.position);
 
         PuttingOnLeash = false;
+
+        detectLayer = LayerMask.GetMask("Human");
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.L)) 
+        if (Input.GetKeyDown(KeyCode.L) || ClickedOnVlado() == true) 
         {
             if (!leash.activeSelf && DogInRange())
             {
@@ -43,7 +46,7 @@ public class Leash : MonoBehaviour
             playerHuman.transform.position = Vector2.Lerp(playerHuman.transform.position,
                 boneToJoint.transform.position, 5f*Time.deltaTime);
 
-            if (Vector2.Distance(playerHuman.transform.position, boneToJoint.transform.position)<=0.1f) 
+            if (Vector2.Distance(playerHuman.transform.position, boneToJoint.transform.position)<=0.3f) 
             {
                 Debug.Log("close enough");
                 SetLeashToPlayerHuman();
@@ -70,5 +73,21 @@ public class Leash : MonoBehaviour
     {
         leash.SetActive(false);
         joint.enabled = false;
+    }
+
+    private bool ClickedOnVlado()
+    {
+        if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began)
+        {
+            Vector2 position = Camera.main.ScreenToWorldPoint(Input.GetTouch(0).position);
+            Collider2D hitObject = Physics2D.OverlapCircle(position, 0.1f, detectLayer);
+            if (hitObject != null)
+            {
+                Debug.Log("Vlado clicked");
+                return true;
+            }
+        }
+  
+        return false;
     }
 }
