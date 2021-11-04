@@ -494,7 +494,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &127344098
 Transform:
   m_ObjectHideFlags: 0
@@ -4543,6 +4543,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Tiles.Array.data[15].second.m_TileObjectToInstantiateIndex
       value: 65535
+      objectReference: {fileID: 0}
+    - target: {fileID: 6711094682917072882, guid: 28540cdd28e29974c8842b51cc142fb8,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6711094682917072885, guid: 28540cdd28e29974c8842b51cc142fb8,
         type: 3}
