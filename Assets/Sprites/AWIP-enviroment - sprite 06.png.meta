@@ -1,0 +1,2916 @@
+fileFormatVersion: 2
+guid: ef502f6824845c848a45323750df66d4
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2585246603817603391
+    second: AWIP-enviroment - sprite 06_0
+  - first:
+      213: -6811320028576270824
+    second: AWIP-enviroment - sprite 06_1
+  - first:
+      213: 3341872268203324705
+    second: AWIP-enviroment - sprite 06_2
+  - first:
+      213: 6790004260259462062
+    second: AWIP-enviroment - sprite 06_3
+  - first:
+      213: 7453389162134533072
+    second: AWIP-enviroment - sprite 06_4
+  - first:
+      213: -6293646516605396531
+    second: AWIP-enviroment - sprite 06_5
+  - first:
+      213: 7232037539573037797
+    second: AWIP-enviroment - sprite 06_6
+  - first:
+      213: -2192856748373852186
+    second: AWIP-enviroment - sprite 06_7
+  - first:
+      213: 2945483800075713216
+    second: AWIP-enviroment - sprite 06_8
+  - first:
+      213: -6792144739493644709
+    second: AWIP-enviroment - sprite 06_9
+  - first:
+      213: -7638041098186556668
+    second: AWIP-enviroment - sprite 06_10
+  - first:
+      213: 1839846366766677587
+    second: AWIP-enviroment - sprite 06_11
+  - first:
+      213: 7474385834985449844
+    second: AWIP-enviroment - sprite 06_12
+  - first:
+      213: 8060316157804117633
+    second: AWIP-enviroment - sprite 06_13
+  - first:
+      213: -6033421772163076878
+    second: AWIP-enviroment - sprite 06_14
+  - first:
+      213: -4626423387903955337
+    second: AWIP-enviroment - sprite 06_15
+  - first:
+      213: -1967174958212650377
+    second: AWIP-enviroment - sprite 06_16
+  - first:
+      213: 476015419754480234
+    second: AWIP-enviroment - sprite 06_17
+  - first:
+      213: -2438416480897246344
+    second: AWIP-enviroment - sprite 06_18
+  - first:
+      213: -635306649595849804
+    second: AWIP-enviroment - sprite 06_19
+  - first:
+      213: -3334347519735504264
+    second: AWIP-enviroment - sprite 06_20
+  - first:
+      213: 4437041446328249803
+    second: AWIP-enviroment - sprite 06_21
+  - first:
+      213: 3894785250457754046
+    second: AWIP-enviroment - sprite 06_22
+  - first:
+      213: -6818939256342129122
+    second: AWIP-enviroment - sprite 06_23
+  - first:
+      213: 628676585958812387
+    second: AWIP-enviroment - sprite 06_24
+  - first:
+      213: -7718951273373924328
+    second: AWIP-enviroment - sprite 06_25
+  - first:
+      213: 7450639462653087891
+    second: AWIP-enviroment - sprite 06_26
+  - first:
+      213: 7994902911363128615
+    second: AWIP-enviroment - sprite 06_27
+  - first:
+      213: -4375368796558700310
+    second: AWIP-enviroment - sprite 06_28
+  - first:
+      213: 4279449094881304781
+    second: AWIP-enviroment - sprite 06_29
+  - first:
+      213: 154850827747364423
+    second: AWIP-enviroment - sprite 06_30
+  - first:
+      213: 9173510146808535843
+    second: AWIP-enviroment - sprite 06_31
+  - first:
+      213: -741263439865870965
+    second: AWIP-enviroment - sprite 06_32
+  - first:
+      213: -5605142396102200389
+    second: AWIP-enviroment - sprite 06_33
+  - first:
+      213: 3830658279228411634
+    second: AWIP-enviroment - sprite 06_34
+  - first:
+      213: 188262857582943323
+    second: AWIP-enviroment - sprite 06_35
+  - first:
+      213: -1634558587581796292
+    second: AWIP-enviroment - sprite 06_36
+  - first:
+      213: 7761645148233839900
+    second: AWIP-enviroment - sprite 06_37
+  - first:
+      213: 6644826158285408577
+    second: AWIP-enviroment - sprite 06_38
+  - first:
+      213: -9126734854942543237
+    second: AWIP-enviroment - sprite 06_39
+  - first:
+      213: -627945647153526970
+    second: AWIP-enviroment - sprite 06_40
+  - first:
+      213: 2973851555615954878
+    second: pjescanik
+  - first:
+      213: 4227514425144461894
+    second: AWIP-enviroment - sprite 06_42
+  - first:
+      213: -4492572242641763500
+    second: AWIP-enviroment - sprite 06_43
+  - first:
+      213: 4662225043704882261
+    second: AWIP-enviroment - sprite 06_44
+  - first:
+      213: 1514159658149796021
+    second: AWIP-enviroment - sprite 06_45
+  - first:
+      213: 4950979128076317986
+    second: AWIP-enviroment - sprite 06_46
+  - first:
+      213: 140383872613914152
+    second: AWIP-enviroment - sprite 06_47
+  - first:
+      213: 4056857937983265737
+    second: AWIP-enviroment - sprite 06_48
+  - first:
+      213: -5588577159397572961
+    second: AWIP-enviroment - sprite 06_49
+  - first:
+      213: -8975787203600285867
+    second: AWIP-enviroment - sprite 06_50
+  - first:
+      213: 8650846743084507343
+    second: AWIP-enviroment - sprite 06_51
+  - first:
+      213: 610592423315527293
+    second: AWIP-enviroment - sprite 06_52
+  - first:
+      213: -8494721569345004818
+    second: AWIP-enviroment - sprite 06_53
+  - first:
+      213: 2573059830259472340
+    second: AWIP-enviroment - sprite 06_54
+  - first:
+      213: 5460811648603497178
+    second: AWIP-enviroment - sprite 06_55
+  - first:
+      213: 7262964505815323336
+    second: AWIP-enviroment - sprite 06_56
+  - first:
+      213: 9099257027084868554
+    second: AWIP-enviroment - sprite 06_57
+  - first:
+      213: -2297780788950061753
+    second: AWIP-enviroment - sprite 06_58
+  - first:
+      213: -4081362324140161722
+    second: AWIP-enviroment - sprite 06_59
+  - first:
+      213: -6248515140351348438
+    second: AWIP-enviroment - sprite 06_60
+  - first:
+      213: 7654166077041704566
+    second: AWIP-enviroment - sprite 06_61
+  - first:
+      213: 2420811114441549524
+    second: AWIP-enviroment - sprite 06_62
+  - first:
+      213: 4020374423306748337
+    second: AWIP-enviroment - sprite 06_63
+  - first:
+      213: -2199954866823304095
+    second: AWIP-enviroment - sprite 06_64
+  - first:
+      213: -3558754612027228766
+    second: AWIP-enviroment - sprite 06_65
+  - first:
+      213: 1228125962195273864
+    second: AWIP-enviroment - sprite 06_66
+  - first:
+      213: -902253447723324649
+    second: AWIP-enviroment - sprite 06_67
+  - first:
+      213: 6303601087162147663
+    second: AWIP-enviroment - sprite 06_68
+  - first:
+      213: -8149740386211438715
+    second: BlueBenchVertical
+  - first:
+      213: 8080019731966851974
+    second: AWIP-enviroment - sprite 06_70
+  - first:
+      213: -216530064594431505
+    second: AWIP-enviroment - sprite 06_71
+  - first:
+      213: 8690833215480078031
+    second: AWIP-enviroment - sprite 06_72
+  - first:
+      213: -7600301591726364369
+    second: AWIP-enviroment - sprite 06_73
+  - first:
+      213: 4154202529989162910
+    second: AWIP-enviroment - sprite 06_74
+  - first:
+      213: 2271015119190109214
+    second: AWIP-enviroment - sprite 06_75
+  - first:
+      213: -31734284818233244
+    second: AWIP-enviroment - sprite 06_76
+  - first:
+      213: 3985493156874078379
+    second: AWIP-enviroment - sprite 06_77
+  - first:
+      213: 6700395665739339116
+    second: AWIP-enviroment - sprite 06_78
+  - first:
+      213: -1573856666282242071
+    second: AWIP-enviroment - sprite 06_79
+  - first:
+      213: 8886403644619544833
+    second: AWIP-enviroment - sprite 06_80
+  - first:
+      213: -2861433375731660354
+    second: AWIP-enviroment - sprite 06_81
+  - first:
+      213: -4431736350687994109
+    second: AWIP-enviroment - sprite 06_82
+  - first:
+      213: 2154061934134856235
+    second: AWIP-enviroment - sprite 06_83
+  - first:
+      213: 3790592114603465127
+    second: AWIP-enviroment - sprite 06_84
+  - first:
+      213: 2725378385846983476
+    second: AWIP-enviroment - sprite 06_85
+  - first:
+      213: 6146735878952964922
+    second: AWIP-enviroment - sprite 06_86
+  - first:
+      213: -3592319631895470352
+    second: AWIP-enviroment - sprite 06_87
+  - first:
+      213: -6460692232221509413
+    second: AWIP-enviroment - sprite 06_88
+  - first:
+      213: -5208693154575075578
+    second: AWIP-enviroment - sprite 06_89
+  - first:
+      213: -8157121656307403144
+    second: AWIP-enviroment - sprite 06_90
+  - first:
+      213: -6498963158782828340
+    second: AWIP-enviroment - sprite 06_92
+  - first:
+      213: -8771508268058967906
+    second: AWIP-enviroment - sprite 06_93
+  - first:
+      213: -6617705855193231022
+    second: AWIP-enviroment - sprite 06_94
+  - first:
+      213: 5958917637818728338
+    second: AWIP-enviroment - sprite 06_95
+  - first:
+      213: -7331891402324184501
+    second: AWIP-enviroment - sprite 06_96
+  - first:
+      213: 2830322486527922973
+    second: AWIP-enviroment - sprite 06_97
+  - first:
+      213: -128996211013542146
+    second: AWIP-enviroment - sprite 06_98
+  - first:
+      213: 8550762013269808812
+    second: AWIP-enviroment - sprite 06_99
+  - first:
+      213: -5478140273212567414
+    second: AWIP-enviroment - sprite 06_100
+  - first:
+      213: -2070617495630114198
+    second: AWIP-enviroment - sprite 06_101
+  - first:
+      213: 1152221160471013347
+    second: AWIP-enviroment - sprite 06_102
+  - first:
+      213: 3950722700841988007
+    second: AWIP-enviroment - sprite 06_103
+  - first:
+      213: -4979416380089031450
+    second: AWIP-enviroment - sprite 06_105
+  - first:
+      213: -3619277725098975772
+    second: AWIP-enviroment - sprite 06_106
+  - first:
+      213: 8568793651298168917
+    second: AWIP-enviroment - sprite 06_107
+  - first:
+      213: 1273863713808231210
+    second: AWIP-enviroment - sprite 06_108
+  - first:
+      213: -4500234294473280491
+    second: AWIP-enviroment - sprite 06_109
+  - first:
+      213: 6924875145099388431
+    second: AWIP-enviroment - sprite 06_110
+  - first:
+      213: -8686687508592899119
+    second: AWIP-enviroment - sprite 06_111
+  - first:
+      213: -3993685755150399603
+    second: AWIP-enviroment - sprite 06_112
+  - first:
+      213: -5944353670153653090
+    second: AWIP-enviroment - sprite 06_113
+  - first:
+      213: 9046915369652369392
+    second: AWIP-enviroment - sprite 06_114
+  - first:
+      213: -9189207400115812707
+    second: AWIP-enviroment - sprite 06_115
+  - first:
+      213: -6751515698308315444
+    second: AWIP-enviroment - sprite 06_116
+  - first:
+      213: 3748172852323103926
+    second: AWIP-enviroment - sprite 06_91
+  - first:
+      213: -6024981656766195413
+    second: AWIP-enviroment - sprite 06_104
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: AWIP-enviroment - sprite 06_0
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 660
+        width: 57
+        height: 21
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f315555c614a0e320800000000000000
+      internalID: 2585246603817603391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AWIP-enviroment - sprite 06_1
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 662
+        width: 69
+        height: 42
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 816353d95845971a0800000000000000
+      internalID: -6811320028576270824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AWIP-enviroment - sprite 06_2
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 656
+        width: 64
+        height: 55
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 125fcf63f17b06e20800000000000000
+      internalID: 3341872268203324705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AWIP-enviroment - sprite 06_3
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 659
+        width: 58
+        height: 55
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eab772456e0fa3e50800000000000000
+      internalID: 6790004260259462062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AWIP-enviroment - sprite 06_4
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 661
+        width: 64
+        height: 53
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d376c504f1cf6760800000000000000
+      internalID: 7453389162134533072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AWIP-enviroment - sprite 06_5
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 657
+        width: 64
+        height: 55
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc95cdb96d978a8a0800000000000000
+      internalID: -6293646516605396531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AWIP-enviroment - sprite 06_6
+      rect:
+        serializedVersion: 2
+        x: 562
+        y: 669
+        width: 38
+        height: 37
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ea7a8443db5d5460800000000000000
+      internalID: 7232037539573037797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AWIP-enviroment - sprite 06_7
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 669
+        width: 37
+        height: 37
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6efbbd5d7686191e0800000000000000
+      internalID: -2192856748373852186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AWIP-enviroment - sprite 06_8
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 669
+        width: 38
+        height: 37
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ca3e2b09e570e820800000000000000
+      internalID: 2945483800075713216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AWIP-enviroment - sprite 06_9
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 669
+        width: 37
+        height: 37
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b56717388547db1a0800000000000000
+      internalID: -6792144739493644709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AWIP-enviroment - sprite 06_10
+      rect:
+        serializedVersion: 2
+        x: 735
+        y: 669
+        width: 38
+        height: 37
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40b71cad61a300690800000000000000
+      internalID: -7638041098186556668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AWIP-enviroment - sprite 06_11
+      rect:
+        serializedVersion: 2
+        x: 778
+        y: 669
+        width: 39
+        height: 37
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35ebb6cc582788910800000000000000
+      internalID: 1839846366766677587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AWIP-enviroment - sprite 06_12
+      rect:
+        serializedVersion: 2
+        x: 821
+        y: 669
+        width: 39
+        height: 37
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 479e480e05a5ab760800000000000000
+      internalID: 7474385834985449844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AWIP-enviroment - sprite 06_13
+      rect:
+        serializedVersion: 2
+        x: 865
+        y: 669
+        width: 38
+        height: 37
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18e714317defbdf60800000000000000
+      internalID: 8060316157804117633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AWIP-enviroment - sprite 06_14
+      rect:
+        serializedVersion: 2
+        x: 908
+        y: 668
+        width: 38
+        height: 38
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fcac1a5ddaf44ca0800000000000000
+      internalID: -6033421772163076878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AWIP-enviroment - sprite 06_15
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 616
+        width: 188
+        height: 33
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77eec67c074abcfb0800000000000000
+      internalID: -4626423387903955337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AWIP-enviroment - sprite 06_16
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 611
+        width: 41
+        height: 28
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77ae0bc4cc033b4e0800000000000000
+      internalID: -1967174958212650377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AWIP-enviroment - sprite 06_17
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 609
+        width: 50
+        height: 29
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a62031290852b9600800000000000000
+      internalID: 476015419754480234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AWIP-enviroment - sprite 06_18
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 611
+        width: 43
+        height: 31
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87b59a14121092ed0800000000000000
+      internalID: -2438416480897246344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AWIP-enviroment - sprite 06_19
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 612
+        width: 56
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b3556bd7ffee27f0800000000000000
+      internalID: -635306649595849804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AWIP-enviroment - sprite 06_20
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 591
+        width: 61
+        height: 55
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 872e570d8940ab1d0800000000000000
+      internalID: -3334347519735504264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AWIP-enviroment - sprite 06_21
+      rect:
+        serializedVersion: 2
+        x: 562
+        y: 625
+        width: 38
+        height: 38
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcda41edfa9839d30800000000000000
+      internalID: 4437041446328249803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AWIP-enviroment - sprite 06_22
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 625
+        width: 37
+        height: 38
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb917f1cc8e0d0630800000000000000
+      internalID: 3894785250457754046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AWIP-enviroment - sprite 06_23
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 625
+        width: 38
+        height: 38
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e16d2c8efd24e51a0800000000000000
+      internalID: -6818939256342129122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AWIP-enviroment - sprite 06_24
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 625
+        width: 37
+        height: 38
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ea2ea8260289b800800000000000000
+      internalID: 628676585958812387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AWIP-enviroment - sprite 06_25
+      rect:
+        serializedVersion: 2
+        x: 735
+        y: 625
+        width: 38
+        height: 38
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8148fffa6b6c0e490800000000000000
+      internalID: -7718951273373924328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AWIP-enviroment - sprite 06_26
+      rect:
+        serializedVersion: 2
+        x: 779
+        y: 625
+        width: 38
+        height: 38
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 390d1f8bd1df56760800000000000000
+      internalID: 7450639462653087891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AWIP-enviroment - sprite 06_27
+      rect:
+        serializedVersion: 2
+        x: 821
+        y: 625
+        width: 39
+        height: 38
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72d198dc6d993fe60800000000000000
+      internalID: 7994902911363128615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AWIP-enviroment - sprite 06_28
+      rect:
+        serializedVersion: 2
+        x: 865
+        y: 625
+        width: 38
+        height: 38
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae05acfd2419743c0800000000000000
+      internalID: -4375368796558700310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AWIP-enviroment - sprite 06_29
+      rect:
+        serializedVersion: 2
+        x: 908
+        y: 625
+        width: 38
+        height: 38
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc064ce3748a36b30800000000000000
+      internalID: 4279449094881304781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AWIP-enviroment - sprite 06_30
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 553
+        width: 54
+        height: 51
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74e8e05e104262200800000000000000
+      internalID: 154850827747364423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AWIP-enviroment - sprite 06_31
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 550
+        width: 61
+        height: 54
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32bd6fb00eade4f70800000000000000
+      internalID: 9173510146808535843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AWIP-enviroment - sprite 06_32
+      rect:
+        serializedVersion: 2
+        x: 562
+        y: 582
+        width: 38
+        height: 38
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b858fcd24d086b5f0800000000000000
+      internalID: -741263439865870965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AWIP-enviroment - sprite 06_33
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 582
+        width: 37
+        height: 38
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb3b8d420b88632b0800000000000000
+      internalID: -5605142396102200389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AWIP-enviroment - sprite 06_34
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 582
+        width: 38
+        height: 38
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fe8155c86b392530800000000000000
+      internalID: 3830658279228411634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AWIP-enviroment - sprite 06_35
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 582
+        width: 37
+        height: 38
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5c91ae4218dc9200800000000000000
+      internalID: 188262857582943323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AWIP-enviroment - sprite 06_36
+      rect:
+        serializedVersion: 2
+        x: 735
+        y: 582
+        width: 38
+        height: 38
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c307f96ff91e059e0800000000000000
+      internalID: -1634558587581796292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AWIP-enviroment - sprite 06_37
+      rect:
+        serializedVersion: 2
+        x: 779
+        y: 582
+        width: 38
+        height: 38
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c15bc1da327e6bb60800000000000000
+      internalID: 7761645148233839900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AWIP-enviroment - sprite 06_38
+      rect:
+        serializedVersion: 2
+        x: 821
+        y: 582
+        width: 39
+        height: 38
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14943d66f2a273c50800000000000000
+      internalID: 6644826158285408577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AWIP-enviroment - sprite 06_39
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 582
+        width: 39
+        height: 38
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7239f34103575180800000000000000
+      internalID: -9126734854942543237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AWIP-enviroment - sprite 06_40
+      rect:
+        serializedVersion: 2
+        x: 908
+        y: 582
+        width: 38
+        height: 38
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 647492bc2c61947f0800000000000000
+      internalID: -627945647153526970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pjescanik
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 538
+        width: 42
+        height: 43
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb75b33db3e354920800000000000000
+      internalID: 2973851555615954878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AWIP-enviroment - sprite 06_42
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 557
+        width: 34
+        height: 19
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64a4399a8f52baa30800000000000000
+      internalID: 4227514425144461894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AWIP-enviroment - sprite 06_43
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 555
+        width: 17
+        height: 20
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 453ce85195d27a1c0800000000000000
+      internalID: -4492572242641763500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AWIP-enviroment - sprite 06_44
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 486
+        width: 33
+        height: 90
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 554a5f8c9fc83b040800000000000000
+      internalID: 4662225043704882261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AWIP-enviroment - sprite 06_45
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 471
+        width: 33
+        height: 107
+      alignment: 9
+      pivot: {x: 0.46352965, y: 0.1072576}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b8de3dcf20630510800000000000000
+      internalID: 1514159658149796021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AWIP-enviroment - sprite 06_46
+      rect:
+        serializedVersion: 2
+        x: 562
+        y: 539
+        width: 38
+        height: 38
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 225bc5b194965b440800000000000000
+      internalID: 4950979128076317986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AWIP-enviroment - sprite 06_47
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 539
+        width: 37
+        height: 38
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 826985b636eb2f100800000000000000
+      internalID: 140383872613914152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AWIP-enviroment - sprite 06_48
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 539
+        width: 38
+        height: 38
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cb57b9eccadc4830800000000000000
+      internalID: 4056857937983265737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AWIP-enviroment - sprite 06_49
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 538
+        width: 37
+        height: 39
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9efe3edea26172b0800000000000000
+      internalID: -5588577159397572961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AWIP-enviroment - sprite 06_50
+      rect:
+        serializedVersion: 2
+        x: 735
+        y: 539
+        width: 38
+        height: 38
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55f78e518199f6380800000000000000
+      internalID: -8975787203600285867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AWIP-enviroment - sprite 06_51
+      rect:
+        serializedVersion: 2
+        x: 779
+        y: 539
+        width: 38
+        height: 38
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc0a5e7574bfd0870800000000000000
+      internalID: 8650846743084507343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AWIP-enviroment - sprite 06_52
+      rect:
+        serializedVersion: 2
+        x: 821
+        y: 539
+        width: 39
+        height: 38
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d76544ee292497800800000000000000
+      internalID: 610592423315527293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AWIP-enviroment - sprite 06_53
+      rect:
+        serializedVersion: 2
+        x: 865
+        y: 539
+        width: 38
+        height: 38
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eea97595dbfac1a80800000000000000
+      internalID: -8494721569345004818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AWIP-enviroment - sprite 06_54
+      rect:
+        serializedVersion: 2
+        x: 908
+        y: 538
+        width: 38
+        height: 39
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d75170784855b320800000000000000
+      internalID: 2573059830259472340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AWIP-enviroment - sprite 06_55
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 461
+        width: 70
+        height: 63
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad2a3540343b8cb40800000000000000
+      internalID: 5460811648603497178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AWIP-enviroment - sprite 06_56
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 474
+        width: 28
+        height: 61
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c29469bcbb3bc460800000000000000
+      internalID: 7262964505815323336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AWIP-enviroment - sprite 06_57
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 474
+        width: 31
+        height: 69
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acbde536e0e074e70800000000000000
+      internalID: 9099257027084868554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AWIP-enviroment - sprite 06_58
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 473
+        width: 33
+        height: 58
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74d2aeeeb84ac10e0800000000000000
+      internalID: -2297780788950061753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AWIP-enviroment - sprite 06_59
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 510
+        width: 39
+        height: 25
+      alignment: 9
+      pivot: {x: 0.54413235, y: 0.5492993}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64586f517961c57c0800000000000000
+      internalID: -4081362324140161722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AWIP-enviroment - sprite 06_60
+      rect:
+        serializedVersion: 2
+        x: 562
+        y: 494
+        width: 38
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2135bdf590d849a0800000000000000
+      internalID: -6248515140351348438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AWIP-enviroment - sprite 06_61
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 495
+        width: 37
+        height: 39
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67e7ae95e7f093a60800000000000000
+      internalID: 7654166077041704566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AWIP-enviroment - sprite 06_62
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 495
+        width: 38
+        height: 39
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d62b90f1e2789120800000000000000
+      internalID: 2420811114441549524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AWIP-enviroment - sprite 06_63
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 494
+        width: 37
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b1c345bc3d3bc730800000000000000
+      internalID: 4020374423306748337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AWIP-enviroment - sprite 06_64
+      rect:
+        serializedVersion: 2
+        x: 735
+        y: 495
+        width: 38
+        height: 39
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16cea1954b03871e0800000000000000
+      internalID: -2199954866823304095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AWIP-enviroment - sprite 06_65
+      rect:
+        serializedVersion: 2
+        x: 779
+        y: 495
+        width: 38
+        height: 39
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ad75531983cc9ec0800000000000000
+      internalID: -3558754612027228766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AWIP-enviroment - sprite 06_66
+      rect:
+        serializedVersion: 2
+        x: 820
+        y: 495
+        width: 40
+        height: 39
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88885144e0e2b0110800000000000000
+      internalID: 1228125962195273864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AWIP-enviroment - sprite 06_67
+      rect:
+        serializedVersion: 2
+        x: 865
+        y: 495
+        width: 38
+        height: 39
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71b6417054d8a73f0800000000000000
+      internalID: -902253447723324649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AWIP-enviroment - sprite 06_68
+      rect:
+        serializedVersion: 2
+        x: 908
+        y: 495
+        width: 38
+        height: 39
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f43e0167ac3ea7750800000000000000
+      internalID: 6303601087162147663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlueBenchVertical
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 477
+        width: 14
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58f56344c4e46ee80800000000000000
+      internalID: -8149740386211438715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AWIP-enviroment - sprite 06_70
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 463
+        width: 40
+        height: 26
+      alignment: 9
+      pivot: {x: 0.49139556, y: 0.4942228}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68bf70ee22ff12070800000000000000
+      internalID: 8080019731966851974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AWIP-enviroment - sprite 06_71
+      rect:
+        serializedVersion: 2
+        x: 562
+        y: 452
+        width: 38
+        height: 39
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe118a0bd0bbefcf0800000000000000
+      internalID: -216530064594431505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AWIP-enviroment - sprite 06_72
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 452
+        width: 38
+        height: 39
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fce1bd273ca0c9870800000000000000
+      internalID: 8690833215480078031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AWIP-enviroment - sprite 06_73
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 452
+        width: 38
+        height: 39
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f29605f68fd468690800000000000000
+      internalID: -7600301591726364369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AWIP-enviroment - sprite 06_74
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 452
+        width: 37
+        height: 39
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e97780de031b6a930800000000000000
+      internalID: 4154202529989162910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AWIP-enviroment - sprite 06_75
+      rect:
+        serializedVersion: 2
+        x: 735
+        y: 452
+        width: 38
+        height: 39
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1c2ed2f734448f10800000000000000
+      internalID: 2271015119190109214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AWIP-enviroment - sprite 06_76
+      rect:
+        serializedVersion: 2
+        x: 779
+        y: 452
+        width: 38
+        height: 39
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 468453a06d14f8ff0800000000000000
+      internalID: -31734284818233244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AWIP-enviroment - sprite 06_77
+      rect:
+        serializedVersion: 2
+        x: 821
+        y: 452
+        width: 39
+        height: 39
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba8ca3ef8e05f4730800000000000000
+      internalID: 3985493156874078379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AWIP-enviroment - sprite 06_78
+      rect:
+        serializedVersion: 2
+        x: 865
+        y: 452
+        width: 38
+        height: 39
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c65d5f69b569cfc50800000000000000
+      internalID: 6700395665739339116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AWIP-enviroment - sprite 06_79
+      rect:
+        serializedVersion: 2
+        x: 908
+        y: 452
+        width: 38
+        height: 39
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9efcdde53b9882ae0800000000000000
+      internalID: -1573856666282242071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AWIP-enviroment - sprite 06_80
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 415
+        width: 40
+        height: 35
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 109d8485809d25b70800000000000000
+      internalID: 8886403644619544833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AWIP-enviroment - sprite 06_81
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 414
+        width: 33
+        height: 36
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb9411b51852a48d0800000000000000
+      internalID: -2861433375731660354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AWIP-enviroment - sprite 06_82
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 414
+        width: 38
+        height: 34
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30f5e07f44f4f72c0800000000000000
+      internalID: -4431736350687994109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AWIP-enviroment - sprite 06_83
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 414
+        width: 40
+        height: 35
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2a8c489ae3c4ed10800000000000000
+      internalID: 2154061934134856235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AWIP-enviroment - sprite 06_84
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 400
+        width: 138
+        height: 37
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a9165fd173ea9430800000000000000
+      internalID: 3790592114603465127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AWIP-enviroment - sprite 06_85
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 410
+        width: 38
+        height: 38
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43bdfe6c33d72d520800000000000000
+      internalID: 2725378385846983476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AWIP-enviroment - sprite 06_86
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 410
+        width: 37
+        height: 38
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a33d32117b79d4550800000000000000
+      internalID: 6146735878952964922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AWIP-enviroment - sprite 06_87
+      rect:
+        serializedVersion: 2
+        x: 779
+        y: 410
+        width: 38
+        height: 38
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fe5535e354852ec0800000000000000
+      internalID: -3592319631895470352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AWIP-enviroment - sprite 06_88
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 289
+        width: 39
+        height: 37
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd8bf4f15a20756a0800000000000000
+      internalID: -6460692232221509413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AWIP-enviroment - sprite 06_89
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 289
+        width: 38
+        height: 37
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6073b893c2107b7b0800000000000000
+      internalID: -5208693154575075578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AWIP-enviroment - sprite 06_90
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 288
+        width: 38
+        height: 38
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 876b62662151cce80800000000000000
+      internalID: -8157121656307403144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AWIP-enviroment - sprite 06_92
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 245
+        width: 39
+        height: 38
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc02668a07b0fc5a0800000000000000
+      internalID: -6498963158782828340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AWIP-enviroment - sprite 06_93
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 245
+        width: 38
+        height: 38
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9081f124b7554680800000000000000
+      internalID: -8771508268058967906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AWIP-enviroment - sprite 06_94
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 245
+        width: 38
+        height: 38
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2515f29369f2924a0800000000000000
+      internalID: -6617705855193231022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AWIP-enviroment - sprite 06_95
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 202
+        width: 39
+        height: 38
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29fbef7150452b250800000000000000
+      internalID: 5958917637818728338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AWIP-enviroment - sprite 06_96
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 202
+        width: 39
+        height: 38
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b42f9b89d93ef3a90800000000000000
+      internalID: -7331891402324184501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AWIP-enviroment - sprite 06_97
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 202
+        width: 38
+        height: 38
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d131c494e43574720800000000000000
+      internalID: 2830322486527922973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AWIP-enviroment - sprite 06_98
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 135
+        width: 38
+        height: 38
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efe9a2921a6b53ef0800000000000000
+      internalID: -128996211013542146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AWIP-enviroment - sprite 06_99
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 135
+        width: 37
+        height: 38
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca6d9d74fb86aa670800000000000000
+      internalID: 8550762013269808812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AWIP-enviroment - sprite 06_100
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 135
+        width: 38
+        height: 38
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a805769227cb9f3b0800000000000000
+      internalID: -5478140273212567414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AWIP-enviroment - sprite 06_101
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 136
+        width: 38
+        height: 38
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a62124bbb50b343e0800000000000000
+      internalID: -2070617495630114198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AWIP-enviroment - sprite 06_102
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 136
+        width: 37
+        height: 38
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e7209c6a038dff00800000000000000
+      internalID: 1152221160471013347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AWIP-enviroment - sprite 06_103
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 136
+        width: 38
+        height: 38
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7af22c55d59c3d630800000000000000
+      internalID: 3950722700841988007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AWIP-enviroment - sprite 06_105
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 90
+        width: 38
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e428043f2f85eab0800000000000000
+      internalID: -4979416380089031450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AWIP-enviroment - sprite 06_106
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 91
+        width: 37
+        height: 39
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4edddf3b51eb5cdc0800000000000000
+      internalID: -3619277725098975772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AWIP-enviroment - sprite 06_107
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 91
+        width: 38
+        height: 39
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 550ff3b2d687ae670800000000000000
+      internalID: 8568793651298168917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AWIP-enviroment - sprite 06_108
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 92
+        width: 38
+        height: 39
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2bacc96c4cada110800000000000000
+      internalID: 1273863713808231210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AWIP-enviroment - sprite 06_109
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 92
+        width: 37
+        height: 39
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 514b3ef90c4fb81c0800000000000000
+      internalID: -4500234294473280491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AWIP-enviroment - sprite 06_110
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 92
+        width: 38
+        height: 39
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f06a49141491a1060800000000000000
+      internalID: 6924875145099388431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AWIP-enviroment - sprite 06_111
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 48
+        width: 38
+        height: 39
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1db4f772cbfa27780800000000000000
+      internalID: -8686687508592899119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AWIP-enviroment - sprite 06_112
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 48
+        width: 37
+        height: 39
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8709b317f39398c0800000000000000
+      internalID: -3993685755150399603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AWIP-enviroment - sprite 06_113
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 48
+        width: 38
+        height: 39
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e94b33fd4d9618da0800000000000000
+      internalID: -5944353670153653090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AWIP-enviroment - sprite 06_114
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 49
+        width: 38
+        height: 39
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f7b62998991d8d70800000000000000
+      internalID: 9046915369652369392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AWIP-enviroment - sprite 06_115
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 49
+        width: 37
+        height: 39
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d96c4bc5e80697080800000000000000
+      internalID: -9189207400115812707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AWIP-enviroment - sprite 06_116
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 49
+        width: 38
+        height: 39
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc60cd25e3ccd42a0800000000000000
+      internalID: -6751515698308315444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AWIP-enviroment - sprite 06_91
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 163
+        width: 369
+        height: 163
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b43b7bb95f240430800000000000000
+      internalID: 3748172852323103926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AWIP-enviroment - sprite 06_104
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 4
+        width: 608
+        height: 144
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b29d43ada17f26ca0800000000000000
+      internalID: -6024981656766195413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -44,6 +44,9 @@ public class PlayerController2D : MonoBehaviour
     private float horizontal;
     private float vertical;
 
+    float moveX;
+    float moveY;
+
     #region Singleton
     public static PlayerController2D Instance { get; private set; }
 
@@ -103,89 +106,11 @@ public class PlayerController2D : MonoBehaviour
                     state = State.Walking;
                 break;
             case State.Walking:
-                float moveX = 0f;
-                float moveY = 0f;
+                moveX = 0f;
+                moveY = 0f;
 
-                if (leash.activeSelf) 
-                    state = State.Follow;
-                
-                if (Input.GetKey(KeyCode.W)) 
-                {
-                    moveY = +1f;
-                    vertical = 1f;
-                }
-                if (Input.GetKey(KeyCode.S)) 
-                {
-                    moveY = -1f;
-                    vertical = -1f;
-                }
-                if (Input.GetKey(KeyCode.A))
-                {
-                    moveX = -1f;
-                    horizontal = -1f;
-                }
-                if (Input.GetKey(KeyCode.D)) 
-                {
-                    moveX = +1f;
-                    horizontal = 1f;
-                }
-
-                if ((Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D))
-                && (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.S)))
-                {
-                    vertical = 0f;
-                }
-
-                if (moveX != 0 || moveY != 0) 
-                {
-                    playerMoving = true;
-                    lastMoveDir = moveDir;
-                } 
-                else 
-                {
-                    playerMoving = false;
-                    horizontal = 0f;
-                    vertical = 0f;
-                }
-
-                Vector2 target;
-                if (Input.touchCount > 0)
-                {
-
-                    Touch touch = Input.GetTouch(0);
-
-                    if (touch.position.y > screenHeight / 2)
-                        vertical = 1.0f;
-            
-                    if (touch.position.y < screenHeight / 2)
-                        vertical = -1.0f;
-
-                    if (touch.position.x > screenWidth / 2)
-                        horizontal = 1.0f;
-            
-                    if (touch.position.x < screenWidth / 2)
-                        horizontal = -1.0f;
-
-                    if (touch.position.y < 2*screenHeight/3 && 
-                        touch.position.y > screenHeight/3)
-                    {
-                        vertical = 0f;
-                    }
-                    
-                    target = Camera.main.ScreenToWorldPoint(Input.GetTouch(0).position);
-                    var delta = 2f*moveSpeed*Time.deltaTime;
-                    Vector2 position = Vector3.MoveTowards(transform.position, target, delta);    
-                    rb.MovePosition(position);
-                    lastMoveDir = new Vector2 (horizontal, vertical);
-                    playerMoving = true;
-
-                } 
-                else if (moveX == 0 && moveY == 0) 
-                { 
-                    horizontal = 0f; 
-                    vertical = 0f; 
-                    playerMoving = false;
-                }
+                WASDMovement();
+                TouchMovement();
 
                 moveDir = new Vector3(moveX, moveY).normalized;
                 break;
@@ -200,7 +125,74 @@ public class PlayerController2D : MonoBehaviour
                 break;
         }
     }
+    private void TouchMovement() {
+        Vector2 target;
+        if (Input.touchCount > 0) {
 
+            Touch touch = Input.GetTouch(0);
+
+            if (touch.position.y > screenHeight / 2)
+                vertical = 1.0f;
+
+            if (touch.position.y < screenHeight / 2)
+                vertical = -1.0f;
+
+            if (touch.position.x > screenWidth / 2)
+                horizontal = 1.0f;
+
+            if (touch.position.x < screenWidth / 2)
+                horizontal = -1.0f;
+
+            if (touch.position.y < 2 * screenHeight / 3 &&
+                touch.position.y > screenHeight / 3) {
+                vertical = 0f;
+            }
+
+            target = Camera.main.ScreenToWorldPoint(Input.GetTouch(0).position);
+            var delta = 2f * moveSpeed * Time.deltaTime;
+            Vector2 position = Vector3.MoveTowards(transform.position, target, delta);
+            rb.MovePosition(position);
+            lastMoveDir = new Vector2(horizontal, vertical);
+            playerMoving = true;
+
+        } else if (moveX == 0 && moveY == 0) {
+            horizontal = 0f;
+            vertical = 0f;
+            playerMoving = false;
+        }
+    }
+    private void WASDMovement() {
+        if (Input.GetKey(KeyCode.W)) {
+            moveY = +1f;
+            vertical = 1f;
+        }
+        if (Input.GetKey(KeyCode.S)) {
+            moveY = -1f;
+            vertical = -1f;
+        }
+        if (Input.GetKey(KeyCode.A)) {
+            moveX = -1f;
+            horizontal = -1f;
+        }
+        if (Input.GetKey(KeyCode.D)) {
+            moveX = +1f;
+            horizontal = 1f;
+        }
+
+        if ((Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D))
+        && (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.S))) {
+            vertical = 0f;
+        }
+
+        if (moveX != 0 || moveY != 0) {
+            playerMoving = true;
+            lastMoveDir = moveDir;
+        } else {
+            playerMoving = false;
+            horizontal = 0f;
+            vertical = 0f;
+        }
+    }
     private void Follow() {
 
         if (playerMoving) {
