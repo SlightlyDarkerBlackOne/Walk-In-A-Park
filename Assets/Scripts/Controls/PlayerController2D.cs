@@ -37,17 +37,13 @@ public class PlayerController2D : MonoBehaviour
     private const float detectRadius = 0.3f;
     public LayerMask detectLayer;
     public GameObject detectedItem;
+    public List<GameObject> cleanUpList = new List<GameObject>();
     public bool carryItem = false;
 
     public float screenWidth;
     public float screenHeight;
     private float horizontal = 0f;
     private float vertical = 0f;
-
-    private Vector2 startPos, endPos, direction;
-    public float throwForce;
-    public bool ignoreFirstTouch = true;
-
 
     #region Singleton
     public static PlayerController2D Instance { get; private set; }
@@ -177,6 +173,11 @@ public class PlayerController2D : MonoBehaviour
                     {
                         vertical = 0f;
                     }
+                    if (touch.position.x < screenWidth/4 || 
+                        touch.position.x > 3*screenWidth/4)
+                    {
+                        vertical = 0f;
+                    }
                     
                     target = Camera.main.ScreenToWorldPoint(Input.GetTouch(0).position);
                     var delta = 2f*moveSpeed*Time.deltaTime;
@@ -265,21 +266,7 @@ public class PlayerController2D : MonoBehaviour
     }
 
     private void Interact()
-    {
-
-        /*if (carryItem)
-        {
-            if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began)
-            {
-                Vector2 force = new Vector2(-throwForce, -throwForce);
-                Rigidbody2D rbItem = detectedItem.GetComponent<Rigidbody2D>();
-                rbItem.isKinematic = false;
-                rbItem.AddForce(force);
-                carryItem = false;
-            } 
-
-        }*/
-        
+    {       
         //carrying items in mouth
         if (DetectItem())
         {
@@ -294,6 +281,24 @@ public class PlayerController2D : MonoBehaviour
                 if (obj)
                 {
                     carryItem = !carryItem;
+                    //if carryItem becomes false, we are about to throw it
+                    if (!carryItem)
+                    {
+                        //only when throwing - add rigidbody2d, adjust params, throw
+                        //if we had rigidbody2d while carrying, if kinematic would block player from moving in its direction
+                        //if dynamic wouldn't work with following via transform at all
+                        Vector2 force = new Vector2(horizontal*5f, vertical*5f);
+                        Rigidbody2D rbItem = detectedItem.gameObject.AddComponent(typeof(Rigidbody2D)) as Rigidbody2D;
+                        rbItem.gravityScale = 0f;
+                        rbItem.drag = 1.5f;
+                        rbItem.constraints = RigidbodyConstraints2D.FreezeRotation;
+                        rbItem.velocity = new Vector2(0.1f,0.1f);
+                        rbItem.AddForce(force);
+                        //add the item to the list of objects to remove rigidbody2d from later
+                        cleanUpList.Add(detectedItem);
+                        
+                    }
+                
                 }
                 
             }
@@ -302,6 +307,25 @@ public class PlayerController2D : MonoBehaviour
 
         if (carryItem) detectedItem.transform.parent = transform;
         else if (DetectItem()) detectedItem.transform.parent = null;
+
+        //remove added rigidbodies2d so that those items can be carried&thrown again
+        List<GameObject> toDelete = new List<GameObject>();
+        foreach (GameObject item in cleanUpList)
+        {
+            //qualifies only if it had rb added and is not moving anymore (not in process of being thrown)
+            if (item.GetComponent<Rigidbody2D>() != null && item.GetComponent<Rigidbody2D>().velocity.x < 0.1f 
+                && item.GetComponent<Rigidbody2D>().velocity.y < 0.1f)
+            {
+                Destroy(item.GetComponent<Rigidbody2D>());
+                toDelete.Add(item);
+                Debug.Log("Removed rb");
+            }
+        }
+        foreach (GameObject item in toDelete)
+        {
+            cleanUpList.Remove(item);
+            Debug.Log("Deleted");
+        }
 
     }
 
@@ -321,29 +345,4 @@ public class PlayerController2D : MonoBehaviour
             return true;
         }
     }   
-
-    private void ThrowItem()
-    {
-        Debug.Log("Entered");
-        if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began)
-        {
-            startPos = Input.GetTouch(0).position;
-            Debug.Log("Began");
-        }
-
-        if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Ended)
-        {
-            endPos = Input.GetTouch(0).position;
-            direction = startPos-endPos;
-            Vector2 force = new Vector2(-direction.x*throwForce, -direction.y*throwForce);
-            Rigidbody2D rbItem = detectedItem.GetComponent<Rigidbody2D>();
-            rbItem.isKinematic = false;
-            rbItem.AddForce(force);
-            carryItem = false;
-            Debug.Log("thrown");
-
-        }
-
-    }
-
 }
