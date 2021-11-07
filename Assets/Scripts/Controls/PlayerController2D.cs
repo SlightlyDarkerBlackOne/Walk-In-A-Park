@@ -129,66 +129,60 @@ public class PlayerController2D : MonoBehaviour
     }
     private void TouchMovement() {
         if ((Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D))
-                && (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.S)))
-                {
+                && (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.S))){
                     vertical = 0f;
                 }
 
-                if (moveX != 0 || moveY != 0) 
-                {
-                    playerMoving = true;
-                    lastMoveDir = moveDir;
-                } 
-                else 
-                {
-                    playerMoving = false;
-                    horizontal = 0f;
-                    vertical = 0f;
-                }
+        if (moveX != 0 || moveY != 0) {
+            playerMoving = true;
+            lastMoveDir = moveDir;
+        } 
+        else {
+            playerMoving = false;
+            horizontal = 0f;
+            vertical = 0f;
+        }
 
-                Vector2 target;
-                if (Input.touchCount > 0)
-                {
+        Vector2 target;
+        if (Input.touchCount > 0){
 
-                    Touch touch = Input.GetTouch(0);
+            Touch touch = Input.GetTouch(0);
 
-                    if (touch.position.y > screenHeight / 2)
-                        vertical = 1.0f;
+            if (touch.position.y > screenHeight / 2)
+                vertical = 1.0f;
             
-                    if (touch.position.y < screenHeight / 2)
-                        vertical = -1.0f;
+            if (touch.position.y < screenHeight / 2)
+                vertical = -1.0f;
 
-                    if (touch.position.x > screenWidth / 2)
-                        horizontal = 1.0f;
+            if (touch.position.x > screenWidth / 2)
+                horizontal = 1.0f;
             
-                    if (touch.position.x < screenWidth / 2)
-                        horizontal = -1.0f;
+            if (touch.position.x < screenWidth / 2)
+                horizontal = -1.0f;
 
-                    if (touch.position.y < 2*screenHeight/3 && 
-                        touch.position.y > screenHeight/3)
-                    {
-                        vertical = 0f;
-                    }
-                    if (touch.position.x < screenWidth/4 || 
-                        touch.position.x > 3*screenWidth/4)
-                    {
-                        vertical = 0f;
-                    }
+            if (touch.position.y < 2 * screenHeight / 3 &&
+                touch.position.y > screenHeight / 3) {
+                vertical = 0f;
+            }
+            if (touch.position.x < screenWidth/4 || 
+                touch.position.x > 3*screenWidth/4){
+                vertical = 0f;
+            }
                     
-                    target = Camera.main.ScreenToWorldPoint(Input.GetTouch(0).position);
-                    var delta = 2f*moveSpeed*Time.deltaTime;
-                    Vector2 position = Vector3.MoveTowards(transform.position, target, delta);    
-                    rb.MovePosition(position);
-                    lastMoveDir = new Vector2 (horizontal, vertical);
-                    playerMoving = true;
+            target = Camera.main.ScreenToWorldPoint(Input.GetTouch(0).position);
+            var delta = 2f*moveSpeed*Time.deltaTime;
+            Vector2 position = Vector3.MoveTowards(transform.position, target, delta);    
+            rb.MovePosition(position);
+            lastMoveDir = new Vector2 (horizontal, vertical);
+            playerMoving = true;
 
-                } 
-                else if (moveX == 0 && moveY == 0) 
-                { 
-                    horizontal = 0f; 
-                    vertical = 0f; 
-                    playerMoving = false;
-                }
+        } 
+        else if (moveX == 0 && moveY == 0) 
+        { 
+            horizontal = 0f; 
+            vertical = 0f; 
+            playerMoving = false;
+        }
     }
     private void WASDMovement() {
         if (Input.GetKey(KeyCode.W)) {
