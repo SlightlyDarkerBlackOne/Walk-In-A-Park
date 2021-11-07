@@ -25,7 +25,7 @@ TagManager:
   - 
   - 
   - 
-  - 
+  - Item
   - Layer 1
   - 
   - 
@@ -44,4 +44,7 @@ TagManager:
     locked: 0
   - name: Layer 1
     uniqueID: 2425651459
+    locked: 0
+  - name: Layer 2
+    uniqueID: 3017130013
     locked: 0

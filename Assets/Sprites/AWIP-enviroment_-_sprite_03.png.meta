@@ -1,0 +1,648 @@
+fileFormatVersion: 2
+guid: 2bf96dc57b4c4a640874d9963ea0d781
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -651677563834668461
+    second: AWIP-enviroment_-_sprite_03_0
+  - first:
+      213: -7972743727261611136
+    second: AWIP-enviroment_-_sprite_03_1
+  - first:
+      213: -1939458151323012813
+    second: AWIP-enviroment_-_sprite_03_2
+  - first:
+      213: 8090291058086562135
+    second: AWIP-enviroment_-_sprite_03_3
+  - first:
+      213: -4994649668738070936
+    second: AWIP-enviroment_-_sprite_03_4
+  - first:
+      213: -1088449899933687468
+    second: AWIP-enviroment_-_sprite_03_5
+  - first:
+      213: -8339146948212716792
+    second: AWIP-enviroment_-_sprite_03_6
+  - first:
+      213: -696629907959727556
+    second: AWIP-enviroment_-_sprite_03_7
+  - first:
+      213: -2228025416955531051
+    second: AWIP-enviroment_-_sprite_03_8
+  - first:
+      213: -9097024114509264127
+    second: AWIP-enviroment_-_sprite_03_9
+  - first:
+      213: 2504355867759659530
+    second: AWIP-enviroment_-_sprite_03_10
+  - first:
+      213: 9213087288912260180
+    second: AWIP-enviroment_-_sprite_03_11
+  - first:
+      213: -2239647136746784814
+    second: AWIP-enviroment_-_sprite_03_12
+  - first:
+      213: -7864231695716018194
+    second: AWIP-enviroment_-_sprite_03_13
+  - first:
+      213: -8063604355309859498
+    second: AWIP-enviroment_-_sprite_03_14
+  - first:
+      213: -4591905594724421262
+    second: AWIP-enviroment_-_sprite_03_15
+  - first:
+      213: 2510826050666697998
+    second: AWIP-enviroment_-_sprite_03_16
+  - first:
+      213: -2218436041100910055
+    second: AWIP-enviroment_-_sprite_03_17
+  - first:
+      213: -1563245336781929991
+    second: AWIP-enviroment_-_sprite_03_18
+  - first:
+      213: -1535422773054242736
+    second: AWIP-enviroment_-_sprite_03_19
+  - first:
+      213: 5674407827555959948
+    second: AWIP-enviroment_-_sprite_03_20
+  - first:
+      213: 1600910538696115320
+    second: AWIP-enviroment_-_sprite_03_21
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: AWIP-enviroment_-_sprite_03_0
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 187
+        width: 66
+        height: 62
+      alignment: 9
+      pivot: {x: 0.5, y: 0.17}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35aea8b55b6c4f6f0800000000000000
+      internalID: -651677563834668461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AWIP-enviroment_-_sprite_03_1
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 189
+        width: 58
+        height: 65
+      alignment: 9
+      pivot: {x: 0.5, y: 0.17}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08b095b42df1b5190800000000000000
+      internalID: -7972743727261611136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AWIP-enviroment_-_sprite_03_2
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 190
+        width: 64
+        height: 63
+      alignment: 9
+      pivot: {x: 0.5, y: 0.17}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 331f7a94619a515e0800000000000000
+      internalID: -1939458151323012813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AWIP-enviroment_-_sprite_03_3
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 196
+        width: 34
+        height: 19
+      alignment: 9
+      pivot: {x: 0.5, y: 0.17}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 759c4c66adc764070800000000000000
+      internalID: 8090291058086562135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AWIP-enviroment_-_sprite_03_4
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 194
+        width: 17
+        height: 20
+      alignment: 9
+      pivot: {x: 0.5, y: 0.17}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 866485dc6907faab0800000000000000
+      internalID: -4994649668738070936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AWIP-enviroment_-_sprite_03_5
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 153
+        width: 36
+        height: 25
+      alignment: 9
+      pivot: {x: 0.5, y: 0.17}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 451a4a6359c05e0f0800000000000000
+      internalID: -1088449899933687468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AWIP-enviroment_-_sprite_03_6
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 151
+        width: 26
+        height: 24
+      alignment: 9
+      pivot: {x: 0.5, y: 0.17}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80b8ff58806654c80800000000000000
+      internalID: -8339146948212716792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AWIP-enviroment_-_sprite_03_7
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 150
+        width: 44
+        height: 33
+      alignment: 9
+      pivot: {x: 0.5, y: 0.17}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3ab5242ac21556f0800000000000000
+      internalID: -696629907959727556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AWIP-enviroment_-_sprite_03_8
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 152
+        width: 36
+        height: 29
+      alignment: 9
+      pivot: {x: 0.5, y: 0.17}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d0f2d710b67411e0800000000000000
+      internalID: -2228025416955531051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AWIP-enviroment_-_sprite_03_9
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 152
+        width: 41
+        height: 28
+      alignment: 9
+      pivot: {x: 0.5, y: 0.17}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10b438514c0e0c180800000000000000
+      internalID: -9097024114509264127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AWIP-enviroment_-_sprite_03_10
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 78
+        height: 177
+      alignment: 9
+      pivot: {x: 0.5, y: 0.17}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0acaf0a46241c220800000000000000
+      internalID: 2504355867759659530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AWIP-enviroment_-_sprite_03_11
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 42
+        width: 31
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.17}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45c284483167bdf70800000000000000
+      internalID: 9213087288912260180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AWIP-enviroment_-_sprite_03_12
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 28
+        width: 37
+        height: 112
+      alignment: 9
+      pivot: {x: 0.5, y: 0.17}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d7bcf79bcc2be0e0800000000000000
+      internalID: -2239647136746784814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AWIP-enviroment_-_sprite_03_13
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 85
+        width: 55
+        height: 57
+      alignment: 9
+      pivot: {x: 0.5, y: 0.17}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee79a7170f2acd290800000000000000
+      internalID: -7864231695716018194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AWIP-enviroment_-_sprite_03_14
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 81
+        width: 61
+        height: 62
+      alignment: 9
+      pivot: {x: 0.5, y: 0.17}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65d8678cf82581090800000000000000
+      internalID: -8063604355309859498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AWIP-enviroment_-_sprite_03_15
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 112
+        width: 33
+        height: 28
+      alignment: 9
+      pivot: {x: 0.5, y: 0.17}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2717258c0364640c0800000000000000
+      internalID: -4591905594724421262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AWIP-enviroment_-_sprite_03_16
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 5
+        width: 31
+        height: 76
+      alignment: 9
+      pivot: {x: 0.5, y: 0.17}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0519ca7dfe38d220800000000000000
+      internalID: 2510826050666697998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AWIP-enviroment_-_sprite_03_17
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 74
+        width: 34
+        height: 27
+      alignment: 9
+      pivot: {x: 0.5, y: 0.17}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 912a145ac288631e0800000000000000
+      internalID: -2218436041100910055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AWIP-enviroment_-_sprite_03_18
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 7
+        width: 30
+        height: 66
+      alignment: 9
+      pivot: {x: 0.5, y: 0.17}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f1c35c06ac3e4ae0800000000000000
+      internalID: -1563245336781929991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AWIP-enviroment_-_sprite_03_19
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 5
+        width: 36
+        height: 65
+      alignment: 9
+      pivot: {x: 0.5, y: 0.17}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0508e087f1511bae0800000000000000
+      internalID: -1535422773054242736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AWIP-enviroment_-_sprite_03_20
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 36
+        width: 45
+        height: 34
+      alignment: 9
+      pivot: {x: 0.5, y: 0.17}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c844b28dadb8fbe40800000000000000
+      internalID: 5674407827555959948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AWIP-enviroment_-_sprite_03_21
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 5
+        width: 39
+        height: 28
+      alignment: 9
+      pivot: {x: 0.5, y: 0.17}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 874492827a3973610800000000000000
+      internalID: 1600910538696115320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -45,6 +45,9 @@ public class PlayerController2D : MonoBehaviour
     private float horizontal = 0f;
     private float vertical = 0f;
 
+    float moveX;
+    float moveY;
+
     #region Singleton
     public static PlayerController2D Instance { get; private set; }
 
@@ -105,34 +108,27 @@ public class PlayerController2D : MonoBehaviour
                     state = State.Walking;
                 break;
             case State.Walking:
-                float moveX = 0f;
-                float moveY = 0f;
+                moveX = 0f;
+                moveY = 0f;
 
-                if (leash.activeSelf) 
-                    state = State.Follow;
-                
-                if (Input.GetKey(KeyCode.W)) 
-                {
-                    moveY = +1f;
-                    vertical = 1f;
-                }
-                if (Input.GetKey(KeyCode.S)) 
-                {
-                    moveY = -1f;
-                    vertical = -1f;
-                }
-                if (Input.GetKey(KeyCode.A))
-                {
-                    moveX = -1f;
-                    horizontal = -1f;
-                }
-                if (Input.GetKey(KeyCode.D)) 
-                {
-                    moveX = +1f;
-                    horizontal = 1f;
-                }
+                WASDMovement();
+                TouchMovement();
 
-                if ((Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D))
+                moveDir = new Vector3(moveX, moveY).normalized;
+                break;
+
+            case State.Follow:
+
+                if (!leash.activeSelf) 
+                {
+                    state = State.Idle;
+                }
+                Follow();
+                break;
+        }
+    }
+    private void TouchMovement() {
+        if ((Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D))
                 && (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.S)))
                 {
                     vertical = 0f;
@@ -193,21 +189,39 @@ public class PlayerController2D : MonoBehaviour
                     vertical = 0f; 
                     playerMoving = false;
                 }
+    }
+    private void WASDMovement() {
+        if (Input.GetKey(KeyCode.W)) {
+            moveY = +1f;
+            vertical = 1f;
+        }
+        if (Input.GetKey(KeyCode.S)) {
+            moveY = -1f;
+            vertical = -1f;
+        }
+        if (Input.GetKey(KeyCode.A)) {
+            moveX = -1f;
+            horizontal = -1f;
+        }
+        if (Input.GetKey(KeyCode.D)) {
+            moveX = +1f;
+            horizontal = 1f;
+        }
 
-                moveDir = new Vector3(moveX, moveY).normalized;
-                break;
+        if ((Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D))
+        && (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.S))) {
+            vertical = 0f;
+        }
 
-            case State.Follow:
-
-                if (!leash.activeSelf) 
-                {
-                    state = State.Idle;
-                }
-                Follow();
-                break;
+        if (moveX != 0 || moveY != 0) {
+            playerMoving = true;
+            lastMoveDir = moveDir;
+        } else {
+            playerMoving = false;
+            horizontal = 0f;
+            vertical = 0f;
         }
     }
-
     private void Follow() {
 
         if (playerMoving) {
