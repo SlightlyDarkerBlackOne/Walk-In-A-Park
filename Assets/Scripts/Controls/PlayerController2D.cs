@@ -37,12 +37,13 @@ public class PlayerController2D : MonoBehaviour
     private const float detectRadius = 0.3f;
     public LayerMask detectLayer;
     public GameObject detectedItem;
+    public List<GameObject> cleanUpList = new List<GameObject>();
     public bool carryItem = false;
 
     public float screenWidth;
     public float screenHeight;
-    private float horizontal;
-    private float vertical;
+    private float horizontal = 0f;
+    private float vertical = 0f;
 
     float moveX;
     float moveY;
@@ -65,6 +66,7 @@ public class PlayerController2D : MonoBehaviour
         timeBetweenMoveCounter = Random.Range(timeBetweenMove * 0.75f, timeBetweenMove * 1.25f);
         timeToMoveCounter = Random.Range(timeToMove * 0.75f, timeToMove * 1.25f);
     
+        detectLayer = LayerMask.GetMask("Item");
         detectPoint = gameObject.transform;
         screenWidth = Screen.width;
         screenHeight = Screen.height;
@@ -126,40 +128,67 @@ public class PlayerController2D : MonoBehaviour
         }
     }
     private void TouchMovement() {
-        Vector2 target;
-        if (Input.touchCount > 0) {
+        if ((Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D))
+                && (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.S)))
+                {
+                    vertical = 0f;
+                }
 
-            Touch touch = Input.GetTouch(0);
+                if (moveX != 0 || moveY != 0) 
+                {
+                    playerMoving = true;
+                    lastMoveDir = moveDir;
+                } 
+                else 
+                {
+                    playerMoving = false;
+                    horizontal = 0f;
+                    vertical = 0f;
+                }
 
-            if (touch.position.y > screenHeight / 2)
-                vertical = 1.0f;
+                Vector2 target;
+                if (Input.touchCount > 0)
+                {
 
-            if (touch.position.y < screenHeight / 2)
-                vertical = -1.0f;
+                    Touch touch = Input.GetTouch(0);
 
-            if (touch.position.x > screenWidth / 2)
-                horizontal = 1.0f;
+                    if (touch.position.y > screenHeight / 2)
+                        vertical = 1.0f;
+            
+                    if (touch.position.y < screenHeight / 2)
+                        vertical = -1.0f;
 
-            if (touch.position.x < screenWidth / 2)
-                horizontal = -1.0f;
+                    if (touch.position.x > screenWidth / 2)
+                        horizontal = 1.0f;
+            
+                    if (touch.position.x < screenWidth / 2)
+                        horizontal = -1.0f;
 
-            if (touch.position.y < 2 * screenHeight / 3 &&
-                touch.position.y > screenHeight / 3) {
-                vertical = 0f;
-            }
+                    if (touch.position.y < 2*screenHeight/3 && 
+                        touch.position.y > screenHeight/3)
+                    {
+                        vertical = 0f;
+                    }
+                    if (touch.position.x < screenWidth/4 || 
+                        touch.position.x > 3*screenWidth/4)
+                    {
+                        vertical = 0f;
+                    }
+                    
+                    target = Camera.main.ScreenToWorldPoint(Input.GetTouch(0).position);
+                    var delta = 2f*moveSpeed*Time.deltaTime;
+                    Vector2 position = Vector3.MoveTowards(transform.position, target, delta);    
+                    rb.MovePosition(position);
+                    lastMoveDir = new Vector2 (horizontal, vertical);
+                    playerMoving = true;
 
-            target = Camera.main.ScreenToWorldPoint(Input.GetTouch(0).position);
-            var delta = 2f * moveSpeed * Time.deltaTime;
-            Vector2 position = Vector3.MoveTowards(transform.position, target, delta);
-            rb.MovePosition(position);
-            lastMoveDir = new Vector2(horizontal, vertical);
-            playerMoving = true;
-
-        } else if (moveX == 0 && moveY == 0) {
-            horizontal = 0f;
-            vertical = 0f;
-            playerMoving = false;
-        }
+                } 
+                else if (moveX == 0 && moveY == 0) 
+                { 
+                    horizontal = 0f; 
+                    vertical = 0f; 
+                    playerMoving = false;
+                }
     }
     private void WASDMovement() {
         if (Input.GetKey(KeyCode.W)) {
@@ -251,28 +280,67 @@ public class PlayerController2D : MonoBehaviour
     }
 
     private void Interact()
-    {
+    {       
+        //carrying items in mouth
         if (DetectItem())
         {
             //PC
             if (Input.GetKeyDown(KeyCode.G)) carryItem = !carryItem;
 
             //mobile
-            if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began)
-            {
-                
+            if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Ended)
+            {                
                 Vector2 position = Camera.main.ScreenToWorldPoint(Input.GetTouch(0).position);
                 Collider2D obj = Physics2D.OverlapCircle(position, detectRadius, detectLayer); 
                 if (obj)
                 {
                     carryItem = !carryItem;
+                    //if carryItem becomes false, we are about to throw it
+                    if (!carryItem)
+                    {
+                        //only when throwing - add rigidbody2d, adjust params, throw
+                        //if we had rigidbody2d while carrying, if kinematic would block player from moving in its direction
+                        //if dynamic wouldn't work with following via transform at all
+                        Vector2 force = new Vector2(horizontal*5f, vertical*5f);
+                        Rigidbody2D rbItem = detectedItem.gameObject.AddComponent(typeof(Rigidbody2D)) as Rigidbody2D;
+                        rbItem.gravityScale = 0f;
+                        rbItem.drag = 1.5f;
+                        rbItem.constraints = RigidbodyConstraints2D.FreezeRotation;
+                        rbItem.velocity = new Vector2(0.1f,0.1f);
+                        rbItem.AddForce(force);
+                        //add the item to the list of objects to remove rigidbody2d from later
+                        cleanUpList.Add(detectedItem);
+                        
+                    }
+                
                 }
                 
             }
+            
         }
 
         if (carryItem) detectedItem.transform.parent = transform;
         else if (DetectItem()) detectedItem.transform.parent = null;
+
+        //remove added rigidbodies2d so that those items can be carried&thrown again
+        List<GameObject> toDelete = new List<GameObject>();
+        foreach (GameObject item in cleanUpList)
+        {
+            //qualifies only if it had rb added and is not moving anymore (not in process of being thrown)
+            if (item.GetComponent<Rigidbody2D>() != null && item.GetComponent<Rigidbody2D>().velocity.x < 0.1f 
+                && item.GetComponent<Rigidbody2D>().velocity.y < 0.1f)
+            {
+                Destroy(item.GetComponent<Rigidbody2D>());
+                toDelete.Add(item);
+                Debug.Log("Removed rb");
+            }
+        }
+        foreach (GameObject item in toDelete)
+        {
+            cleanUpList.Remove(item);
+            Debug.Log("Deleted");
+        }
+
     }
 
     private bool DetectItem()
@@ -291,5 +359,4 @@ public class PlayerController2D : MonoBehaviour
             return true;
         }
     }   
-
 }
