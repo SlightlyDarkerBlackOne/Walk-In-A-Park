@@ -279,7 +279,22 @@ public class PlayerController2D : MonoBehaviour
         if (DetectItem())
         {
             //PC
-            if (Input.GetKeyDown(KeyCode.E)) carryItem = !carryItem;
+            if (Input.GetKeyDown(KeyCode.E)) 
+            {
+                carryItem = !carryItem;
+                if (!carryItem)
+                {
+                    Vector2 force = new Vector2(lastMoveDir.x*5f, lastMoveDir.y*5f);
+                    Rigidbody2D rbItem = detectedItem.gameObject.AddComponent(typeof(Rigidbody2D)) as Rigidbody2D;
+                    rbItem.gravityScale = 0f;
+                    rbItem.drag = 2f;
+                    rbItem.constraints = RigidbodyConstraints2D.FreezeRotation;
+                    rbItem.AddForce(force, ForceMode2D.Impulse);
+                    //add the item to the list of objects to remove rigidbody2d from later
+                    cleanUpList.Add(detectedItem);                       
+                }
+
+            }
 
             //mobile
             if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Ended)
@@ -295,13 +310,12 @@ public class PlayerController2D : MonoBehaviour
                         //only when throwing - add rigidbody2d, adjust params, throw
                         //if we had rigidbody2d while carrying, if kinematic would block player from moving in its direction
                         //if dynamic wouldn't work with following via transform at all
-                        Vector2 force = new Vector2(horizontal*5f, vertical*5f);
+                        Vector2 force = new Vector2(lastMoveDir.x*5f, lastMoveDir.y*5f);
                         Rigidbody2D rbItem = detectedItem.gameObject.AddComponent(typeof(Rigidbody2D)) as Rigidbody2D;
                         rbItem.gravityScale = 0f;
                         rbItem.drag = 1.5f;
                         rbItem.constraints = RigidbodyConstraints2D.FreezeRotation;
-                        rbItem.velocity = new Vector2(0.1f,0.1f);
-                        rbItem.AddForce(force);
+                        rbItem.AddForce(force, ForceMode2D.Impulse);
                         //add the item to the list of objects to remove rigidbody2d from later
                         cleanUpList.Add(detectedItem);                       
                     }
@@ -319,8 +333,7 @@ public class PlayerController2D : MonoBehaviour
         foreach (GameObject item in cleanUpList)
         {
             //qualifies only if it had rb added and is not moving anymore (not in process of being thrown)
-            if (item.GetComponent<Rigidbody2D>() != null && item.GetComponent<Rigidbody2D>().velocity.x < 0.1f 
-                && item.GetComponent<Rigidbody2D>().velocity.y < 0.1f)
+            if (item.GetComponent<Rigidbody2D>() != null && item.GetComponent<Rigidbody2D>().velocity == Vector2.zero)
             {
                 Destroy(item.GetComponent<Rigidbody2D>());
                 toDelete.Add(item);
