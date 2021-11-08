@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 3654264503341384413}
   - component: {fileID: 3061728817631677364}
   - component: {fileID: 5459113845603120593}
-  m_Layer: 0
-  m_Name: shrub short 01
+  m_Layer: 19
+  m_Name: Green Bush
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

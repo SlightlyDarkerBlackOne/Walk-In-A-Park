@@ -279,7 +279,7 @@ public class PlayerController2D : MonoBehaviour
         if (DetectItem())
         {
             //PC
-            if (Input.GetKeyDown(KeyCode.G)) carryItem = !carryItem;
+            if (Input.GetKeyDown(KeyCode.E)) carryItem = !carryItem;
 
             //mobile
             if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Ended)
@@ -303,18 +303,16 @@ public class PlayerController2D : MonoBehaviour
                         rbItem.velocity = new Vector2(0.1f,0.1f);
                         rbItem.AddForce(force);
                         //add the item to the list of objects to remove rigidbody2d from later
-                        cleanUpList.Add(detectedItem);
-                        
+                        cleanUpList.Add(detectedItem);                       
                     }
-                
-                }
-                
-            }
-            
+                }                
+            }            
         }
 
-        if (carryItem) detectedItem.transform.parent = transform;
-        else if (DetectItem()) detectedItem.transform.parent = null;
+        if (carryItem) {
+            detectedItem.transform.parent = transform;
+            UIManager.Instance.HidePickupIndicatorText();
+        } else if (DetectItem()) detectedItem.transform.parent = null;
 
         //remove added rigidbodies2d so that those items can be carried&thrown again
         List<GameObject> toDelete = new List<GameObject>();
@@ -344,11 +342,13 @@ public class PlayerController2D : MonoBehaviour
 
         if (item == null)
         {
+            UIManager.Instance.HidePickupIndicatorText();
             detectedItem = null;
             return false;
         }
         else
         {
+            UIManager.Instance.ShowPickupIndicatorText(item.name);
             detectedItem = item.gameObject;
             return true;
         }
