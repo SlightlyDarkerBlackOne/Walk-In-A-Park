@@ -7,6 +7,7 @@ public class SFXManager : MonoBehaviour
     public AudioSource playerDead;
     public AudioSource levelUP;
     public AudioSource itemPickedUp;
+    public AudioSource itemThrow;
     public AudioSource breakCrate;
 
     public AudioSource soundTrack;
@@ -37,7 +38,7 @@ public class SFXManager : MonoBehaviour
     }
 
     public void PlaySoundTrack(AudioSource source) {
-        soundTrack.Stop();
+        //soundTrack.Stop();
         PlayOnLoop(source);
     }
 }

@@ -2811,9 +2811,12 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 524288
   detectedItem: {fileID: 0}
+  cleanUpList: []
   carryItem: 0
   screenWidth: 0
   screenHeight: 0
+  throwForce: 70
+  throwDrag: 16
 --- !u!114 &1434403192
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2828,6 +2831,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerHuman: {fileID: 0}
   boneToJoint: {fileID: 1804272108}
+  detectLayer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!1 &2658878372882933590
 GameObject:
   m_ObjectHideFlags: 0
@@ -2855,7 +2861,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2658878372882933590}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.171, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2658878372350388072}

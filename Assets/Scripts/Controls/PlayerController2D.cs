@@ -48,6 +48,9 @@ public class PlayerController2D : MonoBehaviour
     float moveX;
     float moveY;
 
+    public float throwForce = 70f;
+    public float throwDrag = 16f;
+
     #region Singleton
     public static PlayerController2D Instance { get; private set; }
 
@@ -188,6 +191,7 @@ public class PlayerController2D : MonoBehaviour
         if (Input.GetKey(KeyCode.W)) {
             moveY = +1f;
             vertical = 1f;
+            Debug.Log("W");
         }
         if (Input.GetKey(KeyCode.S)) {
             moveY = -1f;
@@ -279,19 +283,12 @@ public class PlayerController2D : MonoBehaviour
         if (DetectItem())
         {
             //PC
-            if (Input.GetKeyDown(KeyCode.E)) 
+            if (Input.GetKeyDown(KeyCode.E) && detectedItem.GetComponent<Rigidbody2D>() == null) 
             {
                 carryItem = !carryItem;
                 if (!carryItem)
                 {
-                    Vector2 force = new Vector2(lastMoveDir.x*5f, lastMoveDir.y*5f);
-                    Rigidbody2D rbItem = detectedItem.gameObject.AddComponent(typeof(Rigidbody2D)) as Rigidbody2D;
-                    rbItem.gravityScale = 0f;
-                    rbItem.drag = 2f;
-                    rbItem.constraints = RigidbodyConstraints2D.FreezeRotation;
-                    rbItem.AddForce(force, ForceMode2D.Impulse);
-                    //add the item to the list of objects to remove rigidbody2d from later
-                    cleanUpList.Add(detectedItem);                       
+                    ThrowItem();                      
                 }
 
             }
@@ -307,17 +304,7 @@ public class PlayerController2D : MonoBehaviour
                     //if carryItem becomes false, we are about to throw it
                     if (!carryItem)
                     {
-                        //only when throwing - add rigidbody2d, adjust params, throw
-                        //if we had rigidbody2d while carrying, if kinematic would block player from moving in its direction
-                        //if dynamic wouldn't work with following via transform at all
-                        Vector2 force = new Vector2(lastMoveDir.x*5f, lastMoveDir.y*5f);
-                        Rigidbody2D rbItem = detectedItem.gameObject.AddComponent(typeof(Rigidbody2D)) as Rigidbody2D;
-                        rbItem.gravityScale = 0f;
-                        rbItem.drag = 1.5f;
-                        rbItem.constraints = RigidbodyConstraints2D.FreezeRotation;
-                        rbItem.AddForce(force, ForceMode2D.Impulse);
-                        //add the item to the list of objects to remove rigidbody2d from later
-                        cleanUpList.Add(detectedItem);                       
+                        ThrowItem();                      
                     }
                 }                
             }            
@@ -365,5 +352,20 @@ public class PlayerController2D : MonoBehaviour
             detectedItem = item.gameObject;
             return true;
         }
-    }   
+    }
+
+    //only when throwing - add rigidbody2d, adjust params, throw
+    //if we had rigidbody2d while carrying, if kinematic would block player from moving in its direction
+    //if dynamic wouldn't work with following via transform at all
+    private void ThrowItem() {
+        Vector2 force = new Vector2(lastMoveDir.x * throwForce, lastMoveDir.y * throwForce);
+        Rigidbody2D rbItem = detectedItem.gameObject.AddComponent(typeof(Rigidbody2D)) as Rigidbody2D;
+        rbItem.gravityScale = 0f;
+        rbItem.drag = throwDrag;
+        rbItem.constraints = RigidbodyConstraints2D.FreezeRotation;
+        rbItem.AddForce(force, ForceMode2D.Impulse);
+        SFXManager.Instance.PlaySound(SFXManager.Instance.itemThrow);
+        //add the item to the list of objects to remove rigidbody2d from later
+        cleanUpList.Add(detectedItem);
+    }
 }
