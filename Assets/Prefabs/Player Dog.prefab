@@ -2904,6 +2904,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerHuman: {fileID: 0}
   boneToJoint: {fileID: 1804272108}
+  minLeashDistance: 5
   detectLayer:
     serializedVersion: 2
     m_Bits: 0

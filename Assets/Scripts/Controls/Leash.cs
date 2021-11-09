@@ -8,8 +8,9 @@ public class Leash : MonoBehaviour
     public GameObject playerHuman;
     public GameObject boneToJoint;
     private HingeJoint2D joint;
+    [SerializeField]
     private float minLeashDistance;
-    public static bool PuttingOnLeash;
+    public static bool puttingOnLeash;
     private Vector2 previousPosition;
     public LayerMask detectLayer;
 
@@ -21,7 +22,7 @@ public class Leash : MonoBehaviour
 
         minLeashDistance = Vector2.Distance(playerHuman.transform.position, PlayerController2D.Instance.transform.position);
 
-        PuttingOnLeash = false;
+        puttingOnLeash = false;
 
         detectLayer = LayerMask.GetMask("Human");
     }
@@ -33,7 +34,8 @@ public class Leash : MonoBehaviour
         {
             if (!leash.activeSelf && DogInRange())
             {
-                PuttingOnLeash = true;
+                puttingOnLeash = true;
+                SFXManager.Instance.PlaySound(SFXManager.Instance.leashAttach);
             }
             else if (leash.activeSelf)
             {
@@ -41,7 +43,7 @@ public class Leash : MonoBehaviour
             }
         }
         
-        if (PuttingOnLeash)
+        if (puttingOnLeash)
         {
             playerHuman.transform.position = Vector2.Lerp(playerHuman.transform.position,
                 boneToJoint.transform.position, 5f*Time.deltaTime);
@@ -50,7 +52,7 @@ public class Leash : MonoBehaviour
             {
                 Debug.Log("close enough");
                 SetLeashToPlayerHuman();
-                PuttingOnLeash = false;
+                puttingOnLeash = false;
             }
         }
         
@@ -73,6 +75,7 @@ public class Leash : MonoBehaviour
     {
         leash.SetActive(false);
         joint.enabled = false;
+        SFXManager.Instance.PlaySound(SFXManager.Instance.leashDetach);
     }
 
     private bool ClickedOnVlado()

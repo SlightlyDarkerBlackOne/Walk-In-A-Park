@@ -13,7 +13,10 @@ public class SFXManager : MonoBehaviour
     public AudioSource soundTrack;
 
     public AudioSource dash;
-    public AudioSource footsteps;
+
+    public AudioSource leashAttach;
+    public AudioSource leashDetach;
+    public AudioSource[] footsteps;
 
     #region Singleton
     public static SFXManager Instance { get; private set; }
@@ -40,5 +43,10 @@ public class SFXManager : MonoBehaviour
     public void PlaySoundTrack(AudioSource source) {
         //soundTrack.Stop();
         PlayOnLoop(source);
+    }
+
+    private void PlayRandomFootstep() {
+        int random = Random.Range(0, footsteps.Length);
+        PlaySound(footsteps[random]);
     }
 }
