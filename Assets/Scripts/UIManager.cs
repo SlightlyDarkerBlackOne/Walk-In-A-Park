@@ -9,6 +9,7 @@ public class UIManager : MonoBehaviour
     private Sprite humanImage;
     public Sprite dogImage;
     public TextMeshProUGUI pickupIndicatiorText;
+    public TextMeshProUGUI clickClackIndicatiorText;
 
     #region Singleton
     public static UIManager Instance { get; private set; }
@@ -51,5 +52,18 @@ public class UIManager : MonoBehaviour
     public void HidePickupIndicatorText() {
         pickupIndicatiorText.gameObject.SetActive(false);
         pickupIndicatiorText.GetComponent<Animator>().SetBool("itemInRange", false);
+    }
+
+    public void ShowClickClackText() {
+        clickClackIndicatiorText.gameObject.SetActive(true);
+        clickClackIndicatiorText.text = "Press E to Click-Clack";
+        clickClackIndicatiorText.GetComponent<Animator>().SetBool("itemInRange", true);
+    }
+    public void ShowStopClickClackText() {
+        clickClackIndicatiorText.text = "Press E to Stop Click-Clacking";
+    }
+    public void HideClickClackIndicatorText() {
+        clickClackIndicatiorText.gameObject.SetActive(false);
+        clickClackIndicatiorText.GetComponent<Animator>().SetBool("itemInRange", false);
     }
 }

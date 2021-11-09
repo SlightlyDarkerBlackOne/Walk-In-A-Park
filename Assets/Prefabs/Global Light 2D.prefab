@@ -98,4 +98,7 @@ MonoBehaviour:
   dayIntensity: 0.9
   nightIntensity: 0.3
   midnightIntensity: 0.18
-  mapLights: []
+  mapLights:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}

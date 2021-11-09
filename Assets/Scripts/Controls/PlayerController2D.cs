@@ -51,6 +51,8 @@ public class PlayerController2D : MonoBehaviour
     public float throwForce = 70f;
     public float throwDrag = 16f;
 
+    private Vector2 playerTransformBeforeMoving;
+
     #region Singleton
     public static PlayerController2D Instance { get; private set; }
 
@@ -187,11 +189,23 @@ public class PlayerController2D : MonoBehaviour
             playerMoving = false;
         }
     }
+
+    public void SetPlayerToLocationAndFreeze(Transform transformToSet) {
+        playerTransformBeforeMoving = transform.position;
+        transform.position = transformToSet.position;
+        FrezePlayer();
+    }
+    public void SetPlayerToLocation(Transform transformToSet) {
+        transform.position = transformToSet.position;
+    }
+    public void RemovePlayerFromLocationAndUnfreeze() {
+        transform.position = playerTransformBeforeMoving;
+        UnFreezePlayer();
+    }
     private void WASDMovement() {
         if (Input.GetKey(KeyCode.W)) {
             moveY = +1f;
             vertical = 1f;
-            Debug.Log("W");
         }
         if (Input.GetKey(KeyCode.S)) {
             moveY = -1f;
