@@ -12,10 +12,14 @@ public class Pissing : MonoBehaviour
     [SerializeField]
     private float pissCD;
 
+    public static bool ClickedPeeIcon = false;
+    private bool pissing = false;
+
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.F)) {
+        if (!pissing && (Input.GetKeyDown(KeyCode.F) || ClickedPeeIcon)) {
             StartCoroutine(PissingCO());
+            if (ClickedPeeIcon) ClickedPeeIcon = false;
         }
         if (piss) {
             piss.transform.position = transform.position;
@@ -23,6 +27,7 @@ public class Pissing : MonoBehaviour
     }
 
     private IEnumerator PissingCO() {
+        pissing = true;
         piss = Instantiate(pissParticle, Vector2.zero, Quaternion.Euler(0, 0, -118f)) as GameObject;
         piss.transform.position = transform.position;
         PlayerController2D.Instance.FrezePlayer();
@@ -31,5 +36,6 @@ public class Pissing : MonoBehaviour
         pissStainGO.AddComponent<SortByYAxis>();
         PlayerController2D.Instance.UnFreezePlayer();
         Destroy(piss);
+        pissing = false;
     }
 }
