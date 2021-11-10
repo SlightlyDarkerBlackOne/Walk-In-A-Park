@@ -10,10 +10,11 @@ public class Pissing : MonoBehaviour
     private GameObject pissStain;
     GameObject piss;
     [SerializeField]
-    private float pissCD;
+    private float pissDuration;
 
     public static bool ClickedPeeIcon = false;
     private bool pissing = false;
+    public TaskManager taskManagerScript;
 
     void Update()
     {
@@ -31,9 +32,12 @@ public class Pissing : MonoBehaviour
         piss = Instantiate(pissParticle, Vector2.zero, Quaternion.Euler(0, 0, -118f)) as GameObject;
         piss.transform.position = transform.position;
         PlayerController2D.Instance.FrezePlayer();
-        yield return new WaitForSeconds(pissCD);
+        yield return new WaitForSeconds(pissDuration);
         GameObject pissStainGO = Instantiate(pissStain, new Vector2(transform.position.x - 1.4f, transform.position.y - 0.4f), Quaternion.identity) as GameObject;
         pissStainGO.AddComponent<SortByYAxis>();
+        //update task manager
+        taskManagerScript.peeList.Add(pissStainGO);
+        taskManagerScript.Task2();
         PlayerController2D.Instance.UnFreezePlayer();
         Destroy(piss);
         pissing = false;
