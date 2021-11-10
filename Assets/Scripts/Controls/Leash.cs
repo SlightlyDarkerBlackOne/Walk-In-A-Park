@@ -13,6 +13,8 @@ public class Leash : MonoBehaviour
     public static bool puttingOnLeash;
     private Vector2 previousPosition;
     public LayerMask detectLayer;
+    public AgentEnemy agentEnemyScript;
+    public MoveWaypoints moveWaypoints;
 
     // Start is called before the first frame update
     void Start()
@@ -20,11 +22,13 @@ public class Leash : MonoBehaviour
         leash = transform.Find("Leash").gameObject;
         joint = playerHuman.GetComponent<HingeJoint2D>();
 
-        minLeashDistance = Vector2.Distance(playerHuman.transform.position, PlayerController2D.Instance.transform.position);
+        minLeashDistance = 10f;
 
         puttingOnLeash = false;
 
         detectLayer = LayerMask.GetMask("Human");
+        agentEnemyScript = playerHuman.GetComponent<AgentEnemy>();
+        moveWaypoints = playerHuman.GetComponent<MoveWaypoints>();
     }
 
     // Update is called once per frame
@@ -43,6 +47,7 @@ public class Leash : MonoBehaviour
             }
         }
         
+        //necessary to separate this logic because of Lerp (needs to be in Update, not in if block)
         if (puttingOnLeash)
         {
             playerHuman.transform.position = Vector2.Lerp(playerHuman.transform.position,
@@ -67,6 +72,12 @@ public class Leash : MonoBehaviour
 
     private void SetLeashToPlayerHuman()
     {
+        //exclude the scripts and navmesh (navmesh interferes with hingejoint-leash connection)
+        agentEnemyScript.agent.enabled = false;
+        agentEnemyScript.enabled = false;
+        moveWaypoints.enabled = false;
+        //add some linear drag otherwise Vlado will swing around Bosko like yo-yo
+        playerHuman.GetComponent<Rigidbody2D>().drag = 2f;
         leash.SetActive(true);  
         joint.enabled = true;
     }
@@ -76,6 +87,10 @@ public class Leash : MonoBehaviour
         leash.SetActive(false);
         joint.enabled = false;
         SFXManager.Instance.PlaySound(SFXManager.Instance.leashDetach);
+        //include the scripts and navmesh again
+        agentEnemyScript.enabled = true;
+        agentEnemyScript.agent.enabled = true;
+        moveWaypoints.enabled = true;        
     }
 
     private bool ClickedOnVlado()
