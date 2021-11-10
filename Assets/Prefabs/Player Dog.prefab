@@ -2762,6 +2762,7 @@ GameObject:
   - component: {fileID: 2658878372350388071}
   - component: {fileID: 2658878372350388068}
   - component: {fileID: 1434403192}
+  - component: {fileID: 446922382}
   m_Layer: 0
   m_Name: Player Dog
   m_TagString: Player
@@ -2908,6 +2909,23 @@ MonoBehaviour:
   detectLayer:
     serializedVersion: 2
     m_Bits: 0
+--- !u!114 &446922382
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2658878372350388069}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f786430cdd118540939a9f02b4e1ef0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pissParticle: {fileID: 9019865476342300821, guid: 4966106c14a66e948a233533ed28d0b5,
+    type: 3}
+  pissStain: {fileID: 7585353761594613331, guid: 1103971687761b24da5683881ccf759e,
+    type: 3}
+  pissCD: 1.28
 --- !u!1 &2658878372882933590
 GameObject:
   m_ObjectHideFlags: 0
