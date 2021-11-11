@@ -10,8 +10,8 @@ public class MoveWaypoints : MonoBehaviour {
     [SerializeField] private List<Vector3> waypointList;
     private int waypointIndex;
     private float count;
-
-    private float arrivedAtPositionDistance = 2.5f;
+    //must be greater than whatever stopping distance set in editor!
+    private float arrivedAtPositionDistance = 3.5f;
 
     private void Start() {
         FillWaypointList();

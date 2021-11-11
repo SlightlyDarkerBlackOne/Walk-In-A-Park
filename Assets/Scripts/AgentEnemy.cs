@@ -20,7 +20,6 @@ public class AgentEnemy : MonoBehaviour, IMovePosition
         agent = GetComponent<NavMeshAgent>();
         agent.updateRotation = false;
         agent.updateUpAxis = false;
-        leash = GameObject.FindGameObjectWithTag("Leash");
         target = PlayerController2D.Instance.transform;
         followPlayer = false;
         moveWaypoints = GetComponent<MoveWaypoints>();
