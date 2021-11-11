@@ -32,9 +32,10 @@ public class TaskManager : MonoBehaviour
             if (area != null)
             {
                 Debug.Log(area.name);
-                areaDict[area.name] = true;
-                toDelete.Add(pee);                             
+                areaDict[area.name] = true;                             
             }
+
+            toDelete.Add(pee);
         }
         
         foreach (GameObject pee in toDelete)
