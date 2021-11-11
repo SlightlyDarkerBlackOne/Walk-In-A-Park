@@ -6703,10 +6703,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 370360872, guid: 28540cdd28e29974c8842b51cc142fb8, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 3919041365669029072, guid: 28540cdd28e29974c8842b51cc142fb8,
         type: 3}
       propertyPath: m_RootOrder
@@ -6766,11 +6762,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Level NavMesh2D
-      objectReference: {fileID: 0}
-    - target: {fileID: 4172668501821706985, guid: 28540cdd28e29974c8842b51cc142fb8,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 28540cdd28e29974c8842b51cc142fb8, type: 3}
