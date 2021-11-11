@@ -1,0 +1,492 @@
+fileFormatVersion: 2
+guid: 450fbaf487ee03d409c33343b4e2c02f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6807935927059546166
+    second: SandTerrainEntrances_0
+  - first:
+      213: -2124502555411618234
+    second: SandTerrainEntrances_1
+  - first:
+      213: 3218804630885461770
+    second: SandTerrainEntrances_2
+  - first:
+      213: 1410784241352512295
+    second: SandTerrainEntrances_3
+  - first:
+      213: 3237437303036434082
+    second: SandTerrainEntrances_4
+  - first:
+      213: -2567344673998614575
+    second: SandTerrainEntrances_5
+  - first:
+      213: -8203944950411069
+    second: SandTerrainEntrances_6
+  - first:
+      213: -2053949004160011728
+    second: SandTerrainEntrances_7
+  - first:
+      213: 8400368800937750672
+    second: SandTerrainEntrances_8
+  - first:
+      213: -2016354167661193984
+    second: SandTerrainEntrances_9
+  - first:
+      213: -3451189802680294773
+    second: SandTerrainEntrances_10
+  - first:
+      213: 6118964919585623933
+    second: SandTerrainEntrances_11
+  - first:
+      213: -3025053245245292400
+    second: SandTerrainEntrances_12
+  - first:
+      213: -2557404815496271520
+    second: SandTerrainEntrances_13
+  - first:
+      213: 159445974529636952
+    second: SandTerrainEntrances_14
+  - first:
+      213: -545073616318364730
+    second: SandTerrainEntrances_15
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 27
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SandTerrainEntrances_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 84.75
+        width: 28.25
+        height: 28.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acffef5285a5581a0800000000000000
+      internalID: -6807935927059546166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SandTerrainEntrances_1
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 84.75
+        width: 28.25
+        height: 28.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 646e7449e204482e0800000000000000
+      internalID: -2124502555411618234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SandTerrainEntrances_2
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 84.75
+        width: 28.25
+        height: 28.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0f6f4102cd7bac20800000000000000
+      internalID: 3218804630885461770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SandTerrainEntrances_3
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 84.75
+        width: 28.25
+        height: 28.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7231988facc149310800000000000000
+      internalID: 1410784241352512295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SandTerrainEntrances_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 56.75
+        width: 28.25
+        height: 28.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a6d51e0310bdec20800000000000000
+      internalID: 3237437303036434082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SandTerrainEntrances_5
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 56.75
+        width: 28.25
+        height: 28.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1df42521f95fe5cd0800000000000000
+      internalID: -2567344673998614575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SandTerrainEntrances_6
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 56.75
+        width: 28.25
+        height: 28.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c059773e8ad2eff0800000000000000
+      internalID: -8203944950411069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SandTerrainEntrances_7
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 56.75
+        width: 28.25
+        height: 28.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03276445348ee73e0800000000000000
+      internalID: -2053949004160011728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SandTerrainEntrances_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 28.75
+        width: 28.25
+        height: 28.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0903b2adaea149470800000000000000
+      internalID: 8400368800937750672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SandTerrainEntrances_9
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 28.75
+        width: 28.25
+        height: 28.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0051d2f41987404e0800000000000000
+      internalID: -2016354167661193984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SandTerrainEntrances_10
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 28.75
+        width: 28.25
+        height: 28.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b826aced829ea10d0800000000000000
+      internalID: -3451189802680294773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SandTerrainEntrances_11
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 28.75
+        width: 28.25
+        height: 28.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7f4af8bc2eeae450800000000000000
+      internalID: 6118964919585623933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SandTerrainEntrances_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0.75
+        width: 28.25
+        height: 28.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0900382d91ad406d0800000000000000
+      internalID: -3025053245245292400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SandTerrainEntrances_13
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 0.75
+        width: 28.25
+        height: 28.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 069a879bed5428cd0800000000000000
+      internalID: -2557404815496271520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SandTerrainEntrances_14
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 0.75
+        width: 28.25
+        height: 28.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85a74b0e447763200800000000000000
+      internalID: 159445974529636952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SandTerrainEntrances_15
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 0.75
+        width: 28.25
+        height: 28.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c308e21f628f68f0800000000000000
+      internalID: -545073616318364730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
