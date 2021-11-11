@@ -34,7 +34,7 @@ public class Leash : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.L) || ClickedOnVlado() == true) 
+        if (Input.GetKeyDown(KeyCode.R) || ClickedOnVlado() == true) 
         {
             if (!leash.activeSelf && DogInRange())
             {
