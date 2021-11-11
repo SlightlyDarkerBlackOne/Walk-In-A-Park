@@ -10,8 +10,8 @@ public class MoveWaypoints : MonoBehaviour {
     [SerializeField] private List<Vector3> waypointList;
     private int waypointIndex;
     private float count;
-
-    private float arrivedAtPositionDistance = 1f;
+    //must be greater than whatever stopping distance set in editor!
+    private float arrivedAtPositionDistance = 3.5f;
 
     private void Start() {
         FillWaypointList();
@@ -22,6 +22,9 @@ public class MoveWaypoints : MonoBehaviour {
         ReachedWaypointPosition();
     }
     private void ReachedWaypointPosition() {
+        //if we were just let off the leash we need to get moving the still Vlado again
+        if (GetComponent<Rigidbody2D>().velocity == Vector2.zero) SetMovePosition(GetWaypointPosition());
+
         if (Vector3.Distance(transform.position, GetWaypointPosition()) < arrivedAtPositionDistance) {
             // Reached position
             if ((waypointIndex + 1) >= waypointList.Count) {

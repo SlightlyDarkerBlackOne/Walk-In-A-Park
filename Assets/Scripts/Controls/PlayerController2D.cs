@@ -52,6 +52,7 @@ public class PlayerController2D : MonoBehaviour
     public float throwDrag = 16f;
 
     private Vector2 playerTransformBeforeMoving;
+    public AgentEnemy agentEnemyScript;
 
     #region Singleton
     public static PlayerController2D Instance { get; private set; }
@@ -75,6 +76,8 @@ public class PlayerController2D : MonoBehaviour
         detectPoint = gameObject.transform;
         screenWidth = Screen.width;
         screenHeight = Screen.height;
+
+        agentEnemyScript = GameObject.FindWithTag("Human").GetComponent<AgentEnemy>();
     }
     #endregion
 
@@ -347,6 +350,30 @@ public class PlayerController2D : MonoBehaviour
             Debug.Log("Deleted");
         }
 
+        //call for Vlado by barking
+        if (Input.GetKeyDown(KeyCode.B) || ClickedOnDog()) 
+        {
+            //play barking sound
+            //SFXManager.Instance.PlaySound(SFXManager.Instance.);
+            agentEnemyScript.followPlayer = true;
+        }
+
+    }
+
+    private bool ClickedOnDog()
+    {
+        if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began)
+        {
+            Vector2 position = Camera.main.ScreenToWorldPoint(Input.GetTouch(0).position);
+            Collider2D hitObject = Physics2D.OverlapCircle(position, 0.1f);
+            if (hitObject != null && hitObject.tag == "Player")
+            {
+                Debug.Log("Bosko clicked");
+                return true;
+            }
+        }
+  
+        return false;
     }
 
     private bool DetectItem()
