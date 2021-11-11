@@ -9,7 +9,18 @@ public class TransparentWhenPlayerBehind : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision) {
         if (collision.CompareTag("Player")) {
-            ChangeAlpha(alpha);
+            if(collision.transform.Find("Animation").GetComponent<SpriteRenderer>()
+            .sortingOrder < this.GetComponent<SpriteRenderer>().sortingOrder) {
+                ChangeAlpha(alpha);
+            }
+        }
+    }
+    private void OnTriggerStay2D(Collider2D collision) {
+        if (collision.CompareTag("Player")) {
+            if (collision.transform.Find("Animation").GetComponent<SpriteRenderer>()
+            .sortingOrder < this.GetComponent<SpriteRenderer>().sortingOrder) {
+                ChangeAlpha(alpha);
+            }
         }
     }
     private void OnTriggerExit2D(Collider2D collision) {

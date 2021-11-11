@@ -1399,6 +1399,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 537899029, guid: 452f568c19b07fe4198694a809cc093d, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2423817148163833934, guid: 452f568c19b07fe4198694a809cc093d,
         type: 3}
       propertyPath: m_Name
@@ -6802,10 +6806,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3919041365669029073, guid: 28540cdd28e29974c8842b51cc142fb8,
+        type: 3}
+      propertyPath: m_NavMeshData
+      value: 
+      objectReference: {fileID: 23800000, guid: d97ff3785174bef45a5c32900bfb1783,
+        type: 2}
     - target: {fileID: 3919041365669029086, guid: 28540cdd28e29974c8842b51cc142fb8,
         type: 3}
       propertyPath: m_Name
       value: Level NavMesh2D
+      objectReference: {fileID: 0}
+    - target: {fileID: 3919041366938271629, guid: 28540cdd28e29974c8842b51cc142fb8,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 28540cdd28e29974c8842b51cc142fb8, type: 3}
@@ -7115,8 +7130,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01ea23a492b403d40839690abdc19df0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dogImage: {fileID: -4353814613105701788, guid: db9b79d59bcbc74488b7523b13c75780,
-    type: 3}
   pickupIndicatiorText: {fileID: 1370459245}
   clickClackIndicatiorText: {fileID: 1637305996}
 --- !u!114 &5892482537204379954

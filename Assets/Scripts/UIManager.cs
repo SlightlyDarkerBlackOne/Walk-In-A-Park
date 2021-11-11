@@ -7,7 +7,7 @@ using TMPro;
 public class UIManager : MonoBehaviour
 {
     private Sprite humanImage;
-    public Sprite dogImage;
+    private Sprite dogImage;
     public TextMeshProUGUI pickupIndicatiorText;
     public TextMeshProUGUI clickClackIndicatiorText;
 
@@ -31,6 +31,7 @@ public class UIManager : MonoBehaviour
         humanImage = transform.Find("Switch Control").transform.Find("PlayerImage").gameObject.GetComponent<Image>().sprite;
         pickupIndicatiorText.gameObject.SetActive(false);
         pickupIndicatiorTextOriginal = pickupIndicatiorText.text;
+        dogImage = PlayerController2D.Instance.transform.Find("Animation").GetComponent<SpriteRenderer>().sprite;
     }
 
     // Update is called once per frame
