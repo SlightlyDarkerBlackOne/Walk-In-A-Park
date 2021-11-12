@@ -31,6 +31,7 @@ public class UIManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+
         GetIcons();
 
         humanImage = transform.Find("Switch Control").transform.Find("PlayerImage").gameObject.GetComponent<Image>().sprite;
@@ -38,6 +39,7 @@ public class UIManager : MonoBehaviour
         pickupIndicatiorTextOriginal = pickupIndicatiorText.text;
         dogImage = PlayerController2D.Instance.transform.Find("Animation").GetComponent<SpriteRenderer>().sprite;
     }
+
 
     // Update is called once per frame
     void Update()
@@ -68,6 +70,7 @@ public class UIManager : MonoBehaviour
         };
 
     }
+
 
     public void ShowPickupIndicatorText(string name) {
         pickupIndicatiorText.gameObject.SetActive(true);
