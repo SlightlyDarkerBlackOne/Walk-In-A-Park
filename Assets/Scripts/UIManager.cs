@@ -34,7 +34,6 @@ public class UIManager : MonoBehaviour
 
         GetIcons();
 
-        humanImage = transform.Find("Switch Control").transform.Find("PlayerImage").gameObject.GetComponent<Image>().sprite;
         pickupIndicatiorText.gameObject.SetActive(false);
         pickupIndicatiorTextOriginal = pickupIndicatiorText.text;
         dogImage = PlayerController2D.Instance.transform.Find("Animation").GetComponent<SpriteRenderer>().sprite;
@@ -45,18 +44,12 @@ public class UIManager : MonoBehaviour
     void Update()
     {
         ManageIcons();
-
-        if (!PlayerController2D.Instance.gameObject.transform.Find("Leash").gameObject.activeSelf) {
-            transform.Find("Switch Control").Find("PlayerImage").gameObject.GetComponent<Image>().sprite = dogImage;
-        } else {
-            transform.Find("Switch Control").Find("PlayerImage").gameObject.GetComponent<Image>().sprite = humanImage;
-        }
     }
 
     void GetIcons()
     {
-        button[0] = transform.GetChild(6).GetComponent<Button_UI>(); //pee icon
-        button[1] = transform.GetChild(7).GetComponent<Button_UI>(); //scent icon
+        button[0] = transform.GetChild(5).GetComponent<Button_UI>(); //pee icon
+        button[1] = transform.GetChild(6).GetComponent<Button_UI>(); //scent icon
 
     }
 
