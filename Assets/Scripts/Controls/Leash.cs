@@ -53,7 +53,7 @@ public class Leash : MonoBehaviour
             playerHuman.transform.position = Vector2.Lerp(playerHuman.transform.position,
                 boneToJoint.transform.position, 5f*Time.deltaTime);
 
-            if (Vector2.Distance(playerHuman.transform.position, boneToJoint.transform.position)<=0.3f) 
+            if (Vector2.Distance(playerHuman.transform.position, boneToJoint.transform.position)<=0.4f) 
             {
                 Debug.Log("close enough");
                 SetLeashToPlayerHuman();

@@ -22,6 +22,15 @@ public class TaskManager : MonoBehaviour
         anim = GetComponent<Animator>();        
     }
 
+    public bool Task1()
+    {
+        if (Scent.ballFound)
+        {
+            CheckTaskOnList(1);
+            return true;
+        }
+        return false;
+    }
     public bool Task2()
     {
         foreach (var pee in peeList)
@@ -48,14 +57,20 @@ public class TaskManager : MonoBehaviour
             if (area.Value == false) return false;
         }
 
-        GameObject task2 = gameObject.transform.GetChild(1).GetChild(1).gameObject;
-        task2.GetComponent<Toggle>().isOn = true;
-        //changes the toggle's Normal colour to the new colour
-        ColorBlock cb = task2.GetComponent<Toggle>().colors;
-        cb.normalColor = Color.black;
-        task2.GetComponent<Toggle>().colors = cb;
-        anim.SetBool("isShowing", true);
-        Debug.Log("Task completed");
+        CheckTaskOnList(2);
         return true;
+    }
+
+    void CheckTaskOnList(int taskNumber)
+    {
+        GameObject task = gameObject.transform.GetChild(1).GetChild(taskNumber-1).gameObject;
+        task.GetComponent<Toggle>().isOn = true;
+        //changes the toggle's Normal colour to the new colour
+        ColorBlock cb = task.GetComponent<Toggle>().colors;
+        cb.normalColor = Color.black;
+        task.GetComponent<Toggle>().colors = cb;
+        anim.SetBool("isShowing", true);
+        Debug.Log("Task " + taskNumber + " completed");
+
     }
 }

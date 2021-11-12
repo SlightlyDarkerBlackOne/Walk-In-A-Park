@@ -14,7 +14,7 @@ public class ClickClack : MonoBehaviour
         clickClackPosition = transform.Find("PlayerLocation");
     }
     private void Update() {
-        if (Input.GetKeyDown(KeyCode.E)) {
+        if (Input.GetKeyDown(KeyCode.E) || (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Ended)) {
             if (canClickClack) {
                 anim.SetBool("isClickClacking", true);
                 PlayerController2D.Instance.SetPlayerToLocationAndFreeze(clickClackPosition);

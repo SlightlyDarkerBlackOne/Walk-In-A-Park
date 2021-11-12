@@ -15,10 +15,11 @@ public class Pissing : MonoBehaviour
     public static bool ClickedPeeIcon = false;
     private bool pissing = false;
     private List<GameObject> toDestroy = new List<GameObject>();
-    public TaskManager taskManagerScript;
+    public GameObject toDoListPanel;
 
     void Start() 
     {
+        toDoListPanel = GameObject.Find("ToDo List Panel");
         StartCoroutine(DestroyPeeStains());
     }
     void Update()
@@ -41,8 +42,8 @@ public class Pissing : MonoBehaviour
         GameObject pissStainGO = Instantiate(pissStain, new Vector2(transform.position.x - 1.4f, transform.position.y - 0.4f), Quaternion.identity) as GameObject;
         pissStainGO.AddComponent<SortByYAxis>();
         //update task manager
-        taskManagerScript.peeList.Add(pissStainGO);
-        taskManagerScript.Task2();
+        toDoListPanel.GetComponent<TaskManager>().peeList.Add(pissStainGO);
+        toDoListPanel.GetComponent<TaskManager>().Task2();
         toDestroy.Add(pissStainGO);
         PlayerController2D.Instance.UnFreezePlayer();
         Destroy(piss);
