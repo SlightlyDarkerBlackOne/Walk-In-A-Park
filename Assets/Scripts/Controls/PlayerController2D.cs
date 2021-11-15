@@ -196,6 +196,8 @@ public class PlayerController2D : MonoBehaviour
             vertical = 0f; 
             playerMoving = false;
         }
+        //Debug.Log("Horizontal: " + horizontal);
+        //Debug.Log("Vertical: " + vertical);
     }
 
     public void SetPlayerToLocationAndFreeze(Transform transformToSet) {

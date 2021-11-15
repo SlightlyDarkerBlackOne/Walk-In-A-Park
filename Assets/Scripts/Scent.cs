@@ -21,7 +21,7 @@ public class Scent : MonoBehaviour
     void Start()
     {
         playerHuman = GameObject.FindWithTag("Human");
-        detectLayer = LayerMask.GetMask("Item");
+        detectLayer = LayerMask.GetMask("Default");
         toDoListPanel = GameObject.Find("ToDo List Panel");
         
     }
@@ -29,7 +29,8 @@ public class Scent : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!scenting && (Input.GetKeyDown(KeyCode.G) || ClickedScentIcon)) {
+        if (!scenting && (Input.GetKeyDown(KeyCode.G) || ClickedScentIcon)) 
+        {
             checkedVladoScent = true;
             StartCoroutine("ScentCloud");
             if (ClickedScentIcon) ClickedScentIcon = false;
