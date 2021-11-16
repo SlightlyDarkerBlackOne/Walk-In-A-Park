@@ -13,8 +13,6 @@ public class PlayerController2D : MonoBehaviour
 
     [SerializeField]
     private float moveSpeed;
-    private float leashSpeed = 2.5f;
-    private float noLeashSpeed = 3.5f;
     private Rigidbody2D rb;
     private Vector3 moveDir;
     private Vector3 lastMoveDir;
@@ -95,10 +93,6 @@ public class PlayerController2D : MonoBehaviour
             state = State.Idle;
             playerMoving = false;
         }
-
-        if (!leash.activeSelf) moveSpeed = noLeashSpeed;
-        else moveSpeed = leashSpeed;
-
     }
 
     private void FixedUpdate() 

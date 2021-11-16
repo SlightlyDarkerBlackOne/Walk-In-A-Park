@@ -48,8 +48,8 @@ public class UIManager : MonoBehaviour
 
     void GetIcons()
     {
-        button[0] = transform.GetChild(5).GetComponent<Button_UI>(); //pee icon
-        button[1] = transform.GetChild(6).GetComponent<Button_UI>(); //scent icon
+        button[0] = transform.Find("PeeIcon").GetComponent<Button_UI>(); //pee icon
+        button[1] = transform.Find("ScentIcon").GetComponent<Button_UI>(); //scent icon
 
     }
 
