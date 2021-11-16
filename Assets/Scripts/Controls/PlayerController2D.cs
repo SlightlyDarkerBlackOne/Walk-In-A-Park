@@ -93,7 +93,6 @@ public class PlayerController2D : MonoBehaviour
             state = State.Idle;
             playerMoving = false;
         }
-
     }
 
     private void FixedUpdate() 

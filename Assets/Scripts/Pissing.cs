@@ -19,6 +19,7 @@ public class Pissing : MonoBehaviour
 
     void Start() 
     {
+        toDoListPanel = GameObject.Find("ToDo List Panel");
         StartCoroutine(DestroyPeeStains());
     }
     void Update()

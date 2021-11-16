@@ -21,6 +21,7 @@ public class TaskManager : MonoBehaviour
         areaDict.Add("Area3", false);
         anim = GetComponent<Animator>();        
     }
+
     public bool Task1() {
         if (Scent.ballFound) {
             CheckTaskOnList(1);
@@ -57,6 +58,7 @@ public class TaskManager : MonoBehaviour
         CheckTaskOnList(2);
         return true;
     }
+
     //changes the toggle's Normal colour to the new colour
     void CheckTaskOnList(int taskNumber) {
         GameObject task = gameObject.transform.GetChild(1).GetChild(taskNumber - 1).gameObject;
@@ -65,5 +67,7 @@ public class TaskManager : MonoBehaviour
         cb.normalColor = Color.black;
         task.GetComponent<Toggle>().colors = cb;
         anim.SetBool("isShowing", true);
+        Debug.Log("Task " + taskNumber + " completed");
+
     }
 }

@@ -12,7 +12,8 @@ public class UIManager : MonoBehaviour
     public TextMeshProUGUI pickupIndicatiorText;
     public TextMeshProUGUI clickClackIndicatiorText;
 
-    private Button_UI[] button = new Button_UI[2];
+    private Button_UI [] button = new Button_UI [2];
+
 
     #region Singleton
     public static UIManager Instance { get; private set; }
@@ -31,6 +32,7 @@ public class UIManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+
         GetIcons();
         pickupIndicatiorText.gameObject.SetActive(false);
         pickupIndicatiorTextOriginal = pickupIndicatiorText.text;
@@ -54,6 +56,32 @@ public class UIManager : MonoBehaviour
         };
 
     }
+
+
+    // Update is called once per frame
+    void Update()
+    {
+        ManageIcons();
+    }
+
+    void GetIcons()
+    {
+        button[0] = transform.Find("PeeIcon").GetComponent<Button_UI>(); //pee icon
+        button[1] = transform.Find("ScentIcon").GetComponent<Button_UI>(); //scent icon
+
+    }
+
+    void ManageIcons()
+    {
+        button[0].GetComponent<Button_UI>().ClickFunc = () => {
+            Pissing.ClickedPeeIcon = true;
+        };
+        button[1].GetComponent<Button_UI>().ClickFunc = () => {
+            Scent.ClickedScentIcon = true;
+        };
+
+    }
+
 
     public void ShowPickupIndicatorText(string name) {
         pickupIndicatiorText.gameObject.SetActive(true);

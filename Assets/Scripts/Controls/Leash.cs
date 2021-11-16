@@ -15,6 +15,8 @@ public class Leash : MonoBehaviour
     public LayerMask detectLayer;
     public AgentEnemy agentEnemyScript;
     public MoveWaypoints moveWaypoints;
+    [SerializeField]
+    private float registerDistance = 0.4f;
 
     // Start is called before the first frame update
     void Start()
@@ -53,7 +55,9 @@ public class Leash : MonoBehaviour
             playerHuman.transform.position = Vector2.Lerp(playerHuman.transform.position,
                 boneToJoint.transform.position, 5f*Time.deltaTime);
 
-            if (Vector2.Distance(playerHuman.transform.position, boneToJoint.transform.position) <= 0.4f) {
+            if (Vector2.Distance(playerHuman.transform.position, boneToJoint.transform.position)<=registerDistance) 
+            {
+                Debug.Log("close enough");
                 SetLeashToPlayerHuman();
                 puttingOnLeash = false;
             }
