@@ -2763,6 +2763,7 @@ GameObject:
   - component: {fileID: 2658878372350388068}
   - component: {fileID: 1434403192}
   - component: {fileID: 99989285}
+  - component: {fileID: 1292320066}
   m_Layer: 6
   m_Name: Player Dog
   m_TagString: Player
@@ -2872,7 +2873,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d276254695bc769408df6c95e06d2781, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 2.5
+  moveSpeed: 2.96
   startTimeBtwTrail: 0.1
   trailEffect: {fileID: 1148421819908946, guid: 2976262eb7075c4469774072094b1328,
     type: 3}
@@ -2929,7 +2930,25 @@ MonoBehaviour:
   pissStain: {fileID: 7585353761594613331, guid: 1103971687761b24da5683881ccf759e,
     type: 3}
   pissDuration: 1.21
-  taskManagerScript: {fileID: 0}
+  toDoListPanel: {fileID: 0}
+--- !u!114 &1292320066
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2658878372350388069}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7243116d19d684748bb5d72a9348c9dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scentParticle: {fileID: 2145889371577689046, guid: 235be2dfe85cf974f892556fad4fbedd,
+    type: 3}
+  detectLayer:
+    serializedVersion: 2
+    m_Bits: 256
+  toDoListPanel: {fileID: 0}
 --- !u!1 &2658878372882933590
 GameObject:
   m_ObjectHideFlags: 0
