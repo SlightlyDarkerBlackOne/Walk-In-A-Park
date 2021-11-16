@@ -22,10 +22,8 @@ public class TaskManager : MonoBehaviour
         anim = GetComponent<Animator>();        
     }
 
-    public bool Task1()
-    {
-        if (Scent.ballFound)
-        {
+    public bool Task1() {
+        if (Scent.ballFound) {
             CheckTaskOnList(1);
             return true;
         }
@@ -61,11 +59,10 @@ public class TaskManager : MonoBehaviour
         return true;
     }
 
-    void CheckTaskOnList(int taskNumber)
-    {
-        GameObject task = gameObject.transform.GetChild(1).GetChild(taskNumber-1).gameObject;
+    //changes the toggle's Normal colour to the new colour
+    void CheckTaskOnList(int taskNumber) {
+        GameObject task = gameObject.transform.GetChild(1).GetChild(taskNumber - 1).gameObject;
         task.GetComponent<Toggle>().isOn = true;
-        //changes the toggle's Normal colour to the new colour
         ColorBlock cb = task.GetComponent<Toggle>().colors;
         cb.normalColor = Color.black;
         task.GetComponent<Toggle>().colors = cb;

@@ -14,6 +14,7 @@ public class UIManager : MonoBehaviour
 
     private Button_UI [] button = new Button_UI [2];
 
+
     #region Singleton
     public static UIManager Instance { get; private set; }
 
@@ -33,10 +34,27 @@ public class UIManager : MonoBehaviour
     {
 
         GetIcons();
-
         pickupIndicatiorText.gameObject.SetActive(false);
         pickupIndicatiorTextOriginal = pickupIndicatiorText.text;
         dogImage = PlayerController2D.Instance.transform.Find("Animation").GetComponent<SpriteRenderer>().sprite;
+    }
+    void Update() {
+        ManageIcons();
+    }
+
+    void GetIcons() {
+        button[0] = transform.Find("PeeButton").GetComponent<Button_UI>(); //pee icon
+        button[1] = transform.Find("ScentButton").GetComponent<Button_UI>(); //scent icon
+    }
+
+    void ManageIcons() {
+        button[0].GetComponent<Button_UI>().ClickFunc = () => {
+            Pissing.ClickedPeeIcon = true;
+        };
+        button[1].GetComponent<Button_UI>().ClickFunc = () => {
+            Scent.ClickedScentIcon = true;
+        };
+
     }
 
 
