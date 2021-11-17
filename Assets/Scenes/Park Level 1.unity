@@ -4899,8 +4899,21 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 141052009, guid: 28540cdd28e29974c8842b51cc142fb8, type: 3}
+      propertyPath: avatar
+      value: 
+      objectReference: {fileID: 21300000, guid: 3115464761a7bcb41a6d511a224b17c2,
+        type: 3}
+    - target: {fileID: 141052009, guid: 28540cdd28e29974c8842b51cc142fb8, type: 3}
       propertyPath: dialogue.sentences.Array.data[0]
-      value: I'm just a grey statue
+      value: This is just a gray statue
+      objectReference: {fileID: 0}
+    - target: {fileID: 141052009, guid: 28540cdd28e29974c8842b51cc142fb8, type: 3}
+      propertyPath: dialogue.sentences.Array.data[1]
+      value: Not able to move or anything
+      objectReference: {fileID: 0}
+    - target: {fileID: 141052009, guid: 28540cdd28e29974c8842b51cc142fb8, type: 3}
+      propertyPath: dialogue.sentences.Array.data[2]
+      value: Not able to chase the ball...
       objectReference: {fileID: 0}
     - target: {fileID: 3919041365669029072, guid: 28540cdd28e29974c8842b51cc142fb8,
         type: 3}
