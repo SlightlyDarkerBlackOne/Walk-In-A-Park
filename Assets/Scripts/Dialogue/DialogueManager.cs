@@ -3,11 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using System;
 
 public class DialogueManager : MonoBehaviour {
 
     public TextMeshProUGUI nameText;
     public TextMeshProUGUI dialogueText;
+    public Image avatarImage;
 
     public Animator animator;
 
@@ -31,14 +33,22 @@ public class DialogueManager : MonoBehaviour {
 	}
     
     //For starting a dialogue and also for starting quest dialogue
+    public void StartDialogue(Dialogue dialogue, Sprite avatar) {
+        avatarImage.sprite = avatar;
+        StartDialogueHere(dialogue);
+    }
     public void StartDialogue(Dialogue dialogue) {
+        StartDialogueHere(dialogue);
+    }
+
+    private void StartDialogueHere(Dialogue dialogue) {
         //PlayerController2D.Instance.FrezePlayer();
         animator.SetBool("IsOpen", true);
 
         nameText.text = dialogue.name;
 
         sentences = new Queue<string>();
-        if(sentences.Count != 0)
+        if (sentences.Count != 0)
             sentences.Clear();
 
         foreach (string sentence in dialogue.sentences) {
@@ -68,7 +78,7 @@ public class DialogueManager : MonoBehaviour {
         }
     }
 
-    void EndDialogue() {
+    public void EndDialogue() {
         animator.SetBool("IsOpen", false);
         PlayerController2D.Instance.UnFreezePlayer();
     }

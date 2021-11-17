@@ -36,10 +36,7 @@ public class MoveRoam : MonoBehaviour {
     }
 
     private void SetRandomMovePosition() {
-        //do {
-            targetMovePosition = startPosition + UtilsClass.GetRandomDir() * Random.Range(movementRangeX, movementRangeY);
-        //} while (!AngleToPlayer.IsAngleInPlayerDirection(targetMovePosition, targetToMoveAwayFrom, transform));
-        
+            targetMovePosition = startPosition + UtilsClass.GetRandomDir() * Random.Range(movementRangeX, movementRangeY);    
     }
 
     private void Update() {
