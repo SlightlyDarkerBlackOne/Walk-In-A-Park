@@ -9,12 +9,13 @@ public class ClickClack : MonoBehaviour
     private bool canClickClack;
     private bool clickClacking;
     private bool insideTrigger;
+    private bool enteredTriggerArea = false;
     private void Start() {
         anim = GetComponent<Animator>();
         clickClackPosition = transform.Find("PlayerLocation");
     }
     private void Update() {
-        if (Input.GetKeyDown(KeyCode.E) || (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began)) {
+        if (Input.GetKeyDown(KeyCode.E) || Tap()) {
             if (canClickClack) {
                 anim.SetBool("isClickClacking", true);
                 PlayerController2D.Instance.SetPlayerToLocationAndFreeze(clickClackPosition);
@@ -31,6 +32,11 @@ public class ClickClack : MonoBehaviour
         if (clickClacking) {
             PlayerController2D.Instance.SetPlayerToLocation(clickClackPosition);
         }
+    }
+
+    private void OnTriggerEnter2D()
+    {
+        enteredTriggerArea = true;
     }
     private void OnTriggerStay2D(Collider2D collision) {
         if (collision.CompareTag("Player")) {
@@ -54,5 +60,22 @@ public class ClickClack : MonoBehaviour
     private void ChangeSortingOrderSoPlayerIsOnTop() {
         Destroy(gameObject.GetComponent<SortByYAxis>());
         GetComponent<SpriteRenderer>().sortingOrder = -200;
+    }
+
+    private bool Tap()
+    {
+        if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Ended)
+        {
+            if (enteredTriggerArea)
+            {
+                enteredTriggerArea = false;
+                return false;
+            }
+            else
+            {
+                return true;
+            }        
+        }
+        return false;
     }
 }
