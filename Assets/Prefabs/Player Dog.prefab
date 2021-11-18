@@ -2873,7 +2873,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d276254695bc769408df6c95e06d2781, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 2.96
+  moveSpeed: 3.14
   startTimeBtwTrail: 0.1
   trailEffect: {fileID: 1148421819908946, guid: 2976262eb7075c4469774072094b1328,
     type: 3}
@@ -3022,7 +3022,7 @@ SpriteRenderer:
   m_SortingLayerID: -1869315837
   m_SortingLayer: 1
   m_SortingOrder: 2
-  m_Sprite: {fileID: -4353814613105701788, guid: db9b79d59bcbc74488b7523b13c75780,
+  m_Sprite: {fileID: -6079917966897775418, guid: 4d9384e74d3017842ba4781232294216,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

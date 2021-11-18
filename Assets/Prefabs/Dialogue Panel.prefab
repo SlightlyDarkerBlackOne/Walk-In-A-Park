@@ -114,6 +114,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nameText: {fileID: 1624523831755987361}
   dialogueText: {fileID: 1624523831343069433}
+  avatarImage: {fileID: 3777620472437620674}
   animator: {fileID: 1624523830217503218}
 --- !u!1 &1624523831343069435
 GameObject:
@@ -625,6 +626,6 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 28.2, y: 10}
+  m_AnchoredPosition: {x: 28.199951, y: 10}
   m_SizeDelta: {x: 120.7751, y: 120.7751}
   m_Pivot: {x: 0, y: 0.5}
