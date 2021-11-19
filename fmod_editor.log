@@ -7,7 +7,11 @@
 [LOG] SystemI::init                            : Output requires a sample rate of 44100Hz, resampling will occur.
 [LOG] Thread::initThread                       : Init FMOD stream thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFB, Stack Size: 98304, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Affinity: 0x8000000000000001, Priority: 0xFFFF7FFA, Stack Size: 81920, Semaphore: Yes, Sleep Time: 0, Looping: Yes.
+<<<<<<< Updated upstream
 [LOG] AsyncManager::init                       : manager 0x7feead13f208 isAsync 0 updatePeriod 0.02
+=======
+[LOG] AsyncManager::init                       : manager 0x7f9e01c69208 isAsync 0 updatePeriod 0.02
+>>>>>>> Stashed changes
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFD, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
@@ -18,6 +22,7 @@
 [LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
 [LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
 [LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
+<<<<<<< Updated upstream
 [LOG] SoundI::release                          :  (0x7feeade5dd28)
 [LOG] SoundI::release                          :     park night loop (0x7feeade5de98)
 [LOG] SoundI::release                          :  (0x7feeade5e688)
@@ -26,6 +31,22 @@
 [LOG] SoundI::release                          :     cricket far.cm (0x7feeade5c6a8)
 [LOG] SoundI::release                          :  (0x7feeade5e1d8)
 [LOG] SoundI::release                          :     owl 1.cm (0x7feeade5e348)
+=======
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
+[LOG] SoundI::release                          :  (0x7f9e06c9d4e8)
+[LOG] SoundI::release                          :     owl 1.cm (0x7f9e06ce6eb8)
+[LOG] SoundI::release                          :  (0x7f9e06ce48e8)
+[LOG] SoundI::release                          :     park night loop (0x7f9e06c94a28)
+[LOG] SoundI::release                          :  (0x7f9e06c909b8)
+[LOG] SoundI::release                          :     cricket close.cm_1 (0x7f9e06c5ba88)
+[LOG] SoundI::release                          :  (0x7f9e06ce7058)
+[LOG] SoundI::release                          :     cricket far.cm (0x7f9e06c8e968)
+[LOG] SoundI::release                          :  (0x7f9e06cbb9d8)
+[LOG] SoundI::release                          :     leash detach_01 (0x7f9e06ca5d68)
+>>>>>>> Stashed changes
 [LOG] Thread::callback                         : FMOD Studio update thread finished.
 [LOG] Thread::callback                         : FMOD Studio bank load thread finished.
 [LOG] Profile::disconnectAll                   : Profiler disconnecting all clients

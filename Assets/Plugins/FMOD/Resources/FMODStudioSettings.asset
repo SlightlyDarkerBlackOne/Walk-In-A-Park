@@ -141,10 +141,17 @@ MonoBehaviour:
   m_Name: FMODStudioSettings
   m_EditorClassIdentifier: 
   SwitchSettingsMigration: 1
+<<<<<<< Updated upstream
   HasSourceProject: 0
   HasPlatforms: 0
   sourceProjectPath: ../FMOD/witp fmod/witp fmod.fspro
   sourceBankPath: ../FMOD/witp fmod/Build/Desktop
+=======
+  HasSourceProject: 1
+  HasPlatforms: 1
+  sourceProjectPath: ../FMOD/witp fmod/witp fmod.fspro
+  sourceBankPath: ../FMOD/witp fmod/Build
+>>>>>>> Stashed changes
   SourceBankPathUnformatted: 
   BankRefreshCooldown: 5
   ShowBankRefreshWindow: 1
