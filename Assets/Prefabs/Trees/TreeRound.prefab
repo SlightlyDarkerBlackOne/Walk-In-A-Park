@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 7823796561418598619}
   - component: {fileID: 5158704211263715769}
   - component: {fileID: 7669794068810994181}
+  - component: {fileID: 5217394495108990453}
   m_Layer: 0
   m_Name: TreeRound
   m_TagString: Untagged
@@ -168,3 +169,15 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.31435934, y: 0.41363156}
   m_EdgeRadius: 0
+--- !u!114 &5217394495108990453
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4706309704795225902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfe103f5d8238d8408036a46116b17f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

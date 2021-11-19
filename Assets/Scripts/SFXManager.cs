@@ -16,6 +16,14 @@ public class SFXManager : MonoBehaviour
 
     public AudioSource leashAttach;
     public AudioSource leashDetach;
+
+    public AudioSource owl;
+    public AudioSource birds;
+    public AudioSource crickets;
+    public AudioSource cricketsFar;
+    public AudioSource parkNightAtmosphere;
+    public AudioSource sniff;
+
     public AudioSource[] footsteps;
 
     #region Singleton

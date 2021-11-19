@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8276844994784030005}
   - component: {fileID: 4839656085825289583}
   m_Layer: 0
-  m_Name: VladoScent
+  m_Name: BoskoScent
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -221,8 +221,8 @@ ParticleSystem:
     startColor:
       serializedVersion: 2
       minMaxState: 2
-      minColor: {r: 0.112896055, g: 0.2794479, b: 0.4056604, a: 1}
-      maxColor: {r: 0.32941177, g: 0.5120148, b: 0.6039216, a: 1}
+      minColor: {r: 0.07186722, g: 0.1221027, b: 0.16037738, a: 1}
+      maxColor: {r: 0.2536045, g: 0.2685751, b: 0.38679248, a: 1}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}

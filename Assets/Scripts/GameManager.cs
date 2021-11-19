@@ -7,7 +7,7 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        SFXManager.Instance.PlaySoundTrack(SFXManager.Instance.soundTrack);
+        //SFXManager.Instance.PlaySoundTrack(SFXManager.Instance.soundTrack);
     }
 
     // Update is called once per frame
