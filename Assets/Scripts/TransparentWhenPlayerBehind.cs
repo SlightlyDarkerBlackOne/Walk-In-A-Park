@@ -1,4 +1,4 @@
-mmmmmmmmmmmmmusing System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -12,7 +12,6 @@ public class TransparentWhenPlayerBehind : MonoBehaviour
             if(collision.transform.Find("Animation").GetComponent<SpriteRenderer>()
             .sortingOrder < this.GetComponent<SpriteRenderer>().sortingOrder) {
                 ChangeAlpha(alpha);
-                m
             }
         }
     }
