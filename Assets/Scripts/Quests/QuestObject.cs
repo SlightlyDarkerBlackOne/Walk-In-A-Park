@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using CodeMonkey.Utils;
+using TMPro;
 
 public class QuestObject : MonoBehaviour
 {
@@ -8,6 +10,8 @@ public class QuestObject : MonoBehaviour
 
     public Dialogue startDialogue;
     public Dialogue endDialogue;
+
+    public bool isSmellQuest;
 
     public bool isItemQuest;
     public string targetItem;
@@ -24,6 +28,21 @@ public class QuestObject : MonoBehaviour
     }
 
     private void Update() {
+        if (isSmellQuest) {
+            GameObject.Find("ScentButton").GetComponent<Button_UI>().ClickFunc = () => {
+                QuestManager.Instance.sniffButtonClicked = true;
+
+                GameObject.Find("ScentButton").GetComponent<Animator>().SetBool("pingPong", false);
+                GameObject.Find("VladoScent").GetComponent<ParticleSystem>().Play();
+            };
+            if (QuestManager.Instance.sniffButtonClicked == true && QuestManager.Instance.itemCollected == targetItem) {
+                QuestManager.Instance.itemCollected = null;
+
+                GameObject.Find("ToDo List Panel").GetComponent<TaskManager>().CheckTaskOnToDoList();
+
+                EndQuest();
+            }
+        }
         if (isItemQuest) {
             if(QuestManager.Instance.itemCollected == targetItem) {
                 QuestManager.Instance.itemCollected = null;
@@ -47,6 +66,9 @@ public class QuestObject : MonoBehaviour
 
     public void StartQuest() {
         QuestManager.Instance.ShowQuestText(startDialogue);
+        if (isSmellQuest) {
+            GameObject.Find("ScentButton").GetComponent<Animator>().SetBool("pingPong", true);
+        }
     }
 
     public void EndQuest() {

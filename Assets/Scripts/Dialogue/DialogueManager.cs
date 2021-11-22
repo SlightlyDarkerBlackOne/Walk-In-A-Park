@@ -42,7 +42,7 @@ public class DialogueManager : MonoBehaviour {
     }
 
     private void StartDialogueHere(Dialogue dialogue) {
-        //PlayerController2D.Instance.FrezePlayer();
+         //PlayerController2D.Instance.FrezePlayer();
         animator.SetBool("IsOpen", true);
 
         nameText.text = dialogue.name;
@@ -80,6 +80,6 @@ public class DialogueManager : MonoBehaviour {
 
     public void EndDialogue() {
         animator.SetBool("IsOpen", false);
-        PlayerController2D.Instance.UnFreezePlayer();
+        //PlayerController2D.Instance.UnFreezePlayer();
     }
 }

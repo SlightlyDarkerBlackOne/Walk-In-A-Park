@@ -12,7 +12,10 @@ public class QuestManager : MonoBehaviour
 
     [HideInInspector]
     public string enemyKilled = "";
-    
+
+    [HideInInspector]
+    public bool sniffButtonClicked;
+
     #region Singleton
     public static QuestManager Instance {get; private set;}
     /// <summary>
@@ -30,6 +33,10 @@ public class QuestManager : MonoBehaviour
     #endregion
 
     private void Start() {
+        int index = 0;
+        for (int i = 0; i < transform.childCount; i++) {
+            transform.GetChild(i).gameObject.SetActive(false);
+        }
         questCompleted = new bool[quests.Length];
     }
 

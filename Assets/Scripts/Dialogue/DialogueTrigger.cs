@@ -38,6 +38,8 @@ public class DialogueTrigger : MonoBehaviour {
                         Destroy(gameObject);
                 }
             }
+            //Hide To Do List
+            GameObject.Find("ToDo List Panel").GetComponent<Animator>().SetBool("isShowing", false);
         }
     }
     private void OnTriggerExit2D(Collider2D collision) {

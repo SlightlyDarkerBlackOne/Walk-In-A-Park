@@ -9,22 +9,18 @@ public class Leash : MonoBehaviour
     public GameObject boneToJoint;
     private HingeJoint2D joint;
     [SerializeField]
-    private float minLeashDistance;
-    public static bool puttingOnLeash;
+    private float minLeashDistance = 10f;
+    public static bool puttingOnLeash = true;
     private Vector2 previousPosition;
-    public LayerMask detectLayer;
-    public AgentEnemy agentEnemyScript;
-    public MoveWaypoints moveWaypoints;
+    private LayerMask detectLayer;
+    private AgentEnemy agentEnemyScript;
+    private MoveWaypoints moveWaypoints;
 
     // Start is called before the first frame update
     void Start()
     {
         leash = transform.Find("Leash").gameObject;
         joint = playerHuman.GetComponent<HingeJoint2D>();
-
-        minLeashDistance = 10f;
-
-        puttingOnLeash = false;
 
         detectLayer = LayerMask.GetMask("Human");
         agentEnemyScript = playerHuman.GetComponent<AgentEnemy>();

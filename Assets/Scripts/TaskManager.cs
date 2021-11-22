@@ -21,8 +21,8 @@ public class TaskManager : MonoBehaviour
         areaDict.Add("Area3", false);
         anim = GetComponent<Animator>();        
     }
-    public bool Task1() {
-        if (Scent.ballFound) {
+    public bool CheckTaskOnToDoList() {
+        if (Scent.ballFound || true) {
             CheckTaskOnList(1);
             return true;
         }
