@@ -1,0 +1,429 @@
+fileFormatVersion: 2
+guid: 6a1ee2a5e97b42d47b30ad26aa972805
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6224641497775068856
+    second: Awip-junkyardl_trees-no shadow_dihtering-400x_0
+  - first:
+      213: 2884310866465464034
+    second: Awip-junkyardl_trees-no shadow_dihtering-400x_1
+  - first:
+      213: 7379831193391689513
+    second: Awip-junkyardl_trees-no shadow_dihtering-400x_2
+  - first:
+      213: 3800326718233255810
+    second: Awip-junkyardl_trees-no shadow_dihtering-400x_3
+  - first:
+      213: 8057364279777533288
+    second: Awip-junkyardl_trees-no shadow_dihtering-400x_4
+  - first:
+      213: 3548157556211204804
+    second: Awip-junkyardl_trees-no shadow_dihtering-400x_5
+  - first:
+      213: -5244377090205908146
+    second: Awip-junkyardl_trees-no shadow_dihtering-400x_6
+  - first:
+      213: -1542324253872741877
+    second: Awip-junkyardl_trees-no shadow_dihtering-400x_7
+  - first:
+      213: 2918887029110184539
+    second: Awip-junkyardl_trees-no shadow_dihtering-400x_8
+  - first:
+      213: -1117969116027764245
+    second: Awip-junkyardl_trees-no shadow_dihtering-400x_9
+  - first:
+      213: 6885544466683361249
+    second: Awip-junkyardl_trees-no shadow_dihtering-400x_10
+  - first:
+      213: -8343921218328609996
+    second: Awip-junkyardl_trees-no shadow_dihtering-400x_11
+  - first:
+      213: 4903303579185651663
+    second: Awip-junkyardl_trees-no shadow_dihtering-400x_12
+  - first:
+      213: -3304854943093840293
+    second: Awip-junkyardl_trees-no shadow_dihtering-400x_13
+  - first:
+      213: 5697505555435871479
+    second: Awip-junkyardl_trees-no shadow_dihtering-400x_14
+  - first:
+      213: 8800629431278310939
+    second: Awip-junkyardl_trees-no shadow_dihtering-400x_15
+  - first:
+      213: -8093003785301173219
+    second: Awip-junkyardl_trees-no shadow_dihtering-400x_16
+  - first:
+      213: 4583097242641950685
+    second: Awip-junkyardl_trees-no shadow_dihtering-400x_17
+  - first:
+      213: 7638840781732426571
+    second: Awip-junkyardl_trees-no shadow_dihtering-400x_18
+  - first:
+      213: -3795010383236573268
+    second: Awip-junkyardl_trees-no shadow_dihtering-400x_19
+  - first:
+      213: 4862488520839586899
+    second: Awip-junkyardl_trees-no shadow_dihtering-400x_20
+  - first:
+      213: -4544210679937975925
+    second: Awip-junkyardl_trees-no shadow_dihtering-400x_21
+  - first:
+      213: -5288386977576415575
+    second: Awip-junkyardl_trees-no shadow_dihtering-400x_22
+  - first:
+      213: -2966459137638480197
+    second: Awip-junkyardl_trees-no shadow_dihtering-400x_23
+  - first:
+      213: -3204088757134987465
+    second: Awip-junkyardl_trees-no shadow_dihtering-400x_24
+  - first:
+      213: -8307379094845903808
+    second: Awip-junkyardl_trees-no shadow_dihtering-400x_25
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Awip-junkyardl_trees-no shadow_dihtering-400x_0
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 51
+        width: 162
+        height: 302
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b6d901767e526650800000000000000
+      internalID: 6224641497775068856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Awip-junkyardl_trees-no shadow_dihtering-400x_1
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 56
+        width: 185
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ee19798371270820800000000000000
+      internalID: 2884310866465464034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Awip-junkyardl_trees-no shadow_dihtering-400x_2
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 67
+        width: 166
+        height: 270
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92f6570de5d6a6660800000000000000
+      internalID: 7379831193391689513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Awip-junkyardl_trees-no shadow_dihtering-400x_3
+      rect:
+        serializedVersion: 2
+        x: 664
+        y: 75
+        width: 157
+        height: 238
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28f18b6e3097db430800000000000000
+      internalID: 3800326718233255810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Awip-junkyardl_trees-no shadow_dihtering-400x_4
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 72
+        width: 144
+        height: 241
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86d9f0a6f1281df60800000000000000
+      internalID: 8057364279777533288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Awip-junkyardl_trees-no shadow_dihtering-400x_6
+      rect:
+        serializedVersion: 2
+        x: 1044
+        y: 72
+        width: 148
+        height: 241
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e43841682da3837b0800000000000000
+      internalID: -5244377090205908146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Awip-junkyardl_trees-no shadow_dihtering-400x_7
+      rect:
+        serializedVersion: 2
+        x: 1244
+        y: 79
+        width: 144
+        height: 234
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b02227f3340989ae0800000000000000
+      internalID: -1542324253872741877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Awip-junkyardl_trees-no shadow_dihtering-400x_8
+      rect:
+        serializedVersion: 2
+        x: 1419
+        y: 75
+        width: 162
+        height: 242
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5a9b9db948f18820800000000000000
+      internalID: 2918887029110184539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Awip-junkyardl_trees-no shadow_dihtering-400x_9
+      rect:
+        serializedVersion: 2
+        x: 1611
+        y: 72
+        width: 158
+        height: 252
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be1ce41230d2c70f0800000000000000
+      internalID: -1117969116027764245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Awip-junkyardl_trees-no shadow_dihtering-400x_10
+      rect:
+        serializedVersion: 2
+        x: 1803
+        y: 75
+        width: 149
+        height: 254
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e771d5163e5e8f50800000000000000
+      internalID: 6885544466683361249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Awip-junkyardl_trees-no shadow_dihtering-400x_11
+      rect:
+        serializedVersion: 2
+        x: 1995
+        y: 63
+        width: 157
+        height: 266
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43bbda32cdf643c80800000000000000
+      internalID: -8343921218328609996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
