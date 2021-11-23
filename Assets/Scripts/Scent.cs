@@ -25,7 +25,7 @@ public class Scent : MonoBehaviour{
     void Update() {
         if (!scenting && (Input.GetKeyDown(KeyCode.G) || ClickedScentIcon)) {
             checkedVladoScent = true;
-            StartCoroutine("ScentCloud");
+            //StartCoroutine(ScentCloud());
             if (ClickedScentIcon) ClickedScentIcon = false;
         }
         if (scent) scent.transform.position = playerHuman.transform.position;

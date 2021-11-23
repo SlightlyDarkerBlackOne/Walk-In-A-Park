@@ -12,6 +12,7 @@ public class QuestObject : MonoBehaviour
     public Dialogue endDialogue;
 
     public bool isSmellQuest;
+    public bool isMilicaQuest;
 
     public bool isItemQuest;
     public string targetItem;
@@ -41,7 +42,12 @@ public class QuestObject : MonoBehaviour
                 GameObject.Find("ToDo List Panel").GetComponent<TaskManager>().CheckTaskOnToDoList();
 
                 EndQuest();
+                QuestManager.Instance.quests[1].gameObject.SetActive(true);
+                QuestManager.Instance.quests[1].StartQuest();
             }
+        }
+        if (isMilicaQuest) {
+            
         }
         if (isItemQuest) {
             if(QuestManager.Instance.itemCollected == targetItem) {

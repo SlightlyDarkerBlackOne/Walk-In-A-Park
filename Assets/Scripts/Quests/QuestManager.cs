@@ -41,7 +41,9 @@ public class QuestManager : MonoBehaviour
     }
 
     public void ShowQuestText(Dialogue questDialogue) {
-        DialogueManager.Instance.StartDialogue(questDialogue);
+        if (questDialogue.sentences[0] != "") {
+            DialogueManager.Instance.StartDialogue(questDialogue);
+        }
     }
 
     /*public void TriggerQuestDialogue(Dialogue questDialogue) {

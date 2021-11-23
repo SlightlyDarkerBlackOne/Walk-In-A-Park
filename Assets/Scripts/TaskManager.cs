@@ -23,7 +23,7 @@ public class TaskManager : MonoBehaviour
     }
     public bool CheckTaskOnToDoList() {
         if (Scent.ballFound || true) {
-            CheckTaskOnList(1);
+            StartCoroutine(CheckTaskOnList(1));
             return true;
         }
         return false;
@@ -58,12 +58,15 @@ public class TaskManager : MonoBehaviour
         return true;
     }
     //changes the toggle's Normal colour to the new colour
-    void CheckTaskOnList(int taskNumber) {
-        GameObject task = gameObject.transform.GetChild(1).GetChild(taskNumber - 1).gameObject;
-        task.GetComponent<Toggle>().isOn = true;
-        ColorBlock cb = task.GetComponent<Toggle>().colors;
-        cb.normalColor = Color.black;
-        task.GetComponent<Toggle>().colors = cb;
+    IEnumerator CheckTaskOnList(int taskNumber) {
+        GameObject task = gameObject.transform.GetChild(1).GetChild(taskNumber - 1).GetChild(2).gameObject;
+        yield return new WaitForSeconds(0.8f);
         anim.SetBool("isShowing", true);
+        yield return new WaitForSeconds(0.8f);
+        task.GetComponent<Animator>().SetTrigger("show");
+        //task.GetComponent<Toggle>().isOn = true;
+        //ColorBlock cb = task.GetComponent<Toggle>().colors;
+        //cb.normalColor = Color.black;
+        //task.GetComponent<Toggle>().colors = cb;
     }
 }
