@@ -42,7 +42,7 @@ public class Pissing : MonoBehaviour
         pissStainGO.AddComponent<SortByYAxis>();
         //update task manager
         toDoListPanel.GetComponent<TaskManager>().peeList.Add(pissStainGO);
-        toDoListPanel.GetComponent<TaskManager>().Task2();
+        toDoListPanel.GetComponent<TaskManager>().CheckTaskOnToDoList5();
         toDestroy.Add(pissStainGO);
         PlayerController2D.Instance.UnFreezePlayer();
         Destroy(piss);

@@ -10,6 +10,7 @@ public class TaskManager : MonoBehaviour
     public List<GameObject> peeList = new List<GameObject>();
     private List<GameObject> toDelete = new List<GameObject>();
     private Animator anim;
+    public LayerMask detectLayer;
     
 
     // Start is called before the first frame update
@@ -19,7 +20,8 @@ public class TaskManager : MonoBehaviour
         areaDict.Add("Area1", false);
         areaDict.Add("Area2", false);
         areaDict.Add("Area3", false);
-        anim = GetComponent<Animator>();        
+        anim = GetComponent<Animator>();   
+        detectLayer = LayerMask.GetMask("Area");     
     }
     public bool CheckTaskOnToDoList() {
         if (Scent.ballFound || true) {
@@ -28,17 +30,18 @@ public class TaskManager : MonoBehaviour
         }
         return false;
     }
-    public bool Task2()
+    public bool CheckTaskOnToDoList5()
     {
         foreach (var pee in peeList)
         {
             //area layer
-            Collider2D area = Physics2D.OverlapCircle(pee.transform.position, 0.1f);
+            Collider2D area = Physics2D.OverlapCircle(pee.transform.position, 0.1f, detectLayer);
 
             if (area != null)
             {
                 Debug.Log(area.name);
-                areaDict[area.name] = true;                             
+                areaDict[area.name] = true;   
+                Debug.Log(area.name);                          
             }
 
             toDelete.Add(pee);
@@ -53,8 +56,8 @@ public class TaskManager : MonoBehaviour
         {
             if (area.Value == false) return false;
         }
-
-        CheckTaskOnList(2);
+        
+        StartCoroutine(CheckTaskOnList(5));
         return true;
     }
     //changes the toggle's Normal colour to the new colour
