@@ -84,7 +84,12 @@ public class Leash : MonoBehaviour
         //include the scripts and navmesh again
         agentEnemyScript.enabled = true;
         agentEnemyScript.agent.enabled = true;
-        moveWaypoints.enabled = true;        
+        moveWaypoints.enabled = true;
+        GameObject.Find("Finger").GetComponent<Animator>().SetBool("isShowing", false);
+
+        if (QuestManager.Instance.quests[1].gameObject.activeSelf) {
+            DialogueManager.Instance.StartDialogue(RandomDialogues.Instance.boskoConcernedDialogue);
+        }
     }
 
     private bool ClickedOnVlado()

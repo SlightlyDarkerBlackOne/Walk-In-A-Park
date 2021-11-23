@@ -33,7 +33,6 @@ public class QuestManager : MonoBehaviour
     #endregion
 
     private void Start() {
-        int index = 0;
         for (int i = 0; i < transform.childCount; i++) {
             transform.GetChild(i).gameObject.SetActive(false);
         }
@@ -45,8 +44,4 @@ public class QuestManager : MonoBehaviour
             DialogueManager.Instance.StartDialogue(questDialogue);
         }
     }
-
-    /*public void TriggerQuestDialogue(Dialogue questDialogue) {
-        theDM.StartDialogue(questDialogue);
-    }*/
 }

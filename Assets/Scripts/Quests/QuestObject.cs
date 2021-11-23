@@ -17,11 +17,6 @@ public class QuestObject : MonoBehaviour
     public bool isItemQuest;
     public string targetItem;
 
-    public bool isEnemyQuest;
-    public string targetEnemy;
-    public int enemiesToKill;
-    public int enemyKillCount;
-
     // Start is called before the first frame update
     void Start()
     {
@@ -56,24 +51,16 @@ public class QuestObject : MonoBehaviour
                 EndQuest();
             }
         }
-
-        if (isEnemyQuest) {
-            if(QuestManager.Instance.enemyKilled == targetEnemy) {
-                QuestManager.Instance.enemyKilled = "";
-
-                enemyKillCount++;
-            }
-
-            if(enemyKillCount >= enemiesToKill) {
-                EndQuest();
-            }
-        }
     }
 
     public void StartQuest() {
-        QuestManager.Instance.ShowQuestText(startDialogue);
         if (isSmellQuest) {
             GameObject.Find("ScentButton").GetComponent<Animator>().SetBool("pingPong", true);
+        }
+        if (isMilicaQuest) {
+            StartCoroutine(MilicaDialogue());
+        } else {
+            QuestManager.Instance.ShowQuestText(startDialogue);
         }
     }
 
@@ -81,5 +68,15 @@ public class QuestObject : MonoBehaviour
         QuestManager.Instance.ShowQuestText(endDialogue);
         QuestManager.Instance.questCompleted[questNumber] = true;
         gameObject.SetActive(false);
+    }
+
+    IEnumerator MilicaDialogue() {
+        yield return new WaitForSeconds(4f);
+        QuestManager.Instance.ShowQuestText(startDialogue);
+        yield return new WaitForSeconds(3f);
+        //if (DialogueManager.Instance.animator.GetBool("IsOpen") == false) {
+            GameObject.Find("Finger").GetComponent<Animator>().SetBool("isShowing", true);
+        GameObject.Find("ToDo List Panel").GetComponent<Animator>().SetBool("isShowing", false);
+        //}
     }
 }
