@@ -214,8 +214,8 @@ PrefabInstance:
     - target: {fileID: 3581614946955836175, guid: 85c8d042223a4674e85fba4152427590,
         type: 3}
       propertyPath: m_text
-      value: To his dog, every man is Napoleon; hence the constant popularity of
-        dogs.
+      value: Why are there so many dogs without leashes here? I'd like to speak to
+        the manager of this part.
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 85c8d042223a4674e85fba4152427590, type: 3}
@@ -631,7 +631,7 @@ PrefabInstance:
     - target: {fileID: 3581614946955836175, guid: 85c8d042223a4674e85fba4152427590,
         type: 3}
       propertyPath: m_text
-      value: The dog is a gentleman; I hope to go to his heaven, not man's.
+      value: My glasses! I can't see anything without my glasses!
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 85c8d042223a4674e85fba4152427590, type: 3}
@@ -732,7 +732,7 @@ PrefabInstance:
     - target: {fileID: 3581614946955836175, guid: 85c8d042223a4674e85fba4152427590,
         type: 3}
       propertyPath: m_text
-      value: Everything I know I learned from dogs.
+      value: Stand back or I'm calling the police!
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 85c8d042223a4674e85fba4152427590, type: 3}
@@ -1296,7 +1296,8 @@ PrefabInstance:
     - target: {fileID: 3581614946955836175, guid: 85c8d042223a4674e85fba4152427590,
         type: 3}
       propertyPath: m_text
-      value: "Dogs\u2019 lives are too short. Their only fault, really."
+      value: Everyone looks like me again. I must have forgotten to take my antipsychotics
+        this morning.
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 85c8d042223a4674e85fba4152427590, type: 3}
@@ -1391,7 +1392,7 @@ PrefabInstance:
     - target: {fileID: 3581614946955836175, guid: 85c8d042223a4674e85fba4152427590,
         type: 3}
       propertyPath: m_text
-      value: Every dog must have his day.
+      value: Who let the dogs out?
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 85c8d042223a4674e85fba4152427590, type: 3}
@@ -2181,7 +2182,7 @@ PrefabInstance:
     - target: {fileID: 3581614946955836175, guid: 85c8d042223a4674e85fba4152427590,
         type: 3}
       propertyPath: m_text
-      value: Who let the dogs out?
+      value: Stop following me!
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 85c8d042223a4674e85fba4152427590, type: 3}
@@ -2958,7 +2959,7 @@ PrefabInstance:
     - target: {fileID: 3581614946955836175, guid: 85c8d042223a4674e85fba4152427590,
         type: 3}
       propertyPath: m_text
-      value: The more I learn about people, the more I like my dog.
+      value: Nice kitty.
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 85c8d042223a4674e85fba4152427590, type: 3}
@@ -4692,8 +4693,12 @@ PrefabInstance:
     - target: {fileID: 3581614946955836175, guid: 85c8d042223a4674e85fba4152427590,
         type: 3}
       propertyPath: m_text
-      value: "A dog is the only thing on earth that loves you more than he loves
-        himself.\u201D"
+      value: Are you my dog?
+      objectReference: {fileID: 0}
+    - target: {fileID: 3581614946955836175, guid: 85c8d042223a4674e85fba4152427590,
+        type: 3}
+      propertyPath: m_fontStyle
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 85c8d042223a4674e85fba4152427590, type: 3}
@@ -4788,7 +4793,7 @@ PrefabInstance:
     - target: {fileID: 3581614946955836175, guid: 85c8d042223a4674e85fba4152427590,
         type: 3}
       propertyPath: m_text
-      value: "Scratch a dog and you\u2019ll find a permanent job."
+      value: Why won't you just let me pet you?
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 85c8d042223a4674e85fba4152427590, type: 3}
@@ -5618,8 +5623,8 @@ PrefabInstance:
     - target: {fileID: 3581614946955836175, guid: 85c8d042223a4674e85fba4152427590,
         type: 3}
       propertyPath: m_text
-      value: Outside of a dog, a book is man's best friend. Inside of a dog, it's
-        too dark to read.
+      value: Back in my day, dogs were used for pulling sleds full of medicine for
+        children with diphtheria.
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 85c8d042223a4674e85fba4152427590, type: 3}
@@ -6614,7 +6619,7 @@ PrefabInstance:
     - target: {fileID: 3581614946955836175, guid: 85c8d042223a4674e85fba4152427590,
         type: 3}
       propertyPath: m_text
-      value: Who are all these dogs?
+      value: Hello, doggy! Would you like some chocolate?
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 85c8d042223a4674e85fba4152427590, type: 3}
@@ -6769,7 +6774,7 @@ PrefabInstance:
     - target: {fileID: 3581614946955836175, guid: 85c8d042223a4674e85fba4152427590,
         type: 3}
       propertyPath: m_text
-      value: Dogs are not our whole life, but they make our lives whole.
+      value: I'm more of a cat person.
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 85c8d042223a4674e85fba4152427590, type: 3}
@@ -7007,8 +7012,7 @@ PrefabInstance:
     - target: {fileID: 3581614946955836175, guid: 85c8d042223a4674e85fba4152427590,
         type: 3}
       propertyPath: m_text
-      value: Petting, scratching, and cuddling a dog could be as soothing to the
-        mind and heart as deep meditation, and almost as good for the soul as prayer.
+      value: Help! It's coming right for me!
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 85c8d042223a4674e85fba4152427590, type: 3}
@@ -7820,7 +7824,7 @@ PrefabInstance:
     - target: {fileID: 3581614946955836175, guid: 85c8d042223a4674e85fba4152427590,
         type: 3}
       propertyPath: m_text
-      value: Every Dog has its Day; and every Man his Hour.
+      value: Has anyone seen my Fifi?
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 85c8d042223a4674e85fba4152427590, type: 3}
@@ -9234,6 +9238,11 @@ PrefabInstance:
       propertyPath: targetToMoveAwayFrom
       value: 
       objectReference: {fileID: 690605281}
+    - target: {fileID: 3581614946955836175, guid: 85c8d042223a4674e85fba4152427590,
+        type: 3}
+      propertyPath: m_text
+      value: Oh! Puppies! This is truly the best Granny-Con yet!
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 85c8d042223a4674e85fba4152427590, type: 3}
 --- !u!4 &1890901615 stripped
