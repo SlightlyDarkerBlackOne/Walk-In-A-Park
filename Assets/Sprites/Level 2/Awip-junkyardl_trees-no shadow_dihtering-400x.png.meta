@@ -188,8 +188,8 @@ TextureImporter:
         y: 51
         width: 162
         height: 302
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -209,8 +209,8 @@ TextureImporter:
         y: 56
         width: 185
         height: 300
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -230,8 +230,8 @@ TextureImporter:
         y: 67
         width: 166
         height: 270
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -251,8 +251,8 @@ TextureImporter:
         y: 75
         width: 157
         height: 238
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.4526787, y: 0.21872978}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -272,8 +272,8 @@ TextureImporter:
         y: 72
         width: 144
         height: 241
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.46388456, y: 0.24007602}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -289,12 +289,12 @@ TextureImporter:
       name: Awip-junkyardl_trees-no shadow_dihtering-400x_6
       rect:
         serializedVersion: 2
-        x: 1044
+        x: 1043
         y: 72
         width: 148
         height: 241
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.49498028, y: 0.23082767}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -314,8 +314,8 @@ TextureImporter:
         y: 79
         width: 144
         height: 234
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2380999}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -335,8 +335,8 @@ TextureImporter:
         y: 75
         width: 162
         height: 242
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.49541408, y: 0.22149028}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -356,8 +356,8 @@ TextureImporter:
         y: 72
         width: 158
         height: 252
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.49059594, y: 0.23243023}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -377,8 +377,8 @@ TextureImporter:
         y: 75
         width: 149
         height: 254
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.4650969, y: 0.22632496}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -398,8 +398,8 @@ TextureImporter:
         y: 63
         width: 157
         height: 266
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.47634012, y: 0.2586538}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -407,6 +407,321 @@ TextureImporter:
       bones: []
       spriteID: 43bbda32cdf643c80800000000000000
       internalID: -8343921218328609996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Awip-junkyardl_trees-no shadow_dihtering-400x_5
+      rect:
+        serializedVersion: 2
+        x: 1023
+        y: 143
+        width: 6
+        height: 6
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c246199f769d3130800000000000000
+      internalID: 3548157556211204804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Awip-junkyardl_trees-no shadow_dihtering-400x_12
+      rect:
+        serializedVersion: 2
+        x: 851
+        y: 127
+        width: 5
+        height: 6
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcf134f50a80c0440800000000000000
+      internalID: 4903303579185651663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Awip-junkyardl_trees-no shadow_dihtering-400x_13
+      rect:
+        serializedVersion: 2
+        x: 1951
+        y: 132
+        width: 6
+        height: 5
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b56a2ba60fbc222d0800000000000000
+      internalID: -3304854943093840293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Awip-junkyardl_trees-no shadow_dihtering-400x_14
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 123
+        width: 10
+        height: 5
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fcd191bd1b911f40800000000000000
+      internalID: 5697505555435871479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Awip-junkyardl_trees-no shadow_dihtering-400x_15
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 116
+        width: 10
+        height: 9
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b16113b07dd122a70800000000000000
+      internalID: 8800629431278310939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Awip-junkyardl_trees-no shadow_dihtering-400x_16
+      rect:
+        serializedVersion: 2
+        x: 1235
+        y: 119
+        width: 5
+        height: 6
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1c5b339fefdfaf80800000000000000
+      internalID: -8093003785301173219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Awip-junkyardl_trees-no shadow_dihtering-400x_17
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 104
+        width: 9
+        height: 8
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd7eebee8ae6a9f30800000000000000
+      internalID: 4583097242641950685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Awip-junkyardl_trees-no shadow_dihtering-400x_18
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 100
+        width: 5
+        height: 5
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b43bdeaf73d920a60800000000000000
+      internalID: 7638840781732426571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Awip-junkyardl_trees-no shadow_dihtering-400x_19
+      rect:
+        serializedVersion: 2
+        x: 1767
+        y: 100
+        width: 10
+        height: 9
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca7d34cc92a655bc0800000000000000
+      internalID: -3795010383236573268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Awip-junkyardl_trees-no shadow_dihtering-400x_20
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 88
+        width: 6
+        height: 5
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 354ee011c870b7340800000000000000
+      internalID: 4862488520839586899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Awip-junkyardl_trees-no shadow_dihtering-400x_21
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 91
+        width: 5
+        height: 10
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b89b2cd7678bfe0c0800000000000000
+      internalID: -4544210679937975925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Awip-junkyardl_trees-no shadow_dihtering-400x_22
+      rect:
+        serializedVersion: 2
+        x: 855
+        y: 83
+        width: 6
+        height: 6
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ae81ce1010eb96b0800000000000000
+      internalID: -5288386977576415575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Awip-junkyardl_trees-no shadow_dihtering-400x_23
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 75
+        width: 5
+        height: 5
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb6c85c912505d6d0800000000000000
+      internalID: -2966459137638480197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Awip-junkyardl_trees-no shadow_dihtering-400x_24
+      rect:
+        serializedVersion: 2
+        x: 919
+        y: 63
+        width: 6
+        height: 5
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73f652a504ac883d0800000000000000
+      internalID: -3204088757134987465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Awip-junkyardl_trees-no shadow_dihtering-400x_25
+      rect:
+        serializedVersion: 2
+        x: 952
+        y: 63
+        width: 5
+        height: 5
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04c24354ab246bc80800000000000000
+      internalID: -8307379094845903808
       vertices: []
       indices: 
       edges: []
