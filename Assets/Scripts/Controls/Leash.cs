@@ -16,6 +16,21 @@ public class Leash : MonoBehaviour
     private AgentEnemy agentEnemyScript;
     private MoveWaypoints moveWaypoints;
 
+    public bool canPutLeashOnOrOff = false;
+
+    #region Singleton
+    public static Leash Instance { get; private set; }
+
+    void Awake() {
+        if (Instance == null) {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+        } else {
+            Destroy(gameObject);
+        }
+    }
+    #endregion
+
     // Start is called before the first frame update
     void Start()
     {
@@ -30,15 +45,11 @@ public class Leash : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.R) || ClickedOnVlado() == true) 
-        {
-            if (!leash.activeSelf && DogInRange())
-            {
+        if (Input.GetKeyDown(KeyCode.R) || ClickedOnVlado() == true && canPutLeashOnOrOff) {
+            if (!leash.activeSelf && DogInRange()) {
                 puttingOnLeash = true;
                 SFXManager.Instance.PlaySound(SFXManager.Instance.leashAttach);
-            }
-            else if (leash.activeSelf)
-            {
+            } else if (leash.activeSelf) {
                 DisconnectLeashFromPlayerHuman();
             }
         }
@@ -74,6 +85,8 @@ public class Leash : MonoBehaviour
         playerHuman.GetComponent<Rigidbody2D>().drag = 2f;
         leash.SetActive(true);  
         joint.enabled = true;
+
+        GameManager.Instance.leashActive = true;
     }
 
     private void DisconnectLeashFromPlayerHuman()
@@ -90,6 +103,8 @@ public class Leash : MonoBehaviour
         if (QuestManager.Instance.quests[1].gameObject.activeSelf) {
             DialogueManager.Instance.StartDialogue(RandomDialogues.Instance.boskoConcernedDialogue);
         }
+
+        GameManager.Instance.leashActive = false;
     }
 
     private bool ClickedOnVlado()

@@ -4,15 +4,20 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        //SFXManager.Instance.PlaySoundTrack(SFXManager.Instance.soundTrack);
-    }
+    public bool leashActive;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+    #region Singleton
+    public static GameManager Instance { get; private set; }
+
+    void Awake() {
+        if (Instance == null) {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+        } else {
+            Destroy(gameObject);
+        }
     }
+    #endregion
+
+
 }

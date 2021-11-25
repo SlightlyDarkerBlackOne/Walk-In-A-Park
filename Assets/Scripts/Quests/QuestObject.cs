@@ -13,9 +13,12 @@ public class QuestObject : MonoBehaviour
 
     public bool isSmellQuest;
     public bool isMilicaQuest;
+    public bool isBoneQuest;
 
     public bool isItemQuest;
     public string targetItem;
+
+    private bool milicaDialogueStarted;
 
     // Start is called before the first frame update
     void Start()
@@ -30,6 +33,7 @@ public class QuestObject : MonoBehaviour
 
                 GameObject.Find("ScentButton").GetComponent<Animator>().SetBool("pingPong", false);
                 GameObject.Find("VladoScent").GetComponent<ParticleSystem>().Play();
+                GameObject.Find("VladoScentBurst").GetComponent<ParticleSystem>().Play();
             };
             if (QuestManager.Instance.sniffButtonClicked == true && QuestManager.Instance.itemCollected == targetItem) {
                 QuestManager.Instance.itemCollected = null;
@@ -42,13 +46,24 @@ public class QuestObject : MonoBehaviour
             }
         }
         if (isMilicaQuest) {
-            
+            if (milicaDialogueStarted) {
+                if (DialogueManager.Instance.animator.GetBool("IsOpen") == false) {
+                    GameObject.Find("Finger").GetComponent<Animator>().SetBool("isShowing", true);
+                    Leash.Instance.canPutLeashOnOrOff = true;
+                    milicaDialogueStarted = false;
+                }
+            }
         }
         if (isItemQuest) {
             if(QuestManager.Instance.itemCollected == targetItem) {
                 QuestManager.Instance.itemCollected = null;
 
                 EndQuest();
+            }
+        }
+        if (isBoneQuest) {
+            if (QuestManager.Instance.quests[2].gameObject.activeSelf) {
+                QuestManager.Instance.quests[1].EndQuest();
             }
         }
     }
@@ -72,11 +87,9 @@ public class QuestObject : MonoBehaviour
 
     IEnumerator MilicaDialogue() {
         yield return new WaitForSeconds(4f);
-        QuestManager.Instance.ShowQuestText(startDialogue);
-        yield return new WaitForSeconds(3f);
-        //if (DialogueManager.Instance.animator.GetBool("IsOpen") == false) {
-            GameObject.Find("Finger").GetComponent<Animator>().SetBool("isShowing", true);
         GameObject.Find("ToDo List Panel").GetComponent<Animator>().SetBool("isShowing", false);
-        //}
+        yield return new WaitForSeconds(2f);
+        QuestManager.Instance.ShowQuestText(startDialogue);
+        milicaDialogueStarted = true;
     }
 }

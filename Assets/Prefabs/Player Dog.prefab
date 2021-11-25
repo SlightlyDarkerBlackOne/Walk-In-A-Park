@@ -2908,6 +2908,7 @@ MonoBehaviour:
   playerHuman: {fileID: 0}
   boneToJoint: {fileID: 1804272108}
   minLeashDistance: 10
+  canPutLeashOnOrOff: 0
 --- !u!114 &99989285
 MonoBehaviour:
   m_ObjectHideFlags: 0

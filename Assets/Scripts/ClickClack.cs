@@ -16,7 +16,7 @@ public class ClickClack : MonoBehaviour
     }
     private void Update() {
         if (Input.GetKeyDown(KeyCode.E) || Tap()) {
-            if (canClickClack) {
+            if (canClickClack && !GameManager.Instance.leashActive) {
                 anim.SetBool("isClickClacking", true);
                 PlayerController2D.Instance.SetPlayerToLocationAndFreeze(clickClackPosition);
                 clickClacking = true;
