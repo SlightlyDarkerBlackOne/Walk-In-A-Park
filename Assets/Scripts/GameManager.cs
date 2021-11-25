@@ -17,14 +17,15 @@ public class GameManager : MonoBehaviour
         } else {
             Destroy(gameObject);
         }
+        FillWaypointList();
     }
     #endregion
 
     private void Start() {
-        FillWaypointList();
+        //FillWaypointList();
     }
     public Vector3 RandomWaypoint() {
-        int randomIndex = Random.Range(0, waypoints.Count);
+        int randomIndex = Random.Range(0, waypoints.Count - 1);
         return waypoints[randomIndex];
     }
     private void FillWaypointList() {

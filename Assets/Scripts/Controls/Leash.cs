@@ -100,6 +100,7 @@ public class Leash : MonoBehaviour
         moveWaypoints.enabled = true;
         GameObject.Find("Finger").GetComponent<Animator>().SetBool("isShowing", false);
 
+        StartCoroutine(Wait());
         if (QuestManager.Instance.quests[1].gameObject.activeSelf) {
             DialogueManager.Instance.StartDialogue(RandomDialogues.Instance.boskoConcernedDialogue);
         }
@@ -119,7 +120,10 @@ public class Leash : MonoBehaviour
                 return true;
             }
         }
-  
         return false;
+    }
+
+    IEnumerator Wait() {
+        yield return new WaitForSeconds(1.5f);
     }
 }

@@ -527,8 +527,8 @@ MonoBehaviour:
   - {fileID: 1642473378}
   - {fileID: 1804272109}
   m_Bounds:
-    m_Center: {x: -0.00006222725, y: -0.00012381934, z: 0}
-    m_Extent: {x: 1.2520584, y: 0.024137974, z: 0}
+    m_Center: {x: -0.0000603199, y: -0.00012381934, z: 0}
+    m_Extent: {x: 1.2520603, y: 0.024137974, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
 --- !u!1 &667969373
@@ -1164,7 +1164,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 0.07109833, y: 0}
+  m_ConnectedAnchor: {x: 0.07110214, y: 0}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -1518,7 +1518,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 0.08352663, y: -0.00000037741847}
+  m_ConnectedAnchor: {x: 0.08352283, y: -0.00000051851384}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -2065,7 +2065,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 0.102059476, y: 0.00000046449713}
+  m_ConnectedAnchor: {x: 0.10206328, y: 0.00000034901313}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -2629,7 +2629,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 0.11128998, y: 0.00000023714404}
+  m_ConnectedAnchor: {x: 0.11128616, y: 0.00000023713591}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -2723,7 +2723,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 0.09897103, y: 0.00000031059608}
+  m_ConnectedAnchor: {x: 0.09897485, y: 0.00000019138679}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -2873,7 +2873,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d276254695bc769408df6c95e06d2781, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 3.14
+  moveSpeed: 1.96
   startTimeBtwTrail: 0.1
   trailEffect: {fileID: 1148421819908946, guid: 2976262eb7075c4469774072094b1328,
     type: 3}
@@ -2888,8 +2888,11 @@ MonoBehaviour:
   detectedItem: {fileID: 0}
   cleanUpList: []
   carryItem: 0
+  carryOffset: {x: 0, y: 0, z: 0}
   screenWidth: 0
   screenHeight: 0
+  horizontal: 0
+  vertical: 0
   throwForce: 70
   throwDrag: 16
   agentEnemyScript: {fileID: 0}
