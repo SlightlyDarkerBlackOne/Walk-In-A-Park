@@ -342,7 +342,7 @@ public class PlayerController2D : MonoBehaviour
         }
 
         if (carryItem) {
-            detectedItem.GetComponent<Collider2D>().isTrigger = true;
+            if (detectedItem != null) detectedItem.GetComponent<Collider2D>().isTrigger = true;
 
             switch(horizontal)
             {
@@ -369,7 +369,7 @@ public class PlayerController2D : MonoBehaviour
             
             
             //detectedItem.transform.parent = transform;
-            detectedItem.transform.position = transform.position+carryOffset;
+            if (detectedItem != null) detectedItem.transform.position = transform.position+carryOffset;
             UIManager.Instance.HidePickupIndicatorText();
         } //else if (DetectItem()) detectedItem.transform.parent = null;
         else if (DetectItem())
@@ -435,6 +435,11 @@ public class PlayerController2D : MonoBehaviour
         }
         else
         {
+            //temporary
+            if (item.name == "BoskoBone") 
+            {
+                GameObject.Find("ToDo List Panel").GetComponent<TaskManager>().CheckTaskOnToDoList(3);
+            }
             UIManager.Instance.ShowPickupIndicatorText(item.name);
             detectedItem = item.gameObject;
             return true;
