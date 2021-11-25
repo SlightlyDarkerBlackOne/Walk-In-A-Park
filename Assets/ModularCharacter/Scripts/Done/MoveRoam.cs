@@ -36,7 +36,8 @@ public class MoveRoam : MonoBehaviour {
     }
 
     private void SetRandomMovePosition() {
-            targetMovePosition = startPosition + UtilsClass.GetRandomDir() * Random.Range(movementRangeX, movementRangeY);    
+        //targetMovePosition = startPosition + UtilsClass.GetRandomDir() * Random.Range(movementRangeX, movementRangeY);
+        targetMovePosition = GetRandomWaypoint();
     }
 
     private void Update() {
@@ -55,6 +56,8 @@ public class MoveRoam : MonoBehaviour {
     private void SetMovePosition(Vector3 movePosition) {
         GetComponent<IMovePosition>().SetMovePosition(movePosition);
     }
-
+    Vector3 GetRandomWaypoint() {
+        return GameManager.Instance.RandomWaypoint();
+    }
 
 }

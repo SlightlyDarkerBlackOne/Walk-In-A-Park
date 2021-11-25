@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 2622025684011958564}
   - component: {fileID: 2622025684011958587}
   - component: {fileID: 2622025684011958586}
-  - component: {fileID: 2622025684011958585}
   - component: {fileID: 2622025684011958591}
   - component: {fileID: 4890360392962851331}
+  - component: {fileID: -7003453329477690355}
   m_Layer: 0
   m_Name: Awip-normal_trees-shadow_dihtering-400x_5
   m_TagString: Untagged
@@ -103,32 +103,6 @@ MonoBehaviour:
   m_Area: 1
   m_IgnoreFromBuild: 0
   m_AffectedAgents: ffffffff
---- !u!61 &2622025684011958585
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2622025684011958590}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.01374203, y: 1.09}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5078832, y: 0.2433288}
-    oldSize: {x: 1.45, y: 2.4500968}
-    newSize: {x: 1.45, y: 2.4500968}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1.0835508, y: 1.3141035}
-  m_EdgeRadius: 0
 --- !u!114 &2622025684011958591
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -167,4 +141,30 @@ BoxCollider2D:
   m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 0.35495567, y: 0.2223494}
+  m_EdgeRadius: 0
+--- !u!61 &-7003453329477690355
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2622025684011958590}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.01374203, y: 1.09}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5078832, y: 0.2433288}
+    oldSize: {x: 1.45, y: 2.4500968}
+    newSize: {x: 1.45, y: 2.4500968}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.0835508, y: 1.3141035}
   m_EdgeRadius: 0
