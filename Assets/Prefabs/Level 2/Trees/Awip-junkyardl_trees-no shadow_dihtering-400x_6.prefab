@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 5104359660750150028}
   - component: {fileID: 5104359660750150019}
   - component: {fileID: 5104359660750150018}
-  - component: {fileID: 5104359660750150017}
   - component: {fileID: 5104359660750150016}
+  - component: {fileID: 1342382339581736709}
   m_Layer: 0
   m_Name: Awip-junkyardl_trees-no shadow_dihtering-400x_6
   m_TagString: Untagged
@@ -129,7 +129,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.0817986, y: 1.4609406}
   m_EdgeRadius: 0
---- !u!61 &5104359660750150017
+--- !u!114 &5104359660750150016
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5104359660750150023}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 346fa0d41c8492e4997484c34b542c73, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  alpha: 0.5
+--- !u!61 &1342382339581736709
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -155,16 +168,3 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.264012, y: 0.22291589}
   m_EdgeRadius: 0
---- !u!114 &5104359660750150016
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5104359660750150023}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 346fa0d41c8492e4997484c34b542c73, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  alpha: 0.5

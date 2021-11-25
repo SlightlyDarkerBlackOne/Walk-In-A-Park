@@ -1,8 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Experimental.Rendering.LWRP;
-
+using UnityEngine.Experimental.Rendering.Universal;
 /*
 - Creator:    Two TV Games (@gallighanmaker)
 - Script:     Day And Night 2D System
@@ -60,12 +59,21 @@ public class DayNightSystem2D : MonoBehaviour
 
     [Header("Objects")]
     [Tooltip("Objects to turn on and off based on day night cycles, you can use this example for create some custom stuffs")]
-    public UnityEngine.Experimental.Rendering.Universal.Light2D[] mapLights; // enable/disable in day/night states
+    public Light2D[] mapLights; // enable/disable in day/night states
+    private List<Color> mapLightsColors = new List<Color>();
 
     void Start() 
     {
         dayCycle = DayCycles.Sunrise; // start with sunrise state
         globalLight.color = sunrise; // start global color at sunrise
+
+        foreach (Light2D light in mapLights) {
+            if(light.transform.parent.GetComponent<SpriteRenderer>() != null && light.gameObject.name == "LampLight") {
+                Color colorToStore = light.transform.parent.GetComponent<SpriteRenderer>().color;
+                mapLightsColors.Add(colorToStore);
+            }
+        }
+        ControlLightMaps(false);
     }
 
      void Update()
@@ -82,8 +90,11 @@ public class DayNightSystem2D : MonoBehaviour
         }
 
         // If reach final state we back to sunrise (Enum id 0)
-        if(dayCycle > DayCycles.Midnight)
+        if(dayCycle > DayCycles.Midnight) {
+            //Show Endgame screen
             dayCycle = 0;
+        }
+            
 
         // percent it's a value between current and max time to make a color lerp smooth
         float percent = cycleCurrentTime / cycleMaxTime;
@@ -125,9 +136,19 @@ public class DayNightSystem2D : MonoBehaviour
 
      void ControlLightMaps(bool status)
      {
-         // loop in light array of objects to enable/disable
-         if(mapLights.Length > 0)
-            foreach(UnityEngine.Experimental.Rendering.Universal.Light2D _light in mapLights)
+        int i = 0;
+        // loop in light array of objects to enable/disable
+        if (mapLights.Length > 0)
+            foreach(Light2D _light in mapLights) {
                 _light.gameObject.SetActive(status);
+                if(_light.gameObject.name == "LampLight") {
+                    if (status) {
+                        _light.transform.parent.GetComponent<SpriteRenderer>().color = mapLightsColors[i];
+                    } else {
+                        _light.transform.parent.GetComponent<SpriteRenderer>().color = Color.grey;
+                    }
+                    i++;
+                }
+            }
      }
 }

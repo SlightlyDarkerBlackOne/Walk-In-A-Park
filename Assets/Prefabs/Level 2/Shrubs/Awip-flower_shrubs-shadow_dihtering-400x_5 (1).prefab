@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6669845302391627863}
   - component: {fileID: 3353987791626594751}
   - component: {fileID: 598178757897039855}
-  - component: {fileID: 5208817697504445246}
+  - component: {fileID: 9001620880873933223}
   - component: {fileID: 5686402316536097442}
   m_Layer: 0
   m_Name: Awip-flower_shrubs-shadow_dihtering-400x_5 (1)
@@ -129,7 +129,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.0446682, y: 1.0561928}
   m_EdgeRadius: 0
---- !u!61 &5208817697504445246
+--- !u!61 &9001620880873933223
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

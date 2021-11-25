@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 317104707990357530}
   - component: {fileID: 317104707990357529}
   - component: {fileID: 317104707990357528}
-  - component: {fileID: 317104707990357535}
   - component: {fileID: 317104707990357534}
+  - component: {fileID: 871744988783525518}
   m_Layer: 0
   m_Name: Awip-normal_trees-shadow_dihtering-400x_3
   m_TagString: Untagged
@@ -129,7 +129,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.1247572, y: 1.2712594}
   m_EdgeRadius: 0
---- !u!61 &317104707990357535
+--- !u!114 &317104707990357534
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 317104707990357533}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 346fa0d41c8492e4997484c34b542c73, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  alpha: 0.5
+--- !u!61 &871744988783525518
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -155,16 +168,3 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.27871263, y: 0.18743038}
   m_EdgeRadius: 0
---- !u!114 &317104707990357534
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 317104707990357533}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 346fa0d41c8492e4997484c34b542c73, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  alpha: 0.5

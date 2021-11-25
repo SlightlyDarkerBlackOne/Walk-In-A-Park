@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 7045329067696848975}
   - component: {fileID: 9073507016234438324}
   - component: {fileID: 1762943017500449900}
-  - component: {fileID: 6629314782536103217}
   - component: {fileID: 7837198341945888342}
+  - component: {fileID: 2949059613291844818}
   m_Layer: 0
   m_Name: Awip-flower_shrubs-shadow_dihtering-400x_0
   m_TagString: Untagged
@@ -129,7 +129,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.0538802, y: 0.87182546}
   m_EdgeRadius: 0
---- !u!61 &6629314782536103217
+--- !u!114 &7837198341945888342
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3893098666930676219}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 346fa0d41c8492e4997484c34b542c73, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  alpha: 0.5
+--- !u!61 &2949059613291844818
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -155,16 +168,3 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.23929226, y: 0.114290476}
   m_EdgeRadius: 0
---- !u!114 &7837198341945888342
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3893098666930676219}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 346fa0d41c8492e4997484c34b542c73, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  alpha: 0.5
