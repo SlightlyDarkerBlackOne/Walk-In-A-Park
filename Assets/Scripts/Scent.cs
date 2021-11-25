@@ -33,7 +33,7 @@ public class Scent : MonoBehaviour{
         ball = Physics2D.OverlapCircle(transform.position, 5f, detectLayer);
         if (ball != null && ball.name == "Vlado Ball" && checkedVladoScent) {
             ballFound = true;
-            toDoListPanel.GetComponent<TaskManager>().CheckTaskOnToDoList();
+            //toDoListPanel.GetComponent<TaskManager>().CheckTaskOnToDoList();
             if (ballFound) Debug.Log("Vlado's ball found");
             if (!scenting) StartCoroutine("ScentCloud");
             if (scent) scent.transform.position = ball.transform.position;

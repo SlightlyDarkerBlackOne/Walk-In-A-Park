@@ -23,9 +23,9 @@ public class TaskManager : MonoBehaviour
         anim = GetComponent<Animator>();   
         detectLayer = LayerMask.GetMask("Area");     
     }
-    public bool CheckTaskOnToDoList() {
+    public bool CheckTaskOnToDoList(int taskNumber) {
         if (Scent.ballFound || true) {
-            StartCoroutine(CheckTaskOnList(1));
+            StartCoroutine(CheckTaskOnList(taskNumber));
             return true;
         }
         return false;
@@ -65,7 +65,7 @@ public class TaskManager : MonoBehaviour
         GameObject task = gameObject.transform.GetChild(1).GetChild(taskNumber - 1).GetChild(2).gameObject;
         yield return new WaitForSeconds(0.8f);
         anim.SetBool("isShowing", true);
-        yield return new WaitForSeconds(0.8f);
+        yield return new WaitForSeconds(1.5f);
         task.GetComponent<Animator>().SetTrigger("show");
         //task.GetComponent<Toggle>().isOn = true;
         //ColorBlock cb = task.GetComponent<Toggle>().colors;

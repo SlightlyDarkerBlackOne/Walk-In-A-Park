@@ -38,7 +38,7 @@ public class QuestObject : MonoBehaviour
             if (QuestManager.Instance.sniffButtonClicked == true && QuestManager.Instance.itemCollected == targetItem) {
                 QuestManager.Instance.itemCollected = null;
 
-                GameObject.Find("ToDo List Panel").GetComponent<TaskManager>().CheckTaskOnToDoList();
+                GameObject.Find("ToDo List Panel").GetComponent<TaskManager>().CheckTaskOnToDoList(1);
 
                 EndQuest();
                 QuestManager.Instance.quests[1].gameObject.SetActive(true);
@@ -64,6 +64,7 @@ public class QuestObject : MonoBehaviour
         if (isBoneQuest) {
             if (QuestManager.Instance.quests[2].gameObject.activeSelf) {
                 QuestManager.Instance.quests[1].EndQuest();
+                GameObject.Find("ToDo List Panel").GetComponent<TaskManager>().CheckTaskOnToDoList(2);
             }
         }
     }
