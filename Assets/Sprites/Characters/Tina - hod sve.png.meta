@@ -1,0 +1,936 @@
+fileFormatVersion: 2
+guid: bd40681288f599f48a850e1da8a0feb0
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8013116852505942444
+    second: Tina - hod sve_0
+  - first:
+      213: -4140013030526498852
+    second: Tina - hod sve_1
+  - first:
+      213: -4295954535689511028
+    second: Tina - hod sve_2
+  - first:
+      213: 5525057330372952129
+    second: Tina - hod sve_3
+  - first:
+      213: -2582837833417556938
+    second: Tina - hod sve_4
+  - first:
+      213: 486392983560852639
+    second: Tina - hod sve_5
+  - first:
+      213: -2896601240608513465
+    second: Tina - hod sve_6
+  - first:
+      213: -8627841102559027874
+    second: Tina - hod sve_7
+  - first:
+      213: 8960414654328888351
+    second: Tina - hod sve_8
+  - first:
+      213: 612215458424409946
+    second: Tina - hod sve_9
+  - first:
+      213: -6693892092936265007
+    second: Tina - hod sve_10
+  - first:
+      213: 3170662840470718816
+    second: Tina - hod sve_11
+  - first:
+      213: -6472929796421769739
+    second: Tina - hod sve_12
+  - first:
+      213: 3298007600769271204
+    second: Tina - hod sve_13
+  - first:
+      213: -7701292889752730011
+    second: Tina - hod sve_14
+  - first:
+      213: -2937599958755979833
+    second: Tina - hod sve_15
+  - first:
+      213: 1063742923838154079
+    second: Tina - hod sve_16
+  - first:
+      213: -6204662775085229473
+    second: Tina - hod sve_17
+  - first:
+      213: 365648857475801163
+    second: Tina - hod sve_18
+  - first:
+      213: -539274074877833128
+    second: Tina - hod sve_19
+  - first:
+      213: -633636366663031801
+    second: Tina - hod sve_20
+  - first:
+      213: -3920407015696105248
+    second: Tina - hod sve_21
+  - first:
+      213: 2801476762690418906
+    second: Tina - hod sve_22
+  - first:
+      213: -7453166292760477191
+    second: Tina - hod sve_23
+  - first:
+      213: -2804872059938621955
+    second: Tina - hod sve_24
+  - first:
+      213: 6734734153395312749
+    second: Tina - hod sve_25
+  - first:
+      213: 5035082032592547548
+    second: Tina - hod sve_26
+  - first:
+      213: -7120789282947073715
+    second: Tina - hod sve_27
+  - first:
+      213: 9108498138594007159
+    second: Tina - hod sve_28
+  - first:
+      213: 8951611646324328362
+    second: Tina - hod sve_29
+  - first:
+      213: 280142987171574347
+    second: Tina - hod sve_30
+  - first:
+      213: -2752089195002062692
+    second: Tina - hod sve_31
+  - first:
+      213: 2446680477237347604
+    second: Tina - hod sve_32
+  - first:
+      213: 794615030428984714
+    second: Tina - hod sve_33
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Tina - hod sve_0
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 1520
+        width: 137
+        height: 381
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca91051725f443f60800000000000000
+      internalID: 8013116852505942444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tina - hod sve_1
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 1520
+        width: 142
+        height: 386
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd7cafd5518bb86c0800000000000000
+      internalID: -4140013030526498852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tina - hod sve_2
+      rect:
+        serializedVersion: 2
+        x: 554
+        y: 1520
+        width: 136
+        height: 401
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8f9ff85c14b164c0800000000000000
+      internalID: -4295954535689511028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tina - hod sve_3
+      rect:
+        serializedVersion: 2
+        x: 794
+        y: 1514
+        width: 131
+        height: 387
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1404c847e52fcac40800000000000000
+      internalID: 5525057330372952129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tina - hod sve_4
+      rect:
+        serializedVersion: 2
+        x: 1039
+        y: 1520
+        width: 132
+        height: 376
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63cf4baccaae72cd0800000000000000
+      internalID: -2582837833417556938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tina - hod sve_5
+      rect:
+        serializedVersion: 2
+        x: 1269
+        y: 1520
+        width: 137
+        height: 381
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f94136e67d300c600800000000000000
+      internalID: 486392983560852639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tina - hod sve_6
+      rect:
+        serializedVersion: 2
+        x: 1514
+        y: 1520
+        width: 132
+        height: 396
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 742e29db4843dc7d0800000000000000
+      internalID: -2896601240608513465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tina - hod sve_7
+      rect:
+        serializedVersion: 2
+        x: 1739
+        y: 1514
+        width: 152
+        height: 382
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5d547fba30c34880800000000000000
+      internalID: -8627841102559027874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tina - hod sve_8
+      rect:
+        serializedVersion: 2
+        x: 1974
+        y: 1520
+        width: 131
+        height: 371
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1c5a7f57a9c95c70800000000000000
+      internalID: 8960414654328888351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tina - hod sve_9
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 1039
+        width: 131
+        height: 382
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5fc36d37b60f7800800000000000000
+      internalID: 612215458424409946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tina - hod sve_10
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 1039
+        width: 132
+        height: 392
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d2ecb37b948a13a0800000000000000
+      internalID: -6693892092936265007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tina - hod sve_11
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 1039
+        width: 127
+        height: 402
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 069c9c4fd05700c20800000000000000
+      internalID: 3170662840470718816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tina - hod sve_12
+      rect:
+        serializedVersion: 2
+        x: 789
+        y: 1039
+        width: 127
+        height: 392
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f52d3c25a88b26a0800000000000000
+      internalID: -6472929796421769739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tina - hod sve_13
+      rect:
+        serializedVersion: 2
+        x: 1039
+        y: 1039
+        width: 127
+        height: 377
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a504667070e4cd20800000000000000
+      internalID: 3298007600769271204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tina - hod sve_14
+      rect:
+        serializedVersion: 2
+        x: 1274
+        y: 1039
+        width: 136
+        height: 387
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5660c038be28f1590800000000000000
+      internalID: -7701292889752730011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tina - hod sve_15
+      rect:
+        serializedVersion: 2
+        x: 1519
+        y: 1039
+        width: 132
+        height: 402
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cdc52ec66c8b37d0800000000000000
+      internalID: -2937599958755979833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tina - hod sve_16
+      rect:
+        serializedVersion: 2
+        x: 1764
+        y: 1039
+        width: 127
+        height: 392
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5565b3ad8c23ce00800000000000000
+      internalID: 1063742923838154079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tina - hod sve_17
+      rect:
+        serializedVersion: 2
+        x: 1984
+        y: 1039
+        width: 132
+        height: 387
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5a94fb641c94e9a0800000000000000
+      internalID: -6204662775085229473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tina - hod sve_18
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 559
+        width: 146
+        height: 372
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b406f56d2bb031500800000000000000
+      internalID: 365648857475801163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tina - hod sve_19
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 559
+        width: 157
+        height: 387
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 850545a061d1488f0800000000000000
+      internalID: -539274074877833128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tina - hod sve_20
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 554
+        width: 237
+        height: 381
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 704e748e41fd437f0800000000000000
+      internalID: -633636366663031801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tina - hod sve_21
+      rect:
+        serializedVersion: 2
+        x: 879
+        y: 554
+        width: 232
+        height: 362
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e00c76279ae799c0800000000000000
+      internalID: -3920407015696105248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tina - hod sve_22
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 554
+        width: 231
+        height: 362
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad87ca6d548d0e620800000000000000
+      internalID: 2801476762690418906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tina - hod sve_23
+      rect:
+        serializedVersion: 2
+        x: 1519
+        y: 559
+        width: 157
+        height: 387
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f1c81cceb8019890800000000000000
+      internalID: -7453166292760477191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tina - hod sve_24
+      rect:
+        serializedVersion: 2
+        x: 1760
+        y: 559
+        width: 236
+        height: 367
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df5b0fae8b71319d0800000000000000
+      internalID: -2804872059938621955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tina - hod sve_25
+      rect:
+        serializedVersion: 2
+        x: 2079
+        y: 559
+        width: 222
+        height: 357
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6891d5c705967d50800000000000000
+      internalID: 6734734153395312749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tina - hod sve_26
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 74
+        width: 146
+        height: 372
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cde61af7e6430e540800000000000000
+      internalID: 5035082032592547548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tina - hod sve_27
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 74
+        width: 157
+        height: 387
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d49f78defdfdd2d90800000000000000
+      internalID: -7120789282947073715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tina - hod sve_28
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 74
+        width: 237
+        height: 382
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 778d3345cc2e76e70800000000000000
+      internalID: 9108498138594007159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tina - hod sve_29
+      rect:
+        serializedVersion: 2
+        x: 869
+        y: 69
+        width: 231
+        height: 362
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa7496a5d538a3c70800000000000000
+      internalID: 8951611646324328362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tina - hod sve_30
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 69
+        width: 231
+        height: 362
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b42bda4009443e300800000000000000
+      internalID: 280142987171574347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tina - hod sve_31
+      rect:
+        serializedVersion: 2
+        x: 1519
+        y: 79
+        width: 157
+        height: 386
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9816b5557d9ec9d0800000000000000
+      internalID: -2752089195002062692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tina - hod sve_32
+      rect:
+        serializedVersion: 2
+        x: 1760
+        y: 74
+        width: 236
+        height: 367
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4158d945eea54f120800000000000000
+      internalID: 2446680477237347604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tina - hod sve_33
+      rect:
+        serializedVersion: 2
+        x: 2079
+        y: 74
+        width: 222
+        height: 357
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a85e7edf82a070b00800000000000000
+      internalID: 794615030428984714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

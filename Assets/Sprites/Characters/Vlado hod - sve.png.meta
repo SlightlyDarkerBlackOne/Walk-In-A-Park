@@ -1,0 +1,984 @@
+fileFormatVersion: 2
+guid: c4355655a68203a43802d336053a1010
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6031507197297613355
+    second: Vlado hod - sve_0
+  - first:
+      213: -4572881282911312536
+    second: Vlado hod - sve_1
+  - first:
+      213: -1394238192289725909
+    second: Vlado hod - sve_2
+  - first:
+      213: 771787222951713156
+    second: Vlado hod - sve_3
+  - first:
+      213: -8663046347412500017
+    second: Vlado hod - sve_4
+  - first:
+      213: 9108671562092983113
+    second: Vlado hod - sve_5
+  - first:
+      213: -946355955503810810
+    second: Vlado hod - sve_6
+  - first:
+      213: -3994719374147152514
+    second: Vlado hod - sve_7
+  - first:
+      213: -5314617982665156399
+    second: Vlado hod - sve_8
+  - first:
+      213: 3077696329268946643
+    second: Vlado hod - sve_9
+  - first:
+      213: 2462977061289269227
+    second: Vlado hod - sve_10
+  - first:
+      213: -4608355655694377366
+    second: Vlado hod - sve_11
+  - first:
+      213: -7129214064827273857
+    second: Vlado hod - sve_12
+  - first:
+      213: -4981737153674884696
+    second: Vlado hod - sve_13
+  - first:
+      213: 5369426293276636392
+    second: Vlado hod - sve_14
+  - first:
+      213: 7178095369420903906
+    second: Vlado hod - sve_15
+  - first:
+      213: -4147950332824144076
+    second: Vlado hod - sve_16
+  - first:
+      213: 1703466920957323327
+    second: Vlado hod - sve_17
+  - first:
+      213: -8245397566237350243
+    second: Vlado hod - sve_18
+  - first:
+      213: 8156656083076653934
+    second: Vlado hod - sve_19
+  - first:
+      213: 994806996801357799
+    second: Vlado hod - sve_20
+  - first:
+      213: 5890661258819395961
+    second: Vlado hod - sve_21
+  - first:
+      213: 648588021915844896
+    second: Vlado hod - sve_22
+  - first:
+      213: -7387585547571244616
+    second: Vlado hod - sve_23
+  - first:
+      213: 4924134920445208705
+    second: Vlado hod - sve_24
+  - first:
+      213: 9073689954757319635
+    second: Vlado hod - sve_25
+  - first:
+      213: 7070701005988422208
+    second: Vlado hod - sve_26
+  - first:
+      213: 6142088394251841505
+    second: Vlado hod - sve_27
+  - first:
+      213: 4712533217454725092
+    second: Vlado hod - sve_28
+  - first:
+      213: -790555371951133720
+    second: Vlado hod - sve_29
+  - first:
+      213: 6509271583611498513
+    second: Vlado hod - sve_30
+  - first:
+      213: -3603017255972250020
+    second: Vlado hod - sve_31
+  - first:
+      213: -877647401009814371
+    second: Vlado hod - sve_32
+  - first:
+      213: -5218189896492601228
+    second: Vlado hod - sve_33
+  - first:
+      213: -8103370907247544274
+    second: Vlado hod - sve_34
+  - first:
+      213: -4774535927820118559
+    second: Vlado hod - sve_35
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Vlado hod - sve_0
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 1684
+        width: 136
+        height: 426
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2ad223f6d734b350800000000000000
+      internalID: 6031507197297613355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vlado hod - sve_1
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 1684
+        width: 137
+        height: 432
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 865e90c83bcd980c0800000000000000
+      internalID: -4572881282911312536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vlado hod - sve_2
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 1799
+        width: 7
+        height: 7
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b22c94840cba6ace0800000000000000
+      internalID: -1394238192289725909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vlado hod - sve_3
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 1684
+        width: 137
+        height: 447
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 489d832e360f5ba00800000000000000
+      internalID: 771787222951713156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vlado hod - sve_4
+      rect:
+        serializedVersion: 2
+        x: 665
+        y: 1684
+        width: 135
+        height: 432
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc19bbdee3da6c780800000000000000
+      internalID: -8663046347412500017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vlado hod - sve_5
+      rect:
+        serializedVersion: 2
+        x: 879
+        y: 1684
+        width: 137
+        height: 422
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9433142a680886e70800000000000000
+      internalID: 9108671562092983113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vlado hod - sve_6
+      rect:
+        serializedVersion: 2
+        x: 1059
+        y: 1684
+        width: 142
+        height: 432
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 607be11c54eddd2f0800000000000000
+      internalID: -946355955503810810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vlado hod - sve_7
+      rect:
+        serializedVersion: 2
+        x: 1269
+        y: 1684
+        width: 141
+        height: 447
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e759696e4e7ef88c0800000000000000
+      internalID: -3994719374147152514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vlado hod - sve_8
+      rect:
+        serializedVersion: 2
+        x: 1449
+        y: 1684
+        width: 152
+        height: 432
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d817525a1fae36b0800000000000000
+      internalID: -5314617982665156399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vlado hod - sve_9
+      rect:
+        serializedVersion: 2
+        x: 1669
+        y: 1684
+        width: 142
+        height: 422
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d66990518c26ba20800000000000000
+      internalID: 3077696329268946643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vlado hod - sve_10
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 1204
+        width: 136
+        height: 426
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be7151c76904e2220800000000000000
+      internalID: 2462977061289269227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vlado hod - sve_11
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 1204
+        width: 137
+        height: 432
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6e9caf72f4db00c0800000000000000
+      internalID: -4608355655694377366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vlado hod - sve_12
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 1319
+        width: 7
+        height: 7
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7d604a8491ff0d90800000000000000
+      internalID: -7129214064827273857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vlado hod - sve_13
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 1204
+        width: 132
+        height: 447
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a9c7def3705ddab0800000000000000
+      internalID: -4981737153674884696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vlado hod - sve_14
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 1204
+        width: 120
+        height: 426
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e4756ae3c8048a40800000000000000
+      internalID: 5369426293276636392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vlado hod - sve_15
+      rect:
+        serializedVersion: 2
+        x: 879
+        y: 1204
+        width: 116
+        height: 422
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e5953215b7bd9360800000000000000
+      internalID: 7178095369420903906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vlado hod - sve_16
+      rect:
+        serializedVersion: 2
+        x: 1074
+        y: 1204
+        width: 132
+        height: 432
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 437bd0a26258f66c0800000000000000
+      internalID: -4147950332824144076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vlado hod - sve_17
+      rect:
+        serializedVersion: 2
+        x: 1279
+        y: 1210
+        width: 131
+        height: 445
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f382a46a32ee3a710800000000000000
+      internalID: 1703466920957323327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vlado hod - sve_18
+      rect:
+        serializedVersion: 2
+        x: 1479
+        y: 1204
+        width: 122
+        height: 417
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d966d887996729d80800000000000000
+      internalID: -8245397566237350243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vlado hod - sve_19
+      rect:
+        serializedVersion: 2
+        x: 1684
+        y: 1204
+        width: 116
+        height: 422
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6320d2ed73423170800000000000000
+      internalID: 8156656083076653934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vlado hod - sve_20
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 644
+        width: 167
+        height: 437
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e70b6061b34ecd00800000000000000
+      internalID: 994806996801357799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vlado hod - sve_21
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 644
+        width: 182
+        height: 477
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 971e5107435dfb150800000000000000
+      internalID: 5890661258819395961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vlado hod - sve_22
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 644
+        width: 241
+        height: 457
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0210edb9e5f300900800000000000000
+      internalID: 648588021915844896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vlado hod - sve_23
+      rect:
+        serializedVersion: 2
+        x: 894
+        y: 644
+        width: 227
+        height: 452
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b1d439e5160a7990800000000000000
+      internalID: -7387585547571244616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vlado hod - sve_24
+      rect:
+        serializedVersion: 2
+        x: 1199
+        y: 649
+        width: 182
+        height: 432
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 188ab37fe9a065440800000000000000
+      internalID: 4924134920445208705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vlado hod - sve_25
+      rect:
+        serializedVersion: 2
+        x: 1419
+        y: 644
+        width: 182
+        height: 472
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3db175b70f83ced70800000000000000
+      internalID: 9073689954757319635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vlado hod - sve_26
+      rect:
+        serializedVersion: 2
+        x: 1679
+        y: 644
+        width: 242
+        height: 457
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 042efee4a1d202260800000000000000
+      internalID: 7070701005988422208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vlado hod - sve_27
+      rect:
+        serializedVersion: 2
+        x: 1999
+        y: 644
+        width: 227
+        height: 452
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ef2e663ad41d3550800000000000000
+      internalID: 6142088394251841505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vlado hod - sve_28
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 89
+        width: 167
+        height: 437
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e71e924ef7466140800000000000000
+      internalID: 4712533217454725092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vlado hod - sve_29
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 84
+        width: 182
+        height: 477
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8eb6397e3126705f0800000000000000
+      internalID: -790555371951133720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vlado hod - sve_30
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 84
+        width: 241
+        height: 456
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11035b78404955a50800000000000000
+      internalID: 6509271583611498513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vlado hod - sve_31
+      rect:
+        serializedVersion: 2
+        x: 894
+        y: 84
+        width: 227
+        height: 452
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5edb2235e28ffdc0800000000000000
+      internalID: -3603017255972250020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vlado hod - sve_32
+      rect:
+        serializedVersion: 2
+        x: 1199
+        y: 84
+        width: 182
+        height: 431
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d94e3c8b658f1d3f0800000000000000
+      internalID: -877647401009814371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vlado hod - sve_33
+      rect:
+        serializedVersion: 2
+        x: 1439
+        y: 84
+        width: 182
+        height: 472
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 470b601bfe34597b0800000000000000
+      internalID: -5218189896492601228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vlado hod - sve_34
+      rect:
+        serializedVersion: 2
+        x: 1679
+        y: 84
+        width: 242
+        height: 456
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e287646e71b0b8f80800000000000000
+      internalID: -8103370907247544274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vlado hod - sve_35
+      rect:
+        serializedVersion: 2
+        x: 2004
+        y: 84
+        width: 227
+        height: 452
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e511f6ced07dbdb0800000000000000
+      internalID: -4774535927820118559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
