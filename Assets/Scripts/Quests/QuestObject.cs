@@ -91,7 +91,7 @@ public class QuestObject : MonoBehaviour
     IEnumerator MilicaDialogue() {
         yield return new WaitForSeconds(4f);
         GameObject.Find("ToDo List Panel").GetComponent<Animator>().SetBool("isShowing", false);
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(2f);
         QuestManager.Instance.ShowQuestText(startDialogue);
         milicaDialogueStarted = true;
     }
