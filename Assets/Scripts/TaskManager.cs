@@ -16,10 +16,10 @@ public class TaskManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        areaDict.Add("Playground", false);
         areaDict.Add("Area1", false);
         areaDict.Add("Area2", false);
         areaDict.Add("Area3", false);
+        areaDict.Add("Area4", false);
         anim = GetComponent<Animator>();   
         detectLayer = LayerMask.GetMask("Area");     
     }

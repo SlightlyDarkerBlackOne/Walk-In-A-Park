@@ -57,6 +57,7 @@ public class PlayerController2D : MonoBehaviour
 
     private Vector2 playerTransformBeforeMoving;
     public AgentEnemy agentEnemyScript;
+    private bool boneFound = false;
 
     #region Singleton
     public static PlayerController2D Instance { get; private set; }
@@ -182,8 +183,8 @@ public class PlayerController2D : MonoBehaviour
                 touch.position.y > screenHeight / 3) {
                 vertical = 0f;
             }
-            if (touch.position.x < screenWidth/4 || 
-                touch.position.x > 3*screenWidth/4){
+            if (touch.position.x < screenWidth/6 || 
+                touch.position.x > 5*screenWidth/6){
                 vertical = 0f;
             }
                     
@@ -342,7 +343,8 @@ public class PlayerController2D : MonoBehaviour
         }
 
         if (carryItem) {
-            detectedItem.GetComponent<Collider2D>().isTrigger = true;
+            if (detectedItem == null) carryItem = false;
+            if (detectedItem != null) detectedItem.GetComponent<Collider2D>().isTrigger = true;
 
             switch(horizontal)
             {
@@ -369,7 +371,7 @@ public class PlayerController2D : MonoBehaviour
             
             
             //detectedItem.transform.parent = transform;
-            detectedItem.transform.position = transform.position+carryOffset;
+            if (detectedItem != null) detectedItem.transform.position = transform.position+carryOffset;
             UIManager.Instance.HidePickupIndicatorText();
         } //else if (DetectItem()) detectedItem.transform.parent = null;
         else if (DetectItem())
@@ -435,6 +437,14 @@ public class PlayerController2D : MonoBehaviour
         }
         else
         {
+            //temporary
+            if (item.name == "BoskoBone" && !boneFound) 
+            {
+                GameObject.Find("ToDo List Panel").GetComponent<TaskManager>().CheckTaskOnToDoList(3);
+                boneFound = true;
+
+            }
+
             UIManager.Instance.ShowPickupIndicatorText(item.name);
             detectedItem = item.gameObject;
             return true;
@@ -454,5 +464,13 @@ public class PlayerController2D : MonoBehaviour
         SFXManager.Instance.PlaySound(SFXManager.Instance.itemThrow);
         //add the item to the list of objects to remove rigidbody2d from later
         cleanUpList.Add(detectedItem);
+    }
+
+    //temporary lol
+    private void OnTriggerEnter2D(Collider2D collision) {
+        if (collision.gameObject.name == "Milica") 
+        {
+            GameObject.Find("ToDo List Panel").GetComponent<TaskManager>().CheckTaskOnToDoList(2);
+        }
     }
 }
