@@ -78,12 +78,18 @@ public class PlayerController2D : MonoBehaviour
     
         detectLayer = LayerMask.GetMask("Item");
         detectPoint = gameObject.transform;
-        screenWidth = Screen.width;
-        screenHeight = Screen.height;
+
 
         agentEnemyScript = GameObject.FindWithTag("Human").GetComponent<AgentEnemy>();
     }
     #endregion
+
+    void Start()
+    {
+        screenWidth = Screen.width;
+        screenHeight = Screen.height;
+
+    }
 
     // Update is called once per frame
     void Update() 
@@ -309,14 +315,10 @@ public class PlayerController2D : MonoBehaviour
                 carryItem = !carryItem;
                 if (!carryItem)
                 {
-                    ThrowItem(); 
-                    detectedItem.GetComponent<BoxCollider2D>().isTrigger = false;
-                    detectedItem.GetComponent<Renderer>().sortingLayerID = SortingLayer.NameToID("Layer 1");                     
+                    //ThrowItem(); 
+                                       
                 }
-                else
-                {
-                    detectedItem.GetComponent<BoxCollider2D>().isTrigger = true;
-                }
+               
 
             }
 
@@ -331,20 +333,16 @@ public class PlayerController2D : MonoBehaviour
                     //if carryItem becomes false, we are about to throw it
                     if (!carryItem)
                     {
-                        ThrowItem();   
-                        detectedItem.GetComponent<BoxCollider2D>().isTrigger = false;
-                        detectedItem.GetComponent<Renderer>().sortingLayerID = SortingLayer.NameToID("Layer 1");                   
+                        //ThrowItem();   
+                                          
                     }
-                    else
-                    {
-                        //isTrigger as not to cause issues with colliding Bosko when placing item to mouth
-                        detectedItem.GetComponent<BoxCollider2D>().isTrigger = true;
-                    }
+                    
                 }                
             }            
         }
 
         if (carryItem) {
+            detectedItem.GetComponent<Collider2D>().isTrigger = true;
 
             switch(horizontal)
             {
@@ -373,7 +371,12 @@ public class PlayerController2D : MonoBehaviour
             //detectedItem.transform.parent = transform;
             detectedItem.transform.position = transform.position+carryOffset;
             UIManager.Instance.HidePickupIndicatorText();
-        } else if (DetectItem()) detectedItem.transform.parent = null;
+        } //else if (DetectItem()) detectedItem.transform.parent = null;
+        else if (DetectItem())
+        {
+            detectedItem.GetComponent<Collider2D>().isTrigger = false;
+            detectedItem.GetComponent<Renderer>().sortingLayerID = SortingLayer.NameToID("Layer 1"); 
+        }
 
         //remove added rigidbodies2d so that those items can be carried&thrown again
         List<GameObject> toDelete = new List<GameObject>();
