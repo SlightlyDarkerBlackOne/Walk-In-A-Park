@@ -34,16 +34,20 @@ public class PlayerController2D : MonoBehaviour
     private float timeToMoveCounter;
 
     public Transform detectPoint;
-    private const float detectRadius = 0.3f;
+    private const float detectRadius = 0.9f;
+    private const float detectRadiusThrow = 0.2f;
     public LayerMask detectLayer;
     public GameObject detectedItem;
     public List<GameObject> cleanUpList = new List<GameObject>();
     public bool carryItem = false;
+    [SerializeField]
+    private Vector3 carryOffset;
+    private float carryOffsetX = 0.9f;
 
     public float screenWidth;
     public float screenHeight;
-    private float horizontal = 0f;
-    private float vertical = 0f;
+    public float horizontal = 0f;
+    public float vertical = 0f;
 
     float moveX;
     float moveY;
@@ -305,7 +309,13 @@ public class PlayerController2D : MonoBehaviour
                 carryItem = !carryItem;
                 if (!carryItem)
                 {
-                    ThrowItem();                      
+                    ThrowItem(); 
+                    detectedItem.GetComponent<BoxCollider2D>().isTrigger = false;
+                    detectedItem.GetComponent<Renderer>().sortingLayerID = SortingLayer.NameToID("Layer 1");                     
+                }
+                else
+                {
+                    detectedItem.GetComponent<BoxCollider2D>().isTrigger = true;
                 }
 
             }
@@ -314,21 +324,54 @@ public class PlayerController2D : MonoBehaviour
             if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Ended)
             {                
                 Vector2 position = Camera.main.ScreenToWorldPoint(Input.GetTouch(0).position);
-                Collider2D obj = Physics2D.OverlapCircle(position, detectRadius, detectLayer); 
+                Collider2D obj = Physics2D.OverlapCircle(position, detectRadiusThrow, detectLayer); 
                 if (obj)
                 {
                     carryItem = !carryItem;
                     //if carryItem becomes false, we are about to throw it
                     if (!carryItem)
                     {
-                        ThrowItem();                      
+                        ThrowItem();   
+                        detectedItem.GetComponent<BoxCollider2D>().isTrigger = false;
+                        detectedItem.GetComponent<Renderer>().sortingLayerID = SortingLayer.NameToID("Layer 1");                   
+                    }
+                    else
+                    {
+                        //isTrigger as not to cause issues with colliding Bosko when placing item to mouth
+                        detectedItem.GetComponent<BoxCollider2D>().isTrigger = true;
                     }
                 }                
             }            
         }
 
         if (carryItem) {
-            detectedItem.transform.parent = transform;
+
+            switch(horizontal)
+            {
+                case -1: 
+                    carryOffset = new Vector3(-carryOffsetX,-0.1f,0); 
+                    detectedItem.GetComponent<Renderer>().sortingLayerID = SortingLayer.NameToID("Layer 2");
+                    break;
+                case 1: 
+                    carryOffset = new Vector3(carryOffsetX,-0.1f,0); 
+                    detectedItem.GetComponent<Renderer>().sortingLayerID = SortingLayer.NameToID("Layer 2");
+                    break;
+            }
+            switch(vertical)
+            {
+                case -1: 
+                    carryOffset = new Vector3(0,-0.3f,0); 
+                    detectedItem.GetComponent<Renderer>().sortingLayerID = SortingLayer.NameToID("Layer 2");
+                    break;
+                case 1: 
+                    carryOffset = new Vector3(0, 0.3f,0);
+                    detectedItem.GetComponent<Renderer>().sortingLayerID = SortingLayer.NameToID("Layer 1");
+                    break;
+            }
+            
+            
+            //detectedItem.transform.parent = transform;
+            detectedItem.transform.position = transform.position+carryOffset;
             UIManager.Instance.HidePickupIndicatorText();
         } else if (DetectItem()) detectedItem.transform.parent = null;
 
