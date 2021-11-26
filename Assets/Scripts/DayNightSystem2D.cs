@@ -87,6 +87,9 @@ public class DayNightSystem2D : MonoBehaviour
         {
             cycleCurrentTime = 0; // back to 0 (restarting cycle time)
             dayCycle++; // change cycle state
+            if(dayCycle == DayCycles.Night || dayCycle == DayCycles.Sunrise) {
+                SFXManager.Instance.PlayAtmosphere();
+            }
         }
 
         // If reach final state we back to sunrise (Enum id 0)
@@ -105,6 +108,7 @@ public class DayNightSystem2D : MonoBehaviour
             ControlLightMaps(false); // disable map light (keep enable only at night)
             globalLight.color = Color.Lerp(sunrise, day, percent);
             globalLight.intensity = Mathf.Lerp(sunriseIntensity, dayIntensity, percent);
+
         }
 
         // Mid Day state
@@ -125,10 +129,11 @@ public class DayNightSystem2D : MonoBehaviour
             ControlLightMaps(true); // enable map lights (disable only in day states)
             globalLight.color = Color.Lerp(night, midnight, percent);
             globalLight.intensity = Mathf.Lerp(nightIntensity, midnightIntensity, percent);
+
         }
 
         // Midnight state
-        if(dayCycle == DayCycles.Midnight) {
+        if (dayCycle == DayCycles.Midnight) {
             globalLight.color = Color.Lerp(midnight, sunrise, percent);
             globalLight.intensity = Mathf.Lerp(midnightIntensity, sunriseIntensity, percent);
         }

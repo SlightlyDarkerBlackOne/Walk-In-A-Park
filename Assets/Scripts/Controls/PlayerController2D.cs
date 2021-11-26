@@ -98,7 +98,7 @@ public class PlayerController2D : MonoBehaviour
         Move();
         Interact();
         SetAnimations();
-        TrailEffect();
+        TrailEffectAndFootstepsAudio();
 
         if (playerFrozen) {
             state = State.Idle;
@@ -286,7 +286,7 @@ public class PlayerController2D : MonoBehaviour
         anim.SetFloat("LastMoveX", lastMoveDir.x);
         anim.SetFloat("LastMoveY", lastMoveDir.y);
     }
-    private void TrailEffect() {
+    private void TrailEffectAndFootstepsAudio() {
         if (playerMoving) {
             if (timeBtwTrail <= 0) {
                 GameObject effect = Instantiate(trailEffect, transform.position, Quaternion.identity);
@@ -294,7 +294,13 @@ public class PlayerController2D : MonoBehaviour
                 Destroy(effect, 2f);
                 timeBtwTrail = startTimeBtwTrail;
             } else {
-                timeBtwTrail -= Time.deltaTime; ;
+                timeBtwTrail -= Time.deltaTime;
+            }
+            if (timeBtwTrail*4 <= 0) {
+                SFXManager.Instance.PlayRandomFootstep();
+                timeBtwTrail = startTimeBtwTrail;
+            } else {
+                timeBtwTrail -= Time.deltaTime;
             }
         }
     }

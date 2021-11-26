@@ -15,6 +15,8 @@ public class DialogueManager : MonoBehaviour {
 
     private Queue<string> sentences;
 
+    private bool shouldBark;
+
     #region Singleton
     public static DialogueManager Instance {get; private set;}
     void Awake()
@@ -55,6 +57,11 @@ public class DialogueManager : MonoBehaviour {
         foreach (string sentence in dialogue.sentences) {
             sentences.Enqueue(sentence);
         }
+        if(dialogue.name == "Bosko") {
+            shouldBark = true;
+        } else {
+            shouldBark = false;
+        }
         DisplayNextSentence();
     }
 
@@ -67,6 +74,9 @@ public class DialogueManager : MonoBehaviour {
 
         //Stops animating last sentence if we start with the new one (continue button)
         StopAllCoroutines();
+        if (shouldBark) {
+            SFXManager.Instance.PlayRandomBark();
+        }
         StartCoroutine(TypeSentence(sentence));
     }
 

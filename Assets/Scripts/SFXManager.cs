@@ -8,9 +8,9 @@ public class SFXManager : MonoBehaviour
     public AudioSource levelUP;
     public AudioSource itemPickedUp;
     public AudioSource itemThrow;
-    public AudioSource breakCrate;
 
     public AudioSource soundTrack;
+    public AudioSource reward;
 
     public AudioSource dash;
 
@@ -21,10 +21,15 @@ public class SFXManager : MonoBehaviour
     public AudioSource birds;
     public AudioSource crickets;
     public AudioSource cricketsFar;
+    public AudioSource parkDayAtmosphere;
     public AudioSource parkNightAtmosphere;
     public AudioSource sniff;
 
     public AudioSource[] footsteps;
+    public AudioSource[] uiButtons;
+    public AudioSource[] barks;
+    public AudioSource[] noteCross;
+
 
     #region Singleton
     public static SFXManager Instance { get; private set; }
@@ -43,6 +48,9 @@ public class SFXManager : MonoBehaviour
     public void PlaySound(AudioSource source) {
         source.Play();
     }
+    public void StopSound(AudioSource source) {
+        source.Stop();
+    }
     private void PlayOnLoop(AudioSource source) {
         source.Play();
         source.loop = true;
@@ -52,9 +60,31 @@ public class SFXManager : MonoBehaviour
         //soundTrack.Stop();
         PlayOnLoop(source);
     }
+    public void PlayAtmosphere() {
+        if (parkDayAtmosphere.isPlaying) {
+            PlayOnLoop(parkNightAtmosphere);
+            parkDayAtmosphere.Stop();
+        } else if (parkNightAtmosphere.isPlaying) {
+            PlayOnLoop(parkDayAtmosphere);
+            parkNightAtmosphere.Stop();
+        }
+    }
 
-    private void PlayRandomFootstep() {
+    public void PlayRandomFootstep() {
         int random = Random.Range(0, footsteps.Length);
         PlaySound(footsteps[random]);
+    }
+    public void PlayRandomBark() {
+        int random = Random.Range(0, barks.Length);
+        PlaySound(barks[random]);
+    }
+    public void PlayNoteCrossing() {
+        PlaySound(noteCross[0]);
+        StartCoroutine(Wait());
+        PlaySound(noteCross[1]);
+    }
+    
+    IEnumerator Wait() {
+        yield return new WaitForSeconds(0.1f);
     }
 }

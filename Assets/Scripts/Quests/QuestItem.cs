@@ -16,6 +16,7 @@ public class QuestItem : MonoBehaviour
             }
             if(itemName == "PinkBall") {
                 GameObject.Find("Dog Cookie").GetComponent<Animator>().SetTrigger("getCookie");
+                SFXManager.Instance.PlaySound(SFXManager.Instance.reward);
                 GameObject.Find("Dog Cookie").transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = "1";
             }
         }

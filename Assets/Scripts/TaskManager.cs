@@ -62,6 +62,7 @@ public class TaskManager : MonoBehaviour
     }
     //changes the toggle's Normal colour to the new colour
     IEnumerator CheckTaskOnList(int taskNumber) {
+        SFXManager.Instance.PlayNoteCrossing();
         GameObject task = gameObject.transform.GetChild(1).GetChild(taskNumber - 1).GetChild(2).gameObject;
         yield return new WaitForSeconds(0.8f);
         anim.SetBool("isShowing", true);
