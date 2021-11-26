@@ -88,16 +88,16 @@ MonoBehaviour:
   globalLight: {fileID: 2504097695560378970}
   cycleCurrentTime: 0
   cycleMaxTime: 160
-  dayCycle: 0
+  dayCycle: 3
   sunrise: {r: 1, g: 1, b: 1, a: 0}
   day: {r: 1, g: 1, b: 1, a: 0}
   sunset: {r: 1, g: 1, b: 1, a: 0}
-  night: {r: 1, g: 1, b: 1, a: 0}
-  midnight: {r: 1, g: 1, b: 1, a: 0}
+  night: {r: 0.5223834, g: 0.6509355, b: 0.8584906, a: 0}
+  midnight: {r: 0.25485048, g: 0.3692184, b: 0.6509434, a: 0}
   sunriseIntensity: 1
   dayIntensity: 0.9
-  nightIntensity: 0.3
-  midnightIntensity: 0.18
+  nightIntensity: 0.45
+  midnightIntensity: 0.33
   mapLights:
   - {fileID: 0}
   - {fileID: 0}
