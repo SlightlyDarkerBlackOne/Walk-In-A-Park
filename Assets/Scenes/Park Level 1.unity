@@ -2983,6 +2983,7 @@ MonoBehaviour:
   questNumber: 1
   startDialogue:
     name: Bosko
+    avatar: {fileID: 21300000, guid: 03803ddad9ebd604abb647bc29144f57, type: 3}
     sentences:
     - 'Ugh... Vlado, did you put on weight? Maybe lay off the cheese puffs for a
 
@@ -2992,6 +2993,7 @@ MonoBehaviour:
     - "Sorry, Vlado, but I'm going to have to let you go. You \nunderstand, right?"
   endDialogue:
     name: 
+    avatar: {fileID: 0}
     sentences: []
   isSmellQuest: 0
   isMilicaQuest: 1
@@ -4371,10 +4373,10 @@ MonoBehaviour:
   anim: {fileID: 561449459}
   dialogue:
     name: Bosko
+    avatar: {fileID: 21300000, guid: 5c6efa204900952448d16c5d20a969a8, type: 3}
     sentences:
     - All right--why don't we go see what's new in the park today.
     - A bit of sniffing around should do the trick.
-  avatar: {fileID: 21300000, guid: 5c6efa204900952448d16c5d20a969a8, type: 3}
 --- !u!58 &750512948
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -7890,6 +7892,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: db6b1e37be810624ca3125abedeafc60,
         type: 3}
+    - target: {fileID: 1775201982, guid: cd6aefd3a577dd9438bca8e078479a1e, type: 3}
+      propertyPath: boskoConcernedDialogue.avatar
+      value: 
+      objectReference: {fileID: 21300000, guid: 964595368271ddd4d99cb835e8a45825,
+        type: 3}
     - target: {fileID: 736906268836483161, guid: cd6aefd3a577dd9438bca8e078479a1e,
         type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -8015,6 +8022,12 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -12.000015
       objectReference: {fileID: 0}
+    - target: {fileID: 3777620472437620674, guid: cd6aefd3a577dd9438bca8e078479a1e,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -1908395966526254631, guid: 6ceeec76adfdd164ab94bf247b7ebe8e,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cd6aefd3a577dd9438bca8e078479a1e, type: 3}
 --- !u!4 &1420994353 stripped
@@ -8457,11 +8470,13 @@ MonoBehaviour:
   questNumber: 0
   startDialogue:
     name: Bosko
+    avatar: {fileID: 21300000, guid: 964595368271ddd4d99cb835e8a45825, type: 3}
     sentences:
     - All right--why don't we go see what's new in the park today.
     - A bit of sniffing around should do the trick.
   endDialogue:
     name: 
+    avatar: {fileID: 0}
     sentences:
     - 
     - 
@@ -10328,6 +10343,7 @@ MonoBehaviour:
   questNumber: 2
   startDialogue:
     name: Milica
+    avatar: {fileID: 21300000, guid: 6acc554b4b031ec4d8cf08fb6de2df15, type: 3}
     sentences:
     - "Bo\u0161ko, I'm busy. Tina and I are trying to master a new trick."
     - "If you came to ask about the bone you keep wanting to show me, you're\n too
@@ -10338,6 +10354,7 @@ MonoBehaviour:
     - Bones are pretty hard to come by these days.
   endDialogue:
     name: Bosko
+    avatar: {fileID: 21300000, guid: 3115464761a7bcb41a6d511a224b17c2, type: 3}
     sentences:
     - "Milica's right--I should probably hide this thing before \nanother dog gets
       to it"
@@ -20165,7 +20182,7 @@ PrefabInstance:
     - target: {fileID: 3689493803194752094, guid: 64b668e8f81f76aad93315748de82b66,
         type: 3}
       propertyPath: m_Name
-      value: DirtPileForDigging
+      value: DirtPile
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 64b668e8f81f76aad93315748de82b66, type: 3}
@@ -70530,7 +70547,7 @@ PrefabInstance:
     - target: {fileID: 4838398236725249275, guid: f034b6d1270d0d0b589d9ddd29009938,
         type: 3}
       propertyPath: m_Name
-      value: DirtPile
+      value: DirtPile1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f034b6d1270d0d0b589d9ddd29009938, type: 3}
@@ -73349,12 +73366,12 @@ MonoBehaviour:
   anim: {fileID: 1750185945}
   dialogue:
     name: Agilio
+    avatar: {fileID: 0}
     sentences:
     - "Wow, Bo\u0161ko! Your master must be the luckiest human in the world to have
       \na dog like you!"
     - "But I think he's a tad bit spoiled. Every time you get him a new toy, he \njust
       keeps throwing it away."
-  avatar: {fileID: 21300000, guid: 1b158e1f91d53f048bfa6b59aba6d438, type: 3}
 --- !u!1 &5438984451019244290
 GameObject:
   m_ObjectHideFlags: 0
@@ -73392,11 +73409,11 @@ MonoBehaviour:
   anim: {fileID: 1882006435063912498}
   dialogue:
     name: Statue
+    avatar: {fileID: 0}
     sentences:
     - This is just a gray statue
     - Not able to move or run
     - Not able to chase the ball...
-  avatar: {fileID: 21300000, guid: 3115464761a7bcb41a6d511a224b17c2, type: 3}
 --- !u!4 &5438984451019244301
 Transform:
   m_ObjectHideFlags: 0
@@ -74917,11 +74934,11 @@ MonoBehaviour:
   anim: {fileID: 706514317}
   dialogue:
     name: Agilio
+    avatar: {fileID: 0}
     sentences:
     - A fine piece of dirt if I do say so myself.
     - How did I not notice this dirt patch before?
     - So strange no one's buried anything here yet.
-  avatar: {fileID: 21300000, guid: 8fe7540ac0511974bb9814881c86e18b, type: 3}
 --- !u!1 &5438984452508771744
 GameObject:
   m_ObjectHideFlags: 0
@@ -76886,6 +76903,7 @@ MonoBehaviour:
   questNumber: 2
   startDialogue:
     name: Milica
+    avatar: {fileID: 0}
     sentences:
     - "Bo\u0161ko, I'm busy. Tina and I are trying to master a new trick."
     - "If you came to ask about the bone you keep wanting to show me, you're\n too
@@ -76895,6 +76913,7 @@ MonoBehaviour:
     - Bones are pretty hard to come by these days.
   endDialogue:
     name: Bosko
+    avatar: {fileID: 0}
     sentences:
     - Milica's right--I should probably hide this thing before another dog gets to
       it
@@ -77119,11 +77138,13 @@ MonoBehaviour:
   questNumber: 0
   startDialogue:
     name: Bosko
+    avatar: {fileID: 0}
     sentences:
     - All right--why don't we go see what's new in the park today.
     - A bit of sniffing around should do the trick.
   endDialogue:
     name: 
+    avatar: {fileID: 0}
     sentences:
     - 
     - 
@@ -78069,6 +78090,7 @@ MonoBehaviour:
   questNumber: 1
   startDialogue:
     name: Bosko
+    avatar: {fileID: 0}
     sentences:
     - "Ugh... Vlado, did you put on weight? Maybe lay off the cheese puffs for a
       couple\n of weeks, huh?"
@@ -78076,6 +78098,7 @@ MonoBehaviour:
     - Sorry, Vlado, but I'm going to have to let you go. You understand, right?
   endDialogue:
     name: 
+    avatar: {fileID: 0}
     sentences:
     - 
   isSmellQuest: 0
