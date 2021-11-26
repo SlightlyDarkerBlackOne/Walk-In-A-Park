@@ -1,7 +1,55 @@
 fileFormatVersion: 2
 guid: 9264815697a3be94db2f635ca69990b7
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -9160294680831555221
+    second: nedjeljko_0
+  - first:
+      213: 2737661098870809491
+    second: nedjeljko_1
+  - first:
+      213: -4890560366739989869
+    second: nedjeljko_2
+  - first:
+      213: -8560987542525503572
+    second: nedjeljko_3
+  - first:
+      213: 3738994900432747060
+    second: nedjeljko_4
+  - first:
+      213: -5909039512552088132
+    second: nedjeljko_5
+  - first:
+      213: -5051329678495544509
+    second: nedjeljko_6
+  - first:
+      213: -8748813358851070410
+    second: nedjeljko_7
+  - first:
+      213: 5815572987829148562
+    second: nedjeljko_8
+  - first:
+      213: 6565430707320752378
+    second: nedjeljko_9
+  - first:
+      213: -7193871275890999918
+    second: nedjeljko_10
+  - first:
+      213: 548986537218654793
+    second: nedjeljko_11
+  - first:
+      213: -5834701676044769357
+    second: nedjeljko_12
+  - first:
+      213: -1757029069025829580
+    second: nedjeljko_13
+  - first:
+      213: 7470966663981274664
+    second: nedjeljko_14
+  - first:
+      213: 2632700982581604656
+    second: nedjeljko_15
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -41,7 +89,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -75,9 +123,369 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: nedjeljko_0
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 800
+        width: 95
+        height: 175
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b698227658810e080800000000000000
+      internalID: -9160294680831555221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nedjeljko_1
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 800
+        width: 95
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 393a991c3402ef520800000000000000
+      internalID: 2737661098870809491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nedjeljko_2
+      rect:
+        serializedVersion: 2
+        x: 645
+        y: 800
+        width: 95
+        height: 175
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39adbdbf14d312cb0800000000000000
+      internalID: -4890560366739989869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nedjeljko_3
+      rect:
+        serializedVersion: 2
+        x: 805
+        y: 800
+        width: 95
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca719392033413980800000000000000
+      internalID: -8560987542525503572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nedjeljko_4
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 547
+        width: 231
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43a7a494d0493e330800000000000000
+      internalID: 3738994900432747060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nedjeljko_5
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 560
+        width: 225
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbdd59aeedfdefda0800000000000000
+      internalID: -5909039512552088132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nedjeljko_6
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 560
+        width: 210
+        height: 185
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34b82e5ab6216e9b0800000000000000
+      internalID: -5051329678495544509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nedjeljko_7
+      rect:
+        serializedVersion: 2
+        x: 930
+        y: 560
+        width: 225
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6366d737a98f59680800000000000000
+      internalID: -8748813358851070410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nedjeljko_8
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 320
+        width: 225
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29bd9e8f1d015b050800000000000000
+      internalID: 5815572987829148562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nedjeljko_9
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 320
+        width: 210
+        height: 185
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af88b4371781d1b50800000000000000
+      internalID: 6565430707320752378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nedjeljko_10
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 320
+        width: 225
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29d71a8703c3a2c90800000000000000
+      internalID: -7193871275890999918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nedjeljko_11
+      rect:
+        serializedVersion: 2
+        x: 930
+        y: 320
+        width: 210
+        height: 185
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 942c361d8546e9700800000000000000
+      internalID: 548986537218654793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nedjeljko_12
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 80
+        width: 105
+        height: 175
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b7a9fc3db9f60fa0800000000000000
+      internalID: -5834701676044769357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nedjeljko_13
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 80
+        width: 105
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43d1ea0fe57cd97e0800000000000000
+      internalID: -1757029069025829580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nedjeljko_14
+      rect:
+        serializedVersion: 2
+        x: 645
+        y: 80
+        width: 105
+        height: 175
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 826936719943ea760800000000000000
+      internalID: 7470966663981274664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nedjeljko_15
+      rect:
+        serializedVersion: 2
+        x: 795
+        y: 80
+        width: 105
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0313992589b398420800000000000000
+      internalID: 2632700982581604656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

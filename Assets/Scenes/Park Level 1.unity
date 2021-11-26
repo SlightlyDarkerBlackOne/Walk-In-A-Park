@@ -1294,27 +1294,27 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 6037142488095089555}
     m_Modifications:
     - target: {fileID: 5626566971740301011, guid: aaddc6c52ad06b04c99b28c6eebef33a,
         type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 5626566971740301011, guid: aaddc6c52ad06b04c99b28c6eebef33a,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.52
+      value: -9.55
       objectReference: {fileID: 0}
     - target: {fileID: 5626566971740301011, guid: aaddc6c52ad06b04c99b28c6eebef33a,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -9.66
+      value: -16.360003
       objectReference: {fileID: 0}
     - target: {fileID: 5626566971740301011, guid: aaddc6c52ad06b04c99b28c6eebef33a,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -0.30999947
       objectReference: {fileID: 0}
     - target: {fileID: 5626566971740301011, guid: aaddc6c52ad06b04c99b28c6eebef33a,
         type: 3}
@@ -1324,17 +1324,17 @@ PrefabInstance:
     - target: {fileID: 5626566971740301011, guid: aaddc6c52ad06b04c99b28c6eebef33a,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 5626566971740301011, guid: aaddc6c52ad06b04c99b28c6eebef33a,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 5626566971740301011, guid: aaddc6c52ad06b04c99b28c6eebef33a,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 5626566971740301011, guid: aaddc6c52ad06b04c99b28c6eebef33a,
         type: 3}
@@ -1358,6 +1358,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aaddc6c52ad06b04c99b28c6eebef33a, type: 3}
+--- !u!4 &307401098 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5626566971740301011, guid: aaddc6c52ad06b04c99b28c6eebef33a,
+    type: 3}
+  m_PrefabInstance: {fileID: 307401097}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &312036403 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 481858, guid: 0a0cb6a27372fab479397af0b06ae167,
@@ -2719,8 +2725,10 @@ MonoBehaviour:
   startDialogue:
     name: Bosko
     sentences:
-    - "Ugh... Vlado, did you put on weight? Maybe lay off the cheese puffs for a\n
-      couple of weeks, huh?"
+    - 'Ugh... Vlado, did you put on weight? Maybe lay off the cheese puffs for a
+
+      couple
+      of weeks, huh?'
     - At this rate, I'm not going to be able to get anything done
     - "Sorry, Vlado, but I'm going to have to let you go. You \nunderstand, right?"
   endDialogue:
@@ -3124,17 +3132,17 @@ PrefabInstance:
     - target: {fileID: 5452256966550487135, guid: 57a706b98a3bb45d5a81e1ec7961ecc5,
         type: 3}
       propertyPath: m_Color.b
-      value: 0.79688114
+      value: 0.49935025
       objectReference: {fileID: 0}
     - target: {fileID: 5452256966550487135, guid: 57a706b98a3bb45d5a81e1ec7961ecc5,
         type: 3}
       propertyPath: m_Color.g
-      value: 0.9339623
+      value: 0.5471698
       objectReference: {fileID: 0}
     - target: {fileID: 5452256966550487135, guid: 57a706b98a3bb45d5a81e1ec7961ecc5,
         type: 3}
       propertyPath: m_Color.r
-      value: 0.73571557
+      value: 0.4465112
       objectReference: {fileID: 0}
     - target: {fileID: 6077652215372467672, guid: 57a706b98a3bb45d5a81e1ec7961ecc5,
         type: 3}
@@ -3479,7 +3487,7 @@ Transform:
   - {fileID: 1947812187}
   - {fileID: 6588998}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &672710352 stripped
 Transform:
@@ -4377,6 +4385,51 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Global Light 2D
+      objectReference: {fileID: 0}
+    - target: {fileID: 2504097695560378969, guid: 068c19b67da7703488d01a7b94675a64,
+        type: 3}
+      propertyPath: night.b
+      value: 0.8584906
+      objectReference: {fileID: 0}
+    - target: {fileID: 2504097695560378969, guid: 068c19b67da7703488d01a7b94675a64,
+        type: 3}
+      propertyPath: night.g
+      value: 0.6509355
+      objectReference: {fileID: 0}
+    - target: {fileID: 2504097695560378969, guid: 068c19b67da7703488d01a7b94675a64,
+        type: 3}
+      propertyPath: night.r
+      value: 0.5223834
+      objectReference: {fileID: 0}
+    - target: {fileID: 2504097695560378969, guid: 068c19b67da7703488d01a7b94675a64,
+        type: 3}
+      propertyPath: dayCycle
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2504097695560378969, guid: 068c19b67da7703488d01a7b94675a64,
+        type: 3}
+      propertyPath: midnight.b
+      value: 0.6509434
+      objectReference: {fileID: 0}
+    - target: {fileID: 2504097695560378969, guid: 068c19b67da7703488d01a7b94675a64,
+        type: 3}
+      propertyPath: midnight.g
+      value: 0.3692184
+      objectReference: {fileID: 0}
+    - target: {fileID: 2504097695560378969, guid: 068c19b67da7703488d01a7b94675a64,
+        type: 3}
+      propertyPath: midnight.r
+      value: 0.25485048
+      objectReference: {fileID: 0}
+    - target: {fileID: 2504097695560378969, guid: 068c19b67da7703488d01a7b94675a64,
+        type: 3}
+      propertyPath: nightIntensity
+      value: 0.45
+      objectReference: {fileID: 0}
+    - target: {fileID: 2504097695560378969, guid: 068c19b67da7703488d01a7b94675a64,
+        type: 3}
+      propertyPath: midnightIntensity
+      value: 0.33
       objectReference: {fileID: 0}
     - target: {fileID: 2504097695560378969, guid: 068c19b67da7703488d01a7b94675a64,
         type: 3}
@@ -6734,7 +6787,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 481858, guid: cd427f0dc853ec74a9ba1c5ff0e48ca2, type: 3}
       propertyPath: m_RootOrder
-      value: 16
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 481858, guid: cd427f0dc853ec74a9ba1c5ff0e48ca2, type: 3}
       propertyPath: m_LocalScale.x
@@ -7093,9 +7146,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Press "E" or tap to
-
-    Pick Up '
+  m_text: Tap to pick up!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0828378706fc73d458021f1b16214cea, type: 2}
   m_sharedMaterial: {fileID: 5446349046688147174, guid: 0828378706fc73d458021f1b16214cea,
@@ -7391,10 +7442,36 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5892482537204379916}
     m_Modifications:
-    - target: {fileID: 1775201982, guid: cd6aefd3a577dd9438bca8e078479a1e, type: 3}
-      propertyPath: boskoConcernedDialogue.sentences.Array.data[0]
-      value: "Hmm... Maybe I should be keeping a closer eye on Vlado and put the
-        leash \nback on every now and again."
+    - target: {fileID: 1458611401, guid: cd6aefd3a577dd9438bca8e078479a1e, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 1458611401, guid: cd6aefd3a577dd9438bca8e078479a1e, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 55
+      objectReference: {fileID: 0}
+    - target: {fileID: 1458611401, guid: cd6aefd3a577dd9438bca8e078479a1e, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -34.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1458611401, guid: cd6aefd3a577dd9438bca8e078479a1e, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -155.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1458611403, guid: cd6aefd3a577dd9438bca8e078479a1e, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: db6b1e37be810624ca3125abedeafc60,
+        type: 3}
+    - target: {fileID: 736906268836483161, guid: cd6aefd3a577dd9438bca8e078479a1e,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 34.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 736906268836483161, guid: cd6aefd3a577dd9438bca8e078479a1e,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 28
       objectReference: {fileID: 0}
     - target: {fileID: 1624523830217503222, guid: cd6aefd3a577dd9438bca8e078479a1e,
         type: 3}
@@ -7506,60 +7583,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1624523831343069432, guid: cd6aefd3a577dd9438bca8e078479a1e,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -12
-      objectReference: {fileID: 0}
-    - target: {fileID: 1624523831343069433, guid: cd6aefd3a577dd9438bca8e078479a1e,
-        type: 3}
-      propertyPath: m_margin.z
-      value: -1275.3833
-      objectReference: {fileID: 0}
-    - target: {fileID: 1624523831343069433, guid: cd6aefd3a577dd9438bca8e078479a1e,
-        type: 3}
-      propertyPath: m_fontColor.b
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1624523831343069433, guid: cd6aefd3a577dd9438bca8e078479a1e,
-        type: 3}
-      propertyPath: m_fontColor.g
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1624523831343069433, guid: cd6aefd3a577dd9438bca8e078479a1e,
-        type: 3}
-      propertyPath: m_fontColor.r
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1624523831343069433, guid: cd6aefd3a577dd9438bca8e078479a1e,
-        type: 3}
-      propertyPath: m_fontColor32.rgba
-      value: 4278190080
-      objectReference: {fileID: 0}
     - target: {fileID: 1624523831755987360, guid: cd6aefd3a577dd9438bca8e078479a1e,
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -12.000015
-      objectReference: {fileID: 0}
-    - target: {fileID: 1624523831755987361, guid: cd6aefd3a577dd9438bca8e078479a1e,
-        type: 3}
-      propertyPath: m_fontColor.b
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1624523831755987361, guid: cd6aefd3a577dd9438bca8e078479a1e,
-        type: 3}
-      propertyPath: m_fontColor.g
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1624523831755987361, guid: cd6aefd3a577dd9438bca8e078479a1e,
-        type: 3}
-      propertyPath: m_fontColor.r
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1624523831755987361, guid: cd6aefd3a577dd9438bca8e078479a1e,
-        type: 3}
-      propertyPath: m_fontColor32.rgba
-      value: 4278190080
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cd6aefd3a577dd9438bca8e078479a1e, type: 3}
@@ -7772,101 +7799,6 @@ Transform:
   m_Father: {fileID: 754427415}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1458611400
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1458611401}
-  - component: {fileID: 1458611404}
-  - component: {fileID: 1458611403}
-  - component: {fileID: 1458611402}
-  m_Layer: 5
-  m_Name: Image
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1458611401
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1458611400}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1472870930}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 1}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -29, y: -142}
-  m_SizeDelta: {x: 89.3801, y: 59.2903}
-  m_Pivot: {x: 1, y: 1}
---- !u!95 &1458611402
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1458611400}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: a0cbf8793f263f04eba04e28f9c3e247, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &1458611403
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1458611400}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 0
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 0d3cc2b95f86f264b98eadb0a4c61291, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &1458611404
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1458611400}
-  m_CullTransparentMesh: 1
 --- !u!114 &1462378832 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5836691517668472823, guid: 57a706b98a3bb45d5a81e1ec7961ecc5,
@@ -72850,9 +72782,9 @@ MonoBehaviour:
     name: Agilio
     sentences:
     - "Wow, Bo\u0161ko! Your master must be the luckiest human in the world to have
-      a dog \nlike you!"
-    - "But I think he's a tad bit spoiled. Every time you get him a new toy, he just
-      keeps\n throwing it away."
+      \na dog like you!"
+    - "But I think he's a tad bit spoiled. Every time you get him a new toy, he \njust
+      keeps throwing it away."
   avatar: {fileID: 21300000, guid: 1b158e1f91d53f048bfa6b59aba6d438, type: 3}
 --- !u!4 &5438984451017336434
 Transform:
@@ -72923,7 +72855,7 @@ MonoBehaviour:
     name: Statue
     sentences:
     - This is just a gray statue
-    - Not able to move or anything
+    - Not able to move or run
     - Not able to chase the ball...
   avatar: {fileID: 21300000, guid: 3115464761a7bcb41a6d511a224b17c2, type: 3}
 --- !u!4 &5438984451019244301
@@ -73248,7 +73180,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5438984451302506747}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -33.97, y: 11.82, z: -0.31}
+  m_LocalPosition: {x: -33.675, y: 11.358, z: -0.31}
   m_LocalScale: {x: 3, y: 3, z: 1}
   m_Children: []
   m_Father: {fileID: 6037142488095089555}
@@ -76065,6 +75997,7 @@ Transform:
   - {fileID: 5438984452399972505}
   - {fileID: 5438984451302506693}
   - {fileID: 5438984452899313692}
+  - {fileID: 307401098}
   m_Father: {fileID: 9013986338848632757}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
