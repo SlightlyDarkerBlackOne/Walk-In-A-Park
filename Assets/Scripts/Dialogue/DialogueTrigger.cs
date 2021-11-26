@@ -13,7 +13,6 @@ public class DialogueTrigger : MonoBehaviour {
     public Animator anim;
 
     public Dialogue dialogue;
-    public Sprite avatar;
 
     private void Start(){
         if (story){
@@ -21,7 +20,7 @@ public class DialogueTrigger : MonoBehaviour {
         }
     }
     public void TriggerDialogue(){
-        DialogueManager.Instance.StartDialogue(dialogue, avatar);
+        DialogueManager.Instance.StartDialogue(dialogue);
     }
 
     //When entering dialogue or NPC dialogue zone

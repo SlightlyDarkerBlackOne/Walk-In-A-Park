@@ -20,5 +20,4 @@ public class RandomDialogues : MonoBehaviour
     #endregion
 
     public Dialogue boskoConcernedDialogue;
-    public Sprite avatar;
 }
