@@ -2958,12 +2958,10 @@ MonoBehaviour:
     name: Bosko
     avatar: {fileID: 21300000, guid: 03803ddad9ebd604abb647bc29144f57, type: 3}
     sentences:
-    - 'Ugh... Vlado, did you put on weight? Maybe lay off the cheese puffs for a
-
-      couple
-      of weeks, huh?'
+    - Ugh... Vlado, did you put on weight? Maybe lay off the cheese puffs for a couple
+      of weeks, huh?
     - At this rate, I'm not going to be able to get anything done
-    - "Sorry, Vlado, but I'm going to have to let you go. You \nunderstand, right?"
+    - Sorry, Vlado, but I'm going to have to let you go. You understand, right?
   endDialogue:
     name: 
     avatar: {fileID: 0}
@@ -7489,6 +7487,18 @@ PrefabInstance:
     m_TransformParent: {fileID: 5892482537204379916}
     m_Modifications:
     - target: {fileID: 1458611401, guid: cd6aefd3a577dd9438bca8e078479a1e, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1458611401, guid: cd6aefd3a577dd9438bca8e078479a1e, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1458611401, guid: cd6aefd3a577dd9438bca8e078479a1e, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1458611401, guid: cd6aefd3a577dd9438bca8e078479a1e, type: 3}
       propertyPath: m_SizeDelta.x
       value: 80
       objectReference: {fileID: 0}
@@ -7498,11 +7508,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1458611401, guid: cd6aefd3a577dd9438bca8e078479a1e, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -34.1
+      value: -24
       objectReference: {fileID: 0}
     - target: {fileID: 1458611401, guid: cd6aefd3a577dd9438bca8e078479a1e, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -155.7
+      value: 24
       objectReference: {fileID: 0}
     - target: {fileID: 1458611403, guid: cd6aefd3a577dd9438bca8e078479a1e, type: 3}
       propertyPath: m_Sprite
@@ -7516,13 +7526,23 @@ PrefabInstance:
         type: 3}
     - target: {fileID: 736906268836483161, guid: cd6aefd3a577dd9438bca8e078479a1e,
         type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 148.129
+      objectReference: {fileID: 0}
+    - target: {fileID: 736906268836483161, guid: cd6aefd3a577dd9438bca8e078479a1e,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 156.1071
+      objectReference: {fileID: 0}
+    - target: {fileID: 736906268836483161, guid: cd6aefd3a577dd9438bca8e078479a1e,
+        type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 34.8
+      value: 34
       objectReference: {fileID: 0}
     - target: {fileID: 736906268836483161, guid: cd6aefd3a577dd9438bca8e078479a1e,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 28
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 1624523830217503222, guid: cd6aefd3a577dd9438bca8e078479a1e,
         type: 3}
@@ -7567,12 +7587,12 @@ PrefabInstance:
     - target: {fileID: 1624523830217503223, guid: cd6aefd3a577dd9438bca8e078479a1e,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 1636.911
+      value: 1643.0465
       objectReference: {fileID: 0}
     - target: {fileID: 1624523830217503223, guid: cd6aefd3a577dd9438bca8e078479a1e,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 232.925
+      value: 282.23
       objectReference: {fileID: 0}
     - target: {fileID: 1624523830217503223, guid: cd6aefd3a577dd9438bca8e078479a1e,
         type: 3}
@@ -7612,7 +7632,7 @@ PrefabInstance:
     - target: {fileID: 1624523830217503223, guid: cd6aefd3a577dd9438bca8e078479a1e,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -78.36949
+      value: -75.30164
       objectReference: {fileID: 0}
     - target: {fileID: 1624523830217503223, guid: cd6aefd3a577dd9438bca8e078479a1e,
         type: 3}
@@ -7634,10 +7654,100 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1624523831343069432, guid: cd6aefd3a577dd9438bca8e078479a1e,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 1366.0315
+      objectReference: {fileID: 0}
+    - target: {fileID: 1624523831343069432, guid: cd6aefd3a577dd9438bca8e078479a1e,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 138.67
+      objectReference: {fileID: 0}
+    - target: {fileID: 1624523831343069432, guid: cd6aefd3a577dd9438bca8e078479a1e,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 165.00012
+      objectReference: {fileID: 0}
+    - target: {fileID: 1624523831343069432, guid: cd6aefd3a577dd9438bca8e078479a1e,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -119.558365
+      objectReference: {fileID: 0}
+    - target: {fileID: 1624523831343069433, guid: cd6aefd3a577dd9438bca8e078479a1e,
+        type: 3}
+      propertyPath: m_fontSize
+      value: 52.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1624523831343069433, guid: cd6aefd3a577dd9438bca8e078479a1e,
+        type: 3}
+      propertyPath: m_margin.w
+      value: -0.7650453
+      objectReference: {fileID: 0}
+    - target: {fileID: 1624523831343069433, guid: cd6aefd3a577dd9438bca8e078479a1e,
+        type: 3}
+      propertyPath: m_margin.y
+      value: 0.52287114
+      objectReference: {fileID: 0}
+    - target: {fileID: 1624523831343069433, guid: cd6aefd3a577dd9438bca8e078479a1e,
+        type: 3}
+      propertyPath: m_margin.z
+      value: 0.6512452
+      objectReference: {fileID: 0}
+    - target: {fileID: 1624523831343069433, guid: cd6aefd3a577dd9438bca8e078479a1e,
+        type: 3}
+      propertyPath: m_fontSizeBase
+      value: 52.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1624523831343069433, guid: cd6aefd3a577dd9438bca8e078479a1e,
+        type: 3}
+      propertyPath: m_enableAutoSizing
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1624523831343069433, guid: cd6aefd3a577dd9438bca8e078479a1e,
+        type: 3}
+      propertyPath: m_enableWordWrapping
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1624523831755987360, guid: cd6aefd3a577dd9438bca8e078479a1e,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 917.2741
+      objectReference: {fileID: 0}
+    - target: {fileID: 1624523831755987360, guid: cd6aefd3a577dd9438bca8e078479a1e,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 119.0618
+      objectReference: {fileID: 0}
+    - target: {fileID: 1624523831755987360, guid: cd6aefd3a577dd9438bca8e078479a1e,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 165
+      objectReference: {fileID: 0}
     - target: {fileID: 1624523831755987360, guid: cd6aefd3a577dd9438bca8e078479a1e,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -12.000015
+      value: -12
+      objectReference: {fileID: 0}
+    - target: {fileID: 1624523831755987361, guid: cd6aefd3a577dd9438bca8e078479a1e,
+        type: 3}
+      propertyPath: m_fontSize
+      value: 79.44
+      objectReference: {fileID: 0}
+    - target: {fileID: 1624523831755987361, guid: cd6aefd3a577dd9438bca8e078479a1e,
+        type: 3}
+      propertyPath: m_margin.w
+      value: 7.2107687
+      objectReference: {fileID: 0}
+    - target: {fileID: 1624523831755987361, guid: cd6aefd3a577dd9438bca8e078479a1e,
+        type: 3}
+      propertyPath: m_margin.z
+      value: 2.6990376
+      objectReference: {fileID: 0}
+    - target: {fileID: 1624523831755987361, guid: cd6aefd3a577dd9438bca8e078479a1e,
+        type: 3}
+      propertyPath: m_fontSizeBase
+      value: 79.44
       objectReference: {fileID: 0}
     - target: {fileID: 1624523832007291589, guid: cd6aefd3a577dd9438bca8e078479a1e,
         type: 3}
@@ -7678,6 +7788,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.AudioSource, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 2208449200999015501, guid: cd6aefd3a577dd9438bca8e078479a1e,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2208449200999015501, guid: cd6aefd3a577dd9438bca8e078479a1e,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2208449200999015501, guid: cd6aefd3a577dd9438bca8e078479a1e,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.000022888184
+      objectReference: {fileID: 0}
+    - target: {fileID: 2208449200999015501, guid: cd6aefd3a577dd9438bca8e078479a1e,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3777620472437620674, guid: cd6aefd3a577dd9438bca8e078479a1e,
         type: 3}
@@ -10027,10 +10157,9 @@ MonoBehaviour:
     avatar: {fileID: 21300000, guid: 6acc554b4b031ec4d8cf08fb6de2df15, type: 3}
     sentences:
     - "Bo\u0161ko, I'm busy. Tina and I are trying to master a new trick."
-    - "If you came to ask about the bone you keep wanting to show me, you're\n too
-      late."
-    - "We walked past it on our way to the field just south of here, by the \nbig
-      oak tree."
+    - If you came to ask about the bone you keep wanting to show me, you're too late.
+    - We walked past it on our way to the field just south of here, by the big oak
+      tree.
     - If I were you, I wouldn't leave it just hanging around like that.
     - Bones are pretty hard to come by these days.
   endDialogue:
