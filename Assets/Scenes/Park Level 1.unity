@@ -8626,6 +8626,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5892482537204379916}
     m_Modifications:
+    - target: {fileID: 1775201982, guid: cd6aefd3a577dd9438bca8e078479a1e, type: 3}
+      propertyPath: boskoConcernedDialogue.sentences.Array.data[0]
+      value: Maybe I should be keeping a closer eye on Vlado and put the leash  back
+        on every now and again.
+      objectReference: {fileID: 0}
     - target: {fileID: 1624523830217503222, guid: cd6aefd3a577dd9438bca8e078479a1e,
         type: 3}
       propertyPath: m_Name
