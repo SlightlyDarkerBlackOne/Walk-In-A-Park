@@ -64,8 +64,9 @@ public class DayNightSystem2D : MonoBehaviour
 
     void Start() 
     {
-        dayCycle = DayCycles.Sunrise; // start with sunrise state
-        globalLight.color = sunrise; // start global color at sunrise
+        dayCycle = DayCycles.Night; // start with sunrise state
+        globalLight.color = night; // start global color at sunrise
+        SFXManager.Instance.PlayAtmosphere();
 
         foreach (Light2D light in mapLights) {
             if(light.transform.parent.GetComponent<SpriteRenderer>() != null && light.gameObject.name == "LampLight") {
