@@ -5207,6 +5207,11 @@ PrefabInstance:
       propertyPath: playerHuman
       value: 
       objectReference: {fileID: 812062461}
+    - target: {fileID: 2658878372350388068, guid: b9dffd6f3aca50242abbf302385200b4,
+        type: 3}
+      propertyPath: moveSpeed
+      value: 3.4
+      objectReference: {fileID: 0}
     - target: {fileID: 2658878372350388069, guid: b9dffd6f3aca50242abbf302385200b4,
         type: 3}
       propertyPath: m_Name

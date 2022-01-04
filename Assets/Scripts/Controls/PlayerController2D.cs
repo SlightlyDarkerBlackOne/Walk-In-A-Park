@@ -189,7 +189,7 @@ public class PlayerController2D : MonoBehaviour
             }
                     
             target = Camera.main.ScreenToWorldPoint(Input.GetTouch(0).position);
-            var delta = 2f*moveSpeed*Time.deltaTime;
+            var delta = moveSpeed*Time.deltaTime;
             Vector2 position = Vector3.MoveTowards(transform.position, target, delta);    
             rb.MovePosition(position);
             lastMoveDir = new Vector2 (horizontal, vertical);

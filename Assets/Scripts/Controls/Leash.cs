@@ -45,7 +45,7 @@ public class Leash : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.R) || ClickedOnVlado() == true && canPutLeashOnOrOff) {
+        if ((Input.GetKeyDown(KeyCode.R) || ClickedOnVlado() == true) && canPutLeashOnOrOff) {
             if (!leash.activeSelf && DogInRange()) {
                 puttingOnLeash = true;
                 SFXManager.Instance.PlaySound(SFXManager.Instance.leashAttach);
